@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: 33294cdd8b85e334a82dadee095c46cd
+guid: d6eab743d01b8914598bbcd2c514ec96
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1948456135516571386
-    second: Lorian_IDLE_0
-  - first:
-      213: -5582781271685351521
-    second: Lorian_IDLE_1
-  - first:
-      213: -2188718389898581611
-    second: Lorian_IDLE_2
-  - first:
-      213: 4120440194202198964
-    second: Lorian_IDLE_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 85
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,85 +91,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lorian_IDLE_0
+      name: Power_LR_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 438
-        width: 46
-        height: 62
+        x: 140
+        y: 321
+        width: 101
+        height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 609ba16d771b5f4e0800000000000000
-      internalID: -1948456135516571386
+      spriteID: bcb702bd8a4e8f230800000000000000
+      internalID: 3672936910002617291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_IDLE_1
+      name: Power_LR_1
       rect:
         serializedVersion: 2
-        x: 110
-        y: 438
-        width: 44
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 288
+        y: 321
+        width: 108
+        height: 167
+      alignment: 9
+      pivot: {x: 0.536152, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f97bd72230af582b0800000000000000
-      internalID: -5582781271685351521
+      spriteID: 025ad165e5da88840800000000000000
+      internalID: 5226617988246775072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_IDLE_2
+      name: Power_LR_2
       rect:
         serializedVersion: 2
-        x: 202
-        y: 438
-        width: 38
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 458
+        y: 321
+        width: 126
+        height: 167
+      alignment: 9
+      pivot: {x: 0.6072761, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 599eab0883c10a1e0800000000000000
-      internalID: -2188718389898581611
+      spriteID: f578bb49a2505dad0800000000000000
+      internalID: -2678228722959808673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_IDLE_3
+      name: Power_LR_3
       rect:
         serializedVersion: 2
-        x: 282
-        y: 438
-        width: 39
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 613
+        y: 321
+        width: 189
+        height: 163
+      alignment: 9
+      pivot: {x: 0.65805525, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b3e9ad868ebe2930800000000000000
-      internalID: 4120440194202198964
+      spriteID: 7c1a24aeb99ae2cd0800000000000000
+      internalID: -2580939049321455161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power_LR_7
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 92
+        width: 190
+        height: 167
+      alignment: 9
+      pivot: {x: 0.34784257, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41470cec7ebbc910800000000000000
+      internalID: 1858788714965582157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power_LR_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 92
+        width: 127
+        height: 167
+      alignment: 9
+      pivot: {x: 0.41602644, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18abc6f4309abae10800000000000000
+      internalID: 2210045873837881985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power_LR_5
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 92
+        width: 108
+        height: 167
+      alignment: 9
+      pivot: {x: 0.45768002, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85f2f57895b1df10800000000000000
+      internalID: 2292813351726806410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Power_LR_4
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 92
+        width: 101
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16198c51e040df230800000000000000
+      internalID: 3674097329545711969
       vertices: []
       indices: 
       edges: []

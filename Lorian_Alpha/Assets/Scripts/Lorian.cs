@@ -47,6 +47,15 @@ public class Lorian : MonoBehaviour
         {
             anim.SetTrigger("OnAttack");
         }
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            anim.SetBool("OnPower", true);
+        }
+        else
+        {
+            anim.SetBool("OnPower", false);
+        }
     }
 
     public void TakeSword(int num)
