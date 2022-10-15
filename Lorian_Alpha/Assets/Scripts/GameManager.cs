@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public List<Button> blueButtons = new List<Button>();
     public List<Button> greenButtons = new List<Button>();
     public List<Button> redButtons = new List<Button>();
+    private int buttonsNeeded = 2;
 
     private void Awake()
     {
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour
 
     public void StateOn()
     {
-        if(yellowButtons.Count > 0)
+        if(yellowButtons.Count >= buttonsNeeded)
         {
             yellowBridgeInactive.SetActive(false);
             yellowLightInactive.SetActive(false);
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
             yellowLightActive.SetActive(true);
         }
 
-        if(blueButtons.Count > 0)
+        if(blueButtons.Count >= buttonsNeeded)
         {
             blueBridgeInactive.SetActive(false);
             blueLightInactive.SetActive(false);
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour
             blueLightActive.SetActive(true);
         }
 
-        if(greenButtons.Count > 0)
+        if(greenButtons.Count >= buttonsNeeded)
         {
             greenBridgeInactive.SetActive(false);
             greenLightInactive.SetActive(false);
@@ -58,7 +59,7 @@ public class GameManager : MonoBehaviour
             greenLightActive.SetActive(true);
         }
         
-        if(redButtons.Count > 0)
+        if(redButtons.Count >= buttonsNeeded)
         {
             redBridgeInactive.SetActive(false);
             redLightInactive.SetActive(false);
@@ -69,7 +70,7 @@ public class GameManager : MonoBehaviour
 
     public void StateOff()
     {
-        if (yellowButtons.Count < 1)
+        if (yellowButtons.Count < buttonsNeeded)
         {
             yellowBridgeInactive.SetActive(true);
             yellowLightInactive.SetActive(true);
@@ -77,7 +78,7 @@ public class GameManager : MonoBehaviour
             yellowLightActive.SetActive(false);
         }
 
-        if(blueButtons.Count < 1)
+        if(blueButtons.Count < buttonsNeeded)
         {
             blueBridgeInactive.SetActive(true);
             blueLightInactive.SetActive(true);
@@ -85,7 +86,7 @@ public class GameManager : MonoBehaviour
             blueLightActive.SetActive(false);
         }
         
-        if(greenButtons.Count < 1)
+        if(greenButtons.Count < buttonsNeeded)
         {
             greenBridgeInactive.SetActive(true);
             greenLightInactive.SetActive(true);
@@ -93,7 +94,7 @@ public class GameManager : MonoBehaviour
             greenLightActive.SetActive(false);
         }
 
-        if(redButtons.Count < 1)
+        if(redButtons.Count < buttonsNeeded)
         {
             redBridgeInactive.SetActive(true);
             redLightInactive.SetActive(true);
