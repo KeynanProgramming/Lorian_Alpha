@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: ae47e14ea6b937d448fb4bafcafac5ef
+guid: 9716fa18fcff7bb46945b65084a95911
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4782971623040204751
-    second: Lorian_Animation 1_0
+      213: 3684353324317988999
+    second: Lorian_wd_1
   - first:
-      213: -8228905927275681722
-    second: Lorian_Animation 1_1
+      213: 8853811243681856064
+    second: Lorian_wd_2
   - first:
-      213: -3519802101857835911
-    second: Lorian_Animation 1_2
+      213: -632701477293921079
+    second: Lorian_wd_3
   - first:
-      213: 6694698911328678391
-    second: Lorian_Animation 1_3
+      213: 441027041428280082
+    second: Lorian_wd_4
   - first:
-      213: -757858451465624461
-    second: Lorian_Animation 1_4
+      213: -4620720898696737372
+    second: Lorian_wl_1
   - first:
-      213: -9157168647976180407
-    second: Lorian_Animation 1_5
+      213: -4250914911688663731
+    second: Lorian_wl_2
   - first:
-      213: -7862037398815182974
-    second: Lorian_Animation 1_6
+      213: -4337834827128732413
+    second: Lorian_wl_3
   - first:
-      213: -6716889989230633201
-    second: Lorian_Animation 1_7
+      213: -3663912088380225862
+    second: Lorian_wl_4
   - first:
-      213: -2998540734053897707
-    second: Lorian_Animation 1_8
+      213: -5517207285836343630
+    second: Lorian_wr_1
   - first:
-      213: 5228887641946608885
-    second: Lorian_Animation 1_9
+      213: 4918837875673663852
+    second: Lorian_wr_2
   - first:
-      213: 633135269112919387
-    second: Lorian_Animation 1_10
+      213: 6149002271965115272
+    second: Lorian_wr_3
   - first:
-      213: 889373275017765066
-    second: Lorian_Animation 1_11
+      213: 4963645753509675852
+    second: Lorian_wr_4
   - first:
-      213: 2785467700502815347
-    second: Lorian_Animation 1_12
+      213: 2322940690806167000
+    second: Lorian_wu_1
   - first:
-      213: -8242204465328538289
-    second: Lorian_Animation 1_13
+      213: 5923061098520511857
+    second: Lorian_wu_2
   - first:
-      213: -2667460996737798777
-    second: Lorian_Animation 1_14
+      213: -5927922474820095679
+    second: Lorian_wu_3
   - first:
-      213: 1860384953410765929
-    second: Lorian_Animation 1_15
+      213: -7096565224356713825
+    second: Lorian_wu_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,7 +94,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 560
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,337 +139,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lorian_Animation 1_0
+      name: Lorian_wd_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 476
-        width: 46
-        height: 66
+        x: 439
+        y: 8209
+        width: 785
+        height: 1131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcfb5129957806240800000000000000
-      internalID: 4782971623040204751
+      spriteID: 788d003f3d3712330800000000000000
+      internalID: 3684353324317988999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_1
+      name: Lorian_wd_2
       rect:
         serializedVersion: 2
-        x: 119
-        y: 474
-        width: 49
-        height: 68
+        x: 2048
+        y: 8185
+        width: 844
+        height: 1155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64860a268ad0dcd80800000000000000
-      internalID: -8228905927275681722
+      spriteID: 04a3408aa6e0fda70800000000000000
+      internalID: 8853811243681856064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_2
+      name: Lorian_wd_3
       rect:
         serializedVersion: 2
-        x: 217
-        y: 476
-        width: 49
-        height: 67
+        x: 3740
+        y: 8209
+        width: 839
+        height: 1156
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 974271713a6272fc0800000000000000
-      internalID: -3519802101857835911
+      spriteID: 9cce70dcb513837f0800000000000000
+      internalID: -632701477293921079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_3
+      name: Lorian_wd_4
       rect:
         serializedVersion: 2
-        x: 313
-        y: 476
-        width: 51
-        height: 66
+        x: 5403
+        y: 8209
+        width: 868
+        height: 1131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f1b0f7903958ec50800000000000000
-      internalID: 6694698911328678391
+      spriteID: 2139cace1c7de1600800000000000000
+      internalID: 441027041428280082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_4
+      name: Lorian_wl_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 331
-        width: 57
-        height: 71
+        x: 439
+        y: 5713
+        width: 970
+        height: 1209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3742d52f0cb8b75f0800000000000000
-      internalID: -757858451465624461
+      spriteID: 4ad05f203d6efdfb0800000000000000
+      internalID: -4620720898696737372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_5
+      name: Lorian_wl_2
       rect:
         serializedVersion: 2
-        x: 122
-        y: 331
-        width: 62
-        height: 71
+        x: 2102
+        y: 5713
+        width: 1072
+        height: 1209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9452905a1a33be080800000000000000
-      internalID: -9157168647976180407
+      spriteID: d4dd26ef867b105c0800000000000000
+      internalID: -4250914911688663731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_6
+      name: Lorian_wl_3
       rect:
         serializedVersion: 2
-        x: 218
-        y: 333
-        width: 63
-        height: 70
+        x: 3764
+        y: 5743
+        width: 1078
+        height: 1204
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28fe8c004ae64e290800000000000000
-      internalID: -7862037398815182974
+      spriteID: 3058ca2253aecc3c0800000000000000
+      internalID: -4337834827128732413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_7
+      name: Lorian_wl_4
       rect:
         serializedVersion: 2
-        x: 315
-        y: 331
-        width: 62
-        height: 71
+        x: 5432
+        y: 5713
+        width: 1073
+        height: 1209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0fd7847420d8c2a0800000000000000
-      internalID: -6716889989230633201
+      spriteID: ab646db2e5b272dc0800000000000000
+      internalID: -3663912088380225862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_8
+      name: Lorian_wr_1
       rect:
         serializedVersion: 2
-        x: 15
-        y: 186
-        width: 56
-        height: 71
+        x: 273
+        y: 3217
+        width: 970
+        height: 1209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51aad2ed61b0366d0800000000000000
-      internalID: -2998540734053897707
+      spriteID: 2b617877431fe63b0800000000000000
+      internalID: -5517207285836343630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_9
+      name: Lorian_wr_2
       rect:
         serializedVersion: 2
-        x: 105
-        y: 185
-        width: 63
-        height: 70
+        x: 1814
+        y: 3193
+        width: 1078
+        height: 1204
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f458a44b9db09840800000000000000
-      internalID: 5228887641946608885
+      spriteID: c69044f9cf8334440800000000000000
+      internalID: 4918837875673663852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_10
+      name: Lorian_wr_3
       rect:
         serializedVersion: 2
-        x: 202
-        y: 186
-        width: 62
-        height: 71
+        x: 3482
+        y: 3217
+        width: 1072
+        height: 1209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b553f3a3c2959c800800000000000000
-      internalID: 633135269112919387
+      spriteID: 883fc8fccf4a55550800000000000000
+      internalID: 6149002271965115272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_11
+      name: Lorian_wr_4
       rect:
         serializedVersion: 2
-        x: 298
-        y: 186
-        width: 63
-        height: 71
+        x: 5163
+        y: 3217
+        width: 1073
+        height: 1209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac0e8221840b75c00800000000000000
-      internalID: 889373275017765066
+      spriteID: c4302d8a38962e440800000000000000
+      internalID: 4963645753509675852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_12
+      name: Lorian_wu_1
       rect:
         serializedVersion: 2
-        x: 22
-        y: 43
-        width: 51
-        height: 66
+        x: 385
+        y: 751
+        width: 868
+        height: 1126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3726bc59d18f7a620800000000000000
-      internalID: 2785467700502815347
+      spriteID: 8d55dc5304ebc3020800000000000000
+      internalID: 2322940690806167000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_13
+      name: Lorian_wu_2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 42
-        width: 48
-        height: 67
+        x: 2077
+        y: 721
+        width: 815
+        height: 1156
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4d34f535becd9d80800000000000000
-      internalID: -8242204465328538289
+      spriteID: 1750048ffa0f23250800000000000000
+      internalID: 5923061098520511857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_14
+      name: Lorian_wu_3
       rect:
         serializedVersion: 2
-        x: 218
-        y: 42
-        width: 48
-        height: 67
+        x: 3764
+        y: 721
+        width: 815
+        height: 1156
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78deb353b564bfad0800000000000000
-      internalID: -2667460996737798777
+      spriteID: 1413b48aae9cbbda0800000000000000
+      internalID: -5927922474820095679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lorian_Animation 1_15
+      name: Lorian_wu_4
       rect:
         serializedVersion: 2
-        x: 312
-        y: 43
-        width: 50
-        height: 66
+        x: 5378
+        y: 751
+        width: 868
+        height: 1126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 964c785224a61d910800000000000000
-      internalID: 1860384953410765929
+      spriteID: f9ae3d4178fe38d90800000000000000
+      internalID: -7096565224356713825
       vertices: []
       indices: 
       edges: []
