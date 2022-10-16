@@ -36,6 +36,10 @@ public class Button : MonoBehaviour
                 case "RedButton":
                     GameManager.instance.redButtons.Add(this);
                     break;
+
+                case "OrangeButton":
+                    GameManager.instance.orangeButtons.Add(this);
+                    break;
             }
 
             GameManager.instance.StateOn();
@@ -66,6 +70,10 @@ public class Button : MonoBehaviour
 
                 case "RedButton":
                     GameManager.instance.redButtons.Remove(this);
+                    break;
+
+                case "OrangeButton":
+                    GameManager.instance.orangeButtons.Remove(this);
                     break;
             }
 

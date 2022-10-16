@@ -20,12 +20,18 @@ public class GameManager : MonoBehaviour
                       redBridgeActive,
                       redBridgeInactive,
                       redLightActive,
-                      redLightInactive;
+                      redLightInactive,
+                      orangeBridgeActive,
+                      orangeBridgeInactive,
+                      orangeLightActive,
+                      orangeLightInactive;
+
 
     public List<Button> yellowButtons = new List<Button>();
     public List<Button> blueButtons = new List<Button>();
     public List<Button> greenButtons = new List<Button>();
     public List<Button> redButtons = new List<Button>();
+    public List<Button> orangeButtons = new List<Button>();
     public int buttonsNeeded = 2;
 
     private void Awake()
@@ -66,6 +72,14 @@ public class GameManager : MonoBehaviour
             redBridgeActive.SetActive(true);
             redLightActive.SetActive(true);
         }
+
+        if (orangeButtons.Count >= buttonsNeeded)
+        {
+            orangeBridgeInactive.SetActive(false);
+            orangeLightInactive.SetActive(false);
+            orangeBridgeActive.SetActive(true);
+            orangeLightActive.SetActive(true);
+        }
     }
 
     public void StateOff()
@@ -100,6 +114,14 @@ public class GameManager : MonoBehaviour
             redLightInactive.SetActive(true);
             redBridgeActive.SetActive(false);
             redLightActive.SetActive(false);
+        }
+
+        if (orangeButtons.Count < buttonsNeeded)
+        {
+            orangeBridgeInactive.SetActive(true);
+            orangeLightInactive.SetActive(true);
+            orangeBridgeActive.SetActive(false);
+            orangeLightActive.SetActive(false);
         }
     }
 }
