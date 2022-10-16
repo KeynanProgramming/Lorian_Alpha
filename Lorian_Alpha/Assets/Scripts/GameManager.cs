@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     public List<Button> blueButtons = new List<Button>();
     public List<Button> greenButtons = new List<Button>();
     public List<Button> redButtons = new List<Button>();
-    private int buttonsNeeded = 2;
+    public int buttonsNeeded = 2;
 
     private void Awake()
     {
