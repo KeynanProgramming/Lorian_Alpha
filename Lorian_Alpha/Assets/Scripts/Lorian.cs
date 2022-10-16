@@ -6,10 +6,10 @@ public class Lorian : MonoBehaviour
 {
     public float moveSpeed;
     public int sword;
-    public Transform waveRightDirection;
+    /*public Transform waveRightDirection;
     public Transform waveLeftDirection;
     public Transform waveUpDirection;
-    public Transform waveDownDirection;
+    public Transform waveDownDirection;*/
     public GameObject Wave;
     private Rigidbody2D myRigidBody2D;
     private Animator anim;
@@ -29,7 +29,7 @@ public class Lorian : MonoBehaviour
         movement = movement.normalized;
 
         AnimationUpdate();
-        PowerDirection();
+        //PowerDirection();
     }
 
     private void FixedUpdate()
@@ -59,7 +59,7 @@ public class Lorian : MonoBehaviour
         {
             anim.SetBool("OnPower", true);
 
-            if(movement.x == 1)
+            /*if(movement.x == 1)
             {
                 Instantiate(Wave, waveRightDirection.position, waveRightDirection.rotation);
             }
@@ -77,7 +77,7 @@ public class Lorian : MonoBehaviour
             if (movement.y == -1)
             {
                 Instantiate(Wave, waveDownDirection.position, waveDownDirection.rotation);
-            }
+            }*/
         }
         else
         {
@@ -95,7 +95,7 @@ public class Lorian : MonoBehaviour
         }
     }
 
-    void PowerDirection()
+    /*void PowerDirection()
     {
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
@@ -117,7 +117,7 @@ public class Lorian : MonoBehaviour
         {
             waveDownDirection.right = Vector2.down;
         }
-    }
+    }*/
 
     public void TakeSword(int num)
     {
