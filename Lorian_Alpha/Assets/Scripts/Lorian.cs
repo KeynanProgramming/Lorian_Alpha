@@ -128,17 +128,23 @@ public class Lorian : MonoBehaviour
 
     public void TakeDamage(int dmg)
     {
+        anim.SetTrigger("Damage");
         health -= dmg;
         if (health <= 0)
         {
-            this.gameObject.SetActive(false);
+            anim.SetBool("OnDying", true);
         }
+    }
+
+    public void Dying()
+    {
+        this.gameObject.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
-        if(collision.gameObject.CompareTag("Enemy"))
+        if(collision.gameObject.CompareTag("Enemy") && Input.GetButtonDown("Fire1") && sword != 0)
         {
             enemy.TakeDamage(damage);
         }
