@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: abc2156df44060b478ac84cd3427bf8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5243180749321160128
+    second: DestruccionNAYRU_0
+  - first:
+      213: 1069009943610668536
+    second: DestruccionNAYRU_1
+  - first:
+      213: 5242613434446573809
+    second: DestruccionNAYRU_2
+  - first:
+      213: -8904923142557090954
+    second: DestruccionNAYRU_3
+  - first:
+      213: -2105069875774426576
+    second: DestruccionNAYRU_4
+  - first:
+      213: 5729693355194592977
+    second: DestruccionNAYRU_5
+  - first:
+      213: 4667458698971691427
+    second: DestruccionNAYRU_6
+  - first:
+      213: -3723184450720184475
+    second: DestruccionNAYRU_7
+  - first:
+      213: 5214240877869587600
+    second: DestruccionNAYRU_8
+  - first:
+      213: -4186438487343221498
+    second: DestruccionNAYRU_9
+  - first:
+      213: -3682077243792726153
+    second: DestruccionNAYRU_10
+  - first:
+      213: -7457418527217254825
+    second: DestruccionNAYRU_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DestruccionNAYRU_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 941
+        width: 240
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04abb8753ea7c37b0800000000000000
+      internalID: -5243180749321160128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_1
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 929
+        width: 235
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5364e31e2e5de00800000000000000
+      internalID: 1069009943610668536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_2
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 915
+        width: 226
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0f0ee542181c840800000000000000
+      internalID: 5242613434446573809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_3
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 950
+        width: 239
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bbab7059b5b6480800000000000000
+      internalID: -8904923142557090954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_4
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 960
+        width: 239
+        height: 501
+      alignment: 9
+      pivot: {x: 0.45717323, y: 0.51362044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032f613e91a49c2e0800000000000000
+      internalID: -2105069875774426576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_5
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 846
+        width: 235
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de2a44dfb5f38f40800000000000000
+      internalID: 5729693355194592977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 91
+        width: 233
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9b30c15f426c040800000000000000
+      internalID: 4667458698971691427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_7
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 89
+        width: 300
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567c095e777945cc0800000000000000
+      internalID: -3723184450720184475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_8
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 89
+        width: 321
+        height: 637
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cdcb2c374bc5840800000000000000
+      internalID: 5214240877869587600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_9
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 48
+        width: 304
+        height: 749
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60532ef5068c6e5c0800000000000000
+      internalID: -4186438487343221498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_10
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 58
+        width: 311
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7776f285142a6ecc0800000000000000
+      internalID: -3682077243792726153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DestruccionNAYRU_11
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 117
+        width: 385
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e7ccf4c5de18890800000000000000
+      internalID: -7457418527217254825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
