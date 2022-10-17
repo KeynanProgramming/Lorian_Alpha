@@ -62,7 +62,6 @@ public class Enemy : MonoBehaviour
             {
                 transform.right = Vector3.left;
             }
-
         }
         else
         {
@@ -81,7 +80,6 @@ public class Enemy : MonoBehaviour
                 {
                     transform.right = Vector3.left;
                 }
-
             }
             else
             {

@@ -130,7 +130,7 @@ public class Lorian : MonoBehaviour
     {
         anim.SetTrigger("Damage");
         health -= dmg;
-        if (health <= 0)
+        if(health <= 0)
         {
             anim.SetBool("OnDying", true);
         }
@@ -144,9 +144,12 @@ public class Lorian : MonoBehaviour
     {
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
-        if(collision.gameObject.CompareTag("Enemy") && Input.GetButtonDown("Fire1") && sword != 0)
+        if(collision.gameObject.CompareTag("Enemy"))
         {
-            enemy.TakeDamage(damage);
+            if(Input.GetButtonDown("Fire1") && sword != 0)
+            {
+                enemy.TakeDamage(damage);
+            }
         }
     }
 }
