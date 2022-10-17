@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Lorian : MonoBehaviour
 {
+    public int health, damage, sword;
     public float moveSpeed;
-    public int sword;
     /*public Transform waveRightDirection;
     public Transform waveLeftDirection;
     public Transform waveUpDirection;
     public Transform waveDownDirection;*/
     public GameObject Wave;
+    public List<GameObject> hearts = new List<GameObject>(); 
     private Rigidbody2D myRigidBody2D;
     private Animator anim;
     Vector2 movement;
@@ -122,5 +124,23 @@ public class Lorian : MonoBehaviour
     public void TakeSword(int num)
     {
         sword += num;
+    }
+
+    public void TakeDamage(int dmg)
+    {
+        health -= dmg;
+        if (health <= 0)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            enemy.TakeDamage(damage);
+        }
     }
 }

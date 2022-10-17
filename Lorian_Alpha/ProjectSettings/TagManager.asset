@@ -9,6 +9,8 @@ TagManager:
   - YellowButton
   - GreenButton
   - OrangeButton
+  - Breakable
+  - Enemy
   layers:
   - Default
   - TransparentFX
