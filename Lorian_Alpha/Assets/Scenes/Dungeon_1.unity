@@ -6731,7 +6731,7 @@ MonoBehaviour:
   timer: 0
   idleTime: 0
   moveTime: 0
-  detectionRange: 4
+  detectionRange: 8
   attackRange: 2
   points: []
   target: {fileID: 1965863122}
