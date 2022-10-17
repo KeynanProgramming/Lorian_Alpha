@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Lorian : MonoBehaviour
 {
-    public int health, maxHP, damage, sword;
+    public int health, maxHP, damage, sword, emblem;
     public float moveSpeed;
     /*public Transform waveRightDirection;
     public Transform waveLeftDirection;
@@ -58,7 +58,7 @@ public class Lorian : MonoBehaviour
             anim.SetTrigger("OnAttack");
         }
 
-        if(Input.GetButtonDown("Fire2"))
+        if(Input.GetButtonDown("Fire2") && emblem != 0)
         {
             anim.SetBool("OnPower", true);
 
@@ -125,6 +125,11 @@ public class Lorian : MonoBehaviour
     public void TakeSword(int num)
     {
         sword += num;
+    }
+
+    public void TakeEmblem(int num)
+    {
+        emblem += num;
     }
 
     public bool TakeDamage(int dmg)
