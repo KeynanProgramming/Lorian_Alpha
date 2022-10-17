@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public float moveSpeed, timer, idleTime, moveTime;
     public float detectionRange, attackRange;
     public List<Transform> points;
-    public Transform target, homePosition;
+    public Transform target;
 
     private int currentPoint = 0;
     private Animator anim;

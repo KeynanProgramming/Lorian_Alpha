@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class Lorian : MonoBehaviour
 {
-    public int health, damage, sword;
+    public int health, maxHP, damage, sword;
     public float moveSpeed;
     /*public Transform waveRightDirection;
     public Transform waveLeftDirection;
     public Transform waveUpDirection;
     public Transform waveDownDirection;*/
     public GameObject Wave;
-    public List<GameObject> hearts = new List<GameObject>(); 
+    public List<GameObject> hearts = new List<GameObject>();
+    public Transform heartContainers;
     private Rigidbody2D myRigidBody2D;
     private Animator anim;
     Vector2 movement;
@@ -126,19 +127,51 @@ public class Lorian : MonoBehaviour
         sword += num;
     }
 
-    public void TakeDamage(int dmg)
+    public bool TakeDamage(int dmg)
     {
+        if(health -dmg > maxHP)
+        {
+            return false;
+        }
+
         anim.SetTrigger("Damage");
         health -= dmg;
-        if(health <= 0)
+        UpdateHP(health);
+        if (health <= 0)
         {
-            anim.SetBool("OnDying", true);
+            Destroy(this.gameObject);
+            //this.gameObject.SetActive(false);
+            //anim.SetBool("OnDying", true);
         }
+
+        return true;
     }
 
-    public void Dying()
+    /*public void Dying()
     {
         this.gameObject.SetActive(false);
+    }*/
+
+    public void UpdateHP(int newHP)
+    {
+        for(int i = 0; i < newHP; i++)
+        {
+            if(i < hearts.Count)
+            {
+                hearts[i].SetActive(true);
+            }
+            else
+            {
+                GameObject newHeart = Instantiate(hearts[0], heartContainers);
+                newHeart.SetActive(true);
+                hearts.Add(newHeart);
+            }
+        }
+
+        for(int i = newHP; i < hearts.Count; i++)
+        {
+            hearts[i].SetActive(false);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6010668476525073322
 Transform:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -90,12 +90,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.42870522, y: 1.6691974}
-      - {x: -1.1598854, y: 1.1928152}
+    - - {x: -0.57840014, y: 1.9519533}
+      - {x: -1.342845, y: 1.1928152}
       - {x: -0.78375727, y: 0.47631624}
       - {x: -0.3995728, y: 0.8953463}
-      - {x: 0.34729254, y: 0.7594155}
-      - {x: 0.3236847, y: 1.6578691}
+      - {x: 0.679947, y: 0.6429862}
+      - {x: 0.70623755, y: 1.8241966}
 --- !u!1 &4410745162323783241
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,12 +146,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5732e2e4507ecb4d8c01b5f330a0b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHP: 0
+  health: 2
+  maxHP: 5
+  damage: 5
   sword: 0
   moveSpeed: 7
   Wave: {fileID: 4052028450825684795, guid: c5a1a8238fd2c0545a52d2096d237d39, type: 3}
-  hearts: []
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  heartContainers: {fileID: 0}
 --- !u!114 &43004930834549558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +357,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -368,11 +372,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.7214794, y: 0.6863136}
-      - {x: -1.4397507, y: 0.48380816}
-      - {x: -1.5366049, y: -0.06740686}
-      - {x: -1.4451938, y: -0.63126135}
-      - {x: -0.3114494, y: -0.6312612}
+    - - {x: -0.5551524, y: 1.0854988}
+      - {x: -1.3898523, y: 0.91625893}
+      - {x: -1.8193617, y: 0.015756398}
+      - {x: -1.6780515, y: -0.8142214}
+      - {x: -0.24491847, y: -0.8308538}
       - {x: -0.836956, y: 0.19399875}
 --- !u!1 &5762999274901652666
 GameObject:
@@ -430,13 +434,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.59978676, y: -0.72393113}
+    - - {x: 0.6829505, y: -0.5409711}
       - {x: 0.28227615, y: -0.8190385}
       - {x: 0.2927742, y: -0.7984693}
       - {x: -0.62691313, y: -0.6738676}
-      - {x: -0.43094295, y: -1.5827771}
-      - {x: 0.11725581, y: -1.7709891}
-      - {x: 0.93014336, y: -1.3639778}
+      - {x: -0.5838077, y: -1.8402162}
+      - {x: -0.21471733, y: -2.0318604}
+      - {x: 0.8490952, y: -1.8874178}
+      - {x: 1.2627978, y: -1.3307127}
 --- !u!1 &5908556618771727495
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +577,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -587,13 +592,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.4391613, y: 0.5294695}
-      - {x: 0.6069192, y: 0.047611505}
-      - {x: 0.5519424, y: -0.77764845}
-      - {x: 1.4556528, y: -0.5162428}
-      - {x: 1.4338369, y: -0.19603062}
-      - {x: 1.361578, y: 0.1079123}
-      - {x: 1.0451622, y: 0.52859753}
+    - - {x: 0.505692, y: 1.0450835}
+      - {x: 0.789879, y: 0.19730595}
+      - {x: 0.43551356, y: -0.84417915}
+      - {x: 1.6386129, y: -0.8156317}
+      - {x: 1.7664913, y: -0.22929573}
+      - {x: 1.6277015, y: 0.24097371}
+      - {x: 1.2447548, y: 0.7614557}
 --- !u!1 &8781062018261489920
 GameObject:
   m_ObjectHideFlags: 0
