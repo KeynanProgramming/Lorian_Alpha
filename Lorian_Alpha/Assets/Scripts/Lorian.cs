@@ -134,7 +134,7 @@ public class Lorian : MonoBehaviour
 
     public bool TakeDamage(int dmg)
     {
-        if(health -dmg > maxHP)
+        if(health - dmg > maxHP)
         {
             return false;
         }

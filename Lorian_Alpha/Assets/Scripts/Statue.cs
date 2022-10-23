@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class Statue : MonoBehaviour
 {
+    public GameObject statueLimit;
     private Animator anim;
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         Lorian player = collision.gameObject.GetComponentInChildren<Lorian>();
 
-        if(player)
+        if(collision.gameObject.CompareTag("PlayerHitBox"))
         {
             anim.SetTrigger("OnRestoring");
-            this.gameObject.isStatic = false;
+            statueLimit.gameObject.SetActive(false);
         }
     }
 }
