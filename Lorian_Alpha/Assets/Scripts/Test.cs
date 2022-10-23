@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    public int count;
+    public int cuenta;
+    public GameObject cam1;
+    public GameObject cam2;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision && count == 0)
+        Lorian player = collision.gameObject.GetComponent<Lorian>();
+        if(cuenta == 0)
         {
-            count++;
+            cam2.gameObject.SetActive(true);
+            cam1.gameObject.SetActive(false);
+            cuenta++;
         }
-
-        if(collision && count == 1)
+        else if(cuenta == 1)
         {
-            count--;
+            cam1.gameObject.SetActive(true);
+            cam2.gameObject.SetActive(false);
+            cuenta--;
         }
     }
 }

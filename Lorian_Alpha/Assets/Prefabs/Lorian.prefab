@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 6020806064227419998}
   m_Layer: 7
   m_Name: Hit Box U
-  m_TagString: Untagged
+  m_TagString: PlayerHitBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,6 +153,9 @@ MonoBehaviour:
   moveSpeed: 7
   Wave: {fileID: 4052028450825684795, guid: c5a1a8238fd2c0545a52d2096d237d39, type: 3}
   hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   heartContainers: {fileID: 0}
@@ -315,7 +318,7 @@ GameObject:
   - component: {fileID: 3526175376236949149}
   m_Layer: 7
   m_Name: Hit Box L
-  m_TagString: Untagged
+  m_TagString: PlayerHitBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -359,11 +362,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5551524, y: 1.0854988}
+    - - {x: -0.5342808, y: 0.9498348}
       - {x: -1.3898523, y: 0.91625893}
       - {x: -1.8193617, y: 0.015756398}
       - {x: -1.6780515, y: -0.8142214}
-      - {x: -0.24491847, y: -0.8308538}
+      - {x: -0.5579883, y: -0.8308538}
       - {x: -0.836956, y: 0.19399875}
 --- !u!1 &5762999274901652666
 GameObject:
@@ -377,7 +380,7 @@ GameObject:
   - component: {fileID: 8677784285664096611}
   m_Layer: 7
   m_Name: Hit Box D
-  m_TagString: Untagged
+  m_TagString: PlayerHitBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -535,7 +538,7 @@ GameObject:
   - component: {fileID: 9002902762022544259}
   m_Layer: 7
   m_Name: Hit Box R
-  m_TagString: Untagged
+  m_TagString: PlayerHitBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -581,11 +584,11 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0.505692, y: 1.0450835}
       - {x: 0.789879, y: 0.19730595}
-      - {x: 0.43551356, y: -0.84417915}
+      - {x: 0.6337915, y: -0.8024368}
       - {x: 1.6386129, y: -0.8156317}
       - {x: 1.7664913, y: -0.22929573}
       - {x: 1.6277015, y: 0.24097371}
-      - {x: 1.2447548, y: 0.7614557}
+      - {x: 1.2343187, y: 0.938862}
 --- !u!1 &8781062018261489920
 GameObject:
   m_ObjectHideFlags: 0

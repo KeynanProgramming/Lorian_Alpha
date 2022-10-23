@@ -178,7 +178,7 @@ public class Lorian : MonoBehaviour
             hearts[i].SetActive(false);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
@@ -189,5 +189,5 @@ public class Lorian : MonoBehaviour
                 enemy.TakeDamage(damage);
             }
         }
-    }
+    }*/
 }

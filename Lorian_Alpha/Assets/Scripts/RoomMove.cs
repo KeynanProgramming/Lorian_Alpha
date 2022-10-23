@@ -4,33 +4,34 @@ using UnityEngine;
 
 public class RoomMove : MonoBehaviour
 {
-    /*public Vector2 cameraChange;
+    public Vector2 cameraChange;
     public Vector3 playerChange;
-    private OtherCameraMovement otherCam;*/
+    private OtherCameraMovement otherCam;
     public int counter;
-    //public GameObject cam1;
-    //public GameObject cam2;
+    public GameObject cam1;
+    public GameObject cam2;
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        //otherCam = GetComponent<OtherCameraMovement>();
-        //Lorian player = other.GetComponent<Lorian>();
+        Lorian player = collision.gameObject.GetComponent<Lorian>();
 
-        if(other.CompareTag("Player") && counter == 0)
+        if (counter == 0)
         {
-            /*otherCam.minPosition += cameraChange;
-            otherCam.maxPosition += cameraChange;
-            other.transform.position += playerChange;*/
-            /*cam2.gameObject.SetActive(true);
-            cam1.gameObject.SetActive(false);*/
+            cam2.gameObject.SetActive(true);
+            cam1.gameObject.SetActive(false);
             counter++;
+            otherCam = GetComponent<OtherCameraMovement>();
+            otherCam.minPosition += cameraChange;
+            otherCam.maxPosition += cameraChange;
+            collision.transform.position += playerChange;
+            
+            
         }
-
-        if(other.CompareTag("Player") && counter == 1)
+        else if(counter == 1)
         {
-            /*cam2.gameObject.SetActive(false);
-            cam1.gameObject.SetActive(true);*/
+            cam1.gameObject.SetActive(true);
+            cam2.gameObject.SetActive(false);
             counter--;
         }
     }
