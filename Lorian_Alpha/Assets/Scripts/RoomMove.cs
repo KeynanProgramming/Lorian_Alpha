@@ -25,8 +25,6 @@ public class RoomMove : MonoBehaviour
             /*otherCam.minPosition += cameraChange;
             otherCam.maxPosition += cameraChange;
             collision.transform.position += playerChange;*/
-            
-            
         }
         else if(collision != null && counter == 1)
         {
