@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour
     public GameObject Character;
     void Start()
     {
-        transform.position = new Vector3(0f, 0f, -10f);
+        transform.position = new Vector3(0f, -0.2999992f, -10f);
     }
 
     void Update()

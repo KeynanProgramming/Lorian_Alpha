@@ -16,19 +16,19 @@ public class RoomMove : MonoBehaviour
     {
         Lorian player = collision.gameObject.GetComponent<Lorian>();
 
-        if (counter == 0)
+        if (collision != null && counter == 0)
         {
             cam2.gameObject.SetActive(true);
             cam1.gameObject.SetActive(false);
             counter++;
             otherCam = GetComponent<OtherCameraMovement>();
-            otherCam.minPosition += cameraChange;
+            /*otherCam.minPosition += cameraChange;
             otherCam.maxPosition += cameraChange;
-            collision.transform.position += playerChange;
+            collision.transform.position += playerChange;*/
             
             
         }
-        else if(counter == 1)
+        else if(collision != null && counter == 1)
         {
             cam1.gameObject.SetActive(true);
             cam2.gameObject.SetActive(false);
