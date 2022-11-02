@@ -44,6 +44,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4377269998006787924}
   - component: {fileID: 6020806064227419998}
+  - component: {fileID: 335467880}
   m_Layer: 7
   m_Name: Hit Box U
   m_TagString: PlayerHitBox
@@ -96,6 +97,19 @@ PolygonCollider2D:
       - {x: -0.3995728, y: 0.8953463}
       - {x: 0.679947, y: 0.6429862}
       - {x: 0.70623755, y: 1.8241966}
+--- !u!114 &335467880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355052207939441266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!1 &4410745162323783241
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4410745162323783243}
   - component: {fileID: 4410745162323783240}
+  - component: {fileID: 4494021101368379706}
   - component: {fileID: 4410745162323783253}
   - component: {fileID: 4410745162323783242}
   - component: {fileID: 4410745162323783255}
@@ -148,8 +163,8 @@ MonoBehaviour:
   health: 5
   maxHP: 5
   damage: 5
-  sword: 0
-  emblem: 0
+  sword: 1
+  emblem: 1
   moveSpeed: 7
   Wave: {fileID: 4052028450825684795, guid: c5a1a8238fd2c0545a52d2096d237d39, type: 3}
   hearts:
@@ -159,6 +174,19 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   heartContainers: {fileID: 0}
+--- !u!114 &4494021101368379706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410745162323783241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad10f4a1e6bb827449bb0dc2dca032fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 2
 --- !u!50 &4410745162323783253
 Rigidbody2D:
   serializedVersion: 4
@@ -316,6 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8815216530832714310}
   - component: {fileID: 3526175376236949149}
+  - component: {fileID: 1042580794}
   m_Layer: 7
   m_Name: Hit Box L
   m_TagString: PlayerHitBox
@@ -368,6 +397,19 @@ PolygonCollider2D:
       - {x: -1.6780515, y: -0.8142214}
       - {x: -0.5579883, y: -0.8308538}
       - {x: -0.836956, y: 0.19399875}
+--- !u!114 &1042580794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528098836018149422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!1 &5762999274901652666
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8840442828417964404}
   - component: {fileID: 8677784285664096611}
+  - component: {fileID: 632659262}
   m_Layer: 7
   m_Name: Hit Box D
   m_TagString: PlayerHitBox
@@ -432,6 +475,19 @@ PolygonCollider2D:
       - {x: -0.21471733, y: -2.0318604}
       - {x: 0.8490952, y: -1.8874178}
       - {x: 1.2627978, y: -1.3307127}
+--- !u!114 &632659262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762999274901652666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!1 &5908556618771727495
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4453350046883090353}
   - component: {fileID: 9002902762022544259}
+  - component: {fileID: 6140888}
   m_Layer: 7
   m_Name: Hit Box R
   m_TagString: PlayerHitBox
@@ -589,6 +646,19 @@ PolygonCollider2D:
       - {x: 1.7664913, y: -0.22929573}
       - {x: 1.6277015, y: 0.24097371}
       - {x: 1.2343187, y: 0.938862}
+--- !u!114 &6140888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8083131900922391048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!1 &8781062018261489920
 GameObject:
   m_ObjectHideFlags: 0

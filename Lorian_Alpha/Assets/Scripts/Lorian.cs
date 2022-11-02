@@ -144,17 +144,17 @@ public class Lorian : MonoBehaviour
         UpdateHP(health);
         if (health <= 0)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
             //this.gameObject.SetActive(false);
-            //anim.SetBool("OnDying", true);
+            anim.SetBool("OnDying", true);
         }
         return true;
     }
 
-    /*public void Dying()
+    public void Dying()
     {
         this.gameObject.SetActive(false);
-    }*/
+    }
 
     public void UpdateHP(int newHP)
     {
@@ -177,16 +177,17 @@ public class Lorian : MonoBehaviour
             hearts[i].SetActive(false);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
-        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        Enemy enemy = collision.gameObject.GetComponentInChildren<Enemy>();
 
         if(collision.gameObject.CompareTag("Enemy"))
         {
+            enemy.TakeDamage(damage);
             if(Input.GetButtonDown("Fire1") && sword != 0)
             {
                 enemy.TakeDamage(damage);
             }
         }
-    }
+    }*/
 }

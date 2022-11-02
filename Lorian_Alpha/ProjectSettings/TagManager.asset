@@ -9,9 +9,9 @@ TagManager:
   - YellowButton
   - GreenButton
   - OrangeButton
-  - Breakable
   - Enemy
   - PlayerHitBox
+  - Statue
   layers:
   - Default
   - TransparentFX

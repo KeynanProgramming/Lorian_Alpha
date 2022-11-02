@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9093366229267871747}
   - component: {fileID: 9093366229267871865}
-  - component: {fileID: 9093366229267871870}
   - component: {fileID: 9093366229267871871}
   - component: {fileID: 9093366229267871864}
   - component: {fileID: 9093366229267871868}
@@ -54,25 +53,12 @@ MonoBehaviour:
   timer: 0
   idleTime: 5
   moveTime: 10
-  detectionRange: 4
-  attackRange: 2
+  chaseRadius: 0
+  attackRadius: 0
   points:
   - {fileID: 0}
   - {fileID: 0}
   target: {fileID: 0}
---- !u!114 &9093366229267871870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9093366229267871866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad10f4a1e6bb827449bb0dc2dca032fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 5
 --- !u!61 &9093366229267871871
 BoxCollider2D:
   m_ObjectHideFlags: 0

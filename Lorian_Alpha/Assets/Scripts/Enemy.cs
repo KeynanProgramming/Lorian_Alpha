@@ -6,21 +6,28 @@ public class Enemy : MonoBehaviour
 {
     public int health, damage;
     public float moveSpeed, timer, idleTime, moveTime;
-    public float detectionRange, attackRange;
+    public float chaseRadius, attackRadius;
     public List<Transform> points;
     public Transform target;
 
     private int currentPoint = 0;
+    private Rigidbody2D myRigidbody;
     private Animator anim;
     void Start()
     {
+        myRigidbody = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag("Player").transform;
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
+        IdleTimer();
         CheckDistance();
+    }
+
+    void IdleTimer()
+    {
         timer += Time.deltaTime;
 
         if (timer > idleTime)
@@ -37,7 +44,16 @@ public class Enemy : MonoBehaviour
 
     void CheckDistance()
     {
-        if(Vector2.Distance(target.position, transform.position) < detectionRange)
+        if(Vector3.Distance(target.position, transform.position) <= chaseRadius
+            && Vector3.Distance(target.position, transform.position) > attackRadius)
+        {
+            Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+
+            myRigidbody.MovePosition(temp);
+        }
+
+        /*if(Vector2.Distance(target.position, transform.position) <= chaseRadius
+            && Vector2.Distance(target.position, transform.position) > attackRadius)
         {
             Vector3 dir = target.position - transform.position;
             dir.z = 0;
@@ -45,7 +61,7 @@ public class Enemy : MonoBehaviour
             transform.position += dir * moveSpeed * Time.deltaTime;
             anim.SetBool("OnIdle", false);
 
-            if(Vector2.Distance(target.position, transform.position) < attackRange)
+            if(Vector2.Distance(target.position, transform.position) < attackRadius)
             {
                 anim.SetBool("OnRange", true);
             }
@@ -89,18 +105,18 @@ public class Enemy : MonoBehaviour
                     currentPoint = 0;
                 }
             }
-        }
+        }*/
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
-        Lorian player = collision.gameObject.GetComponent<Lorian>();
+        Lorian player = collision.gameObject.GetComponentInParent<Lorian>();
 
         if (player)
         {
             player.TakeDamage(damage);
         }
-    }
+    }*/
 
     public void TakeDamage(int dmg)
     {
@@ -119,7 +135,7 @@ public class Enemy : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(transform.position, detectionRange);
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.DrawWireSphere(transform.position, chaseRadius);
+        Gizmos.DrawWireSphere(transform.position, attackRadius);
     }
 }
