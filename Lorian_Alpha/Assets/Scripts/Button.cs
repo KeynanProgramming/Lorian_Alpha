@@ -22,24 +22,24 @@ public class Button : MonoBehaviour
             switch (gameObject.tag)
             {
                 case "YellowButton":
-                    GameManager.instance.yellowButtons.Add(this);
+                    GameManager.instance.yellowButtonsPushed.Add(this);
                     break;
 
                 case "BlueButton":
-                    GameManager.instance.blueButtons.Add(this);
+                    GameManager.instance.blueButtonsPushed.Add(this);
                     break;
 
                 case "GreenButton":
-                    GameManager.instance.greenButtons.Add(this);
+                    GameManager.instance.greenButtonsPushed.Add(this);
                     break;
 
                 case "RedButton":
-                    GameManager.instance.redButtons.Add(this);
+                    GameManager.instance.redButtonsPushed.Add(this);
                     break;
 
-                case "OrangeButton":
+                /*case "OrangeButton":
                     GameManager.instance.orangeButtons.Add(this);
-                    break;
+                    break;*/
             }
 
             GameManager.instance.StateOn();
@@ -57,24 +57,24 @@ public class Button : MonoBehaviour
             switch (gameObject.tag)
             {
                 case "YellowButton":
-                    GameManager.instance.yellowButtons.Remove(this);
+                    GameManager.instance.yellowButtonsPushed.Remove(this);
                     break;
 
                 case "BlueButton":
-                    GameManager.instance.blueButtons.Remove(this);
+                    GameManager.instance.blueButtonsPushed.Remove(this);
                     break;
 
                 case "GreenButton":
-                    GameManager.instance.greenButtons.Remove(this);
+                    GameManager.instance.greenButtonsPushed.Remove(this);
                     break;
 
                 case "RedButton":
-                    GameManager.instance.redButtons.Remove(this);
+                    GameManager.instance.redButtonsPushed.Remove(this);
                     break;
 
-                case "OrangeButton":
+                /*case "OrangeButton":
                     GameManager.instance.orangeButtons.Remove(this);
-                    break;
+                    break;*/
             }
 
             GameManager.instance.StateOff();
