@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class HeartRestore : MonoBehaviour
 {
-    public int healtRestore = 1;
+    public int healthRestore = 1;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Lorian player = collision.gameObject.GetComponent<Lorian>();
-        if (player) 
+        Lorian takeHeart = collision.gameObject.GetComponent<Lorian>();
+        if(takeHeart && takeHeart.gameObject.GetComponent<Lorian>().health < 5) 
         {
-            if (player.TakeDamage(-healtRestore))
-            {
-                gameObject.SetActive(false);
-            }
+            takeHeart.TakeHeart(healthRestore);
+            Destroy(this.gameObject);
         }
     }
 }

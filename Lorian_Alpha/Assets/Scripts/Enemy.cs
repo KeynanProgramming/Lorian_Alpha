@@ -11,22 +11,20 @@ public class Enemy : MonoBehaviour
     public Transform target;
 
     private int currentPoint = 0;
-    private Rigidbody2D myRigidbody;
     private Animator anim;
     void Start()
     {
-        myRigidbody = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag("Player").transform;
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        IdleTimer();
+        //IdleTimer();
         CheckDistance();
     }
 
-    void IdleTimer()
+    /*void IdleTimer()
     {
         timer += Time.deltaTime;
 
@@ -40,19 +38,11 @@ public class Enemy : MonoBehaviour
             anim.SetBool("OnIdle", false);
             timer -= moveTime;
         }
-    }
+    }*/
 
     void CheckDistance()
     {
-        if(Vector3.Distance(target.position, transform.position) <= chaseRadius
-            && Vector3.Distance(target.position, transform.position) > attackRadius)
-        {
-            Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-
-            myRigidbody.MovePosition(temp);
-        }
-
-        /*if(Vector2.Distance(target.position, transform.position) <= chaseRadius
+        if(Vector2.Distance(target.position, transform.position) <= chaseRadius
             && Vector2.Distance(target.position, transform.position) > attackRadius)
         {
             Vector3 dir = target.position - transform.position;
@@ -63,11 +53,8 @@ public class Enemy : MonoBehaviour
 
             if(Vector2.Distance(target.position, transform.position) < attackRadius)
             {
-                anim.SetBool("OnRange", true);
-            }
-            else
-            {
-                anim.SetBool("OnRange", false);
+                transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                anim.SetTrigger("OnRange");
             }
 
             if(dir.x > 0)
@@ -105,7 +92,7 @@ public class Enemy : MonoBehaviour
                     currentPoint = 0;
                 }
             }
-        }*/
+        }
     }
 
     /*private void OnTriggerEnter2D(Collider2D collision)

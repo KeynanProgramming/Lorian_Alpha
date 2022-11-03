@@ -4,31 +4,58 @@ using UnityEngine;
 
 public class Knockback : MonoBehaviour
 {
+    public int damage;
     public float thrust;
     public float knockTime;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Enemy"))
+        if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Player"))
         {
-            Rigidbody2D enemy = collision.GetComponent<Rigidbody2D>();
+            Rigidbody2D hit = collision.GetComponent<Rigidbody2D>();
 
-            if(enemy != null)
+            if(hit != null)
             {
-                Vector2 difference = enemy.transform.position - transform.position;
-                difference = difference.normalized * thrust;
-                enemy.AddForce(difference, ForceMode2D.Impulse);
-                StartCoroutine(KnockCo(enemy));
+                if(collision.gameObject.CompareTag("Enemy"))
+                {
+                    hit.isKinematic = false;
+                    hit.gameObject.GetComponent<Enemy>().chaseRadius = 0;
+                    Vector2 difference = hit.transform.position - transform.position;
+                    difference = difference.normalized * thrust;
+                    hit.AddForce(difference, ForceMode2D.Impulse);
+                    hit.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+                    StartCoroutine(EnemyKnockCo(hit));
+                }
+
+                if(collision.gameObject.CompareTag("Player"))
+                {
+                    Vector2 difference = hit.transform.position - transform.position;
+                    difference = difference.normalized * thrust;
+                    hit.AddForce(difference, ForceMode2D.Impulse);
+                    hit.gameObject.GetComponent<Lorian>().TakeDamage(damage);
+                    StartCoroutine(PlayerKnockCo(hit));
+                }
             }
         }
     }
 
-    private IEnumerator KnockCo(Rigidbody2D enemy)
+    private IEnumerator EnemyKnockCo(Rigidbody2D hit)
     {
-        if(enemy != null)
+        if(hit != null)
         {
             yield return new WaitForSeconds(knockTime);
-            enemy.velocity = Vector2.zero;
+            hit.velocity = Vector2.zero;
+            hit.gameObject.GetComponent<Enemy>().chaseRadius = 4;
+            hit.isKinematic = true;
+        }
+    }
+
+    private IEnumerator PlayerKnockCo(Rigidbody2D hit)
+    {
+        if(hit != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            hit.velocity = Vector2.zero;
         }
     }
 }

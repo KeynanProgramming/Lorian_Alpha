@@ -11,7 +11,7 @@ public class Emblem : MonoBehaviour
 
         if (takeEmblem == true)
         {
-            takeEmblem.TakeEmblem(emblem);
+            takeEmblem.TakeAmulet(emblem);
             Destroy(this.gameObject);
         }
     }

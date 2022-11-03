@@ -109,7 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
 --- !u!1 &4410745162323783241
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +185,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad10f4a1e6bb827449bb0dc2dca032fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
   thrust: 2
+  knockTime: 0
 --- !u!50 &4410745162323783253
 Rigidbody2D:
   serializedVersion: 4
@@ -344,7 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8815216530832714310}
   - component: {fileID: 3526175376236949149}
-  - component: {fileID: 1042580794}
+  - component: {fileID: 2170879620426688515}
   m_Layer: 7
   m_Name: Hit Box L
   m_TagString: PlayerHitBox
@@ -397,7 +398,7 @@ PolygonCollider2D:
       - {x: -1.6780515, y: -0.8142214}
       - {x: -0.5579883, y: -0.8308538}
       - {x: -0.836956, y: 0.19399875}
---- !u!114 &1042580794
+--- !u!114 &2170879620426688515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -409,7 +410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
 --- !u!1 &5762999274901652666
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8840442828417964404}
   - component: {fileID: 8677784285664096611}
-  - component: {fileID: 632659262}
+  - component: {fileID: 5832425119761117609}
   m_Layer: 7
   m_Name: Hit Box D
   m_TagString: PlayerHitBox
@@ -475,7 +475,7 @@ PolygonCollider2D:
       - {x: -0.21471733, y: -2.0318604}
       - {x: 0.8490952, y: -1.8874178}
       - {x: 1.2627978, y: -1.3307127}
---- !u!114 &632659262
+--- !u!114 &5832425119761117609
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -487,7 +487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
 --- !u!1 &5908556618771727495
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
 --- !u!1 &8781062018261489920
 GameObject:
   m_ObjectHideFlags: 0

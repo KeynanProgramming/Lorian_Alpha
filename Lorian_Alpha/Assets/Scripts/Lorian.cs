@@ -5,22 +5,22 @@ using UnityEngine.UI;
 
 public class Lorian : MonoBehaviour
 {
-    public int health, maxHP, damage, sword, emblem;
+    public int health, maxHP, sword, amulet;
     public float moveSpeed;
     /*public Transform waveRightDirection;
     public Transform waveLeftDirection;
     public Transform waveUpDirection;
     public Transform waveDownDirection;*/
-    public GameObject Wave;
+    //public GameObject Wave;
     public List<GameObject> hearts = new List<GameObject>();
     public Transform heartContainers;
-    private Rigidbody2D myRigidBody2D;
+    private Rigidbody2D myRigidbody;
     private Animator anim;
     Vector2 movement;
     
     void Start()
     {
-        myRigidBody2D = GetComponent<Rigidbody2D>();
+        myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -37,7 +37,7 @@ public class Lorian : MonoBehaviour
 
     private void FixedUpdate()
     {
-        myRigidBody2D.MovePosition(myRigidBody2D.position + movement * moveSpeed * Time.fixedDeltaTime);
+        myRigidbody.MovePosition(myRigidbody.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
     void AnimationUpdate()
@@ -58,7 +58,7 @@ public class Lorian : MonoBehaviour
             anim.SetTrigger("OnAttack");
         }
 
-        if(Input.GetButtonDown("Fire2") && emblem != 0)
+        if(Input.GetButtonDown("Fire2") && amulet != 0)
         {
             anim.SetBool("OnPower", true);
 
@@ -127,28 +127,32 @@ public class Lorian : MonoBehaviour
         sword += num;
     }
 
-    public void TakeEmblem(int num)
+    public void TakeAmulet(int num)
     {
-        emblem += num;
+        amulet += num;
     }
 
-    public bool TakeDamage(int dmg)
+    public void TakeHeart(int num)
     {
-        if(health - dmg > maxHP)
+        if(health == maxHP)
         {
-            return false;
-        }
 
+        }
+        health += num;
+        UpdateHP(health);
+    }
+
+    public void TakeDamage(int dmg)
+    {
         anim.SetTrigger("Damage");
         health -= dmg;
         UpdateHP(health);
-        if (health <= 0)
+        if(health <= 0)
         {
             //Destroy(this.gameObject);
             //this.gameObject.SetActive(false);
             anim.SetBool("OnDying", true);
         }
-        return true;
     }
 
     public void Dying()
@@ -177,17 +181,4 @@ public class Lorian : MonoBehaviour
             hearts[i].SetActive(false);
         }
     }
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Enemy enemy = collision.gameObject.GetComponentInChildren<Enemy>();
-
-        if(collision.gameObject.CompareTag("Enemy"))
-        {
-            enemy.TakeDamage(damage);
-            if(Input.GetButtonDown("Fire1") && sword != 0)
-            {
-                enemy.TakeDamage(damage);
-            }
-        }
-    }*/
 }
