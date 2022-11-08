@@ -20,11 +20,11 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        //IdleTimer();
+        IdleTimer();
         CheckDistance();
     }
 
-    /*void IdleTimer()
+    void IdleTimer()
     {
         timer += Time.deltaTime;
 
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
             anim.SetBool("OnIdle", false);
             timer -= moveTime;
         }
-    }*/
+    }
 
     void CheckDistance()
     {

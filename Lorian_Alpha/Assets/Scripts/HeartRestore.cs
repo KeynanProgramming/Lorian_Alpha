@@ -9,7 +9,7 @@ public class HeartRestore : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Lorian takeHeart = collision.gameObject.GetComponent<Lorian>();
-        if(takeHeart && takeHeart.gameObject.GetComponent<Lorian>().health < 5) 
+        if(takeHeart && takeHeart.gameObject.GetComponent<Lorian>().health < takeHeart.gameObject.GetComponent<Lorian>().hearts.Count) 
         {
             takeHeart.TakeHeart(healthRestore);
             Destroy(this.gameObject);

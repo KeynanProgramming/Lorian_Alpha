@@ -44,7 +44,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4377269998006787924}
   - component: {fileID: 6020806064227419998}
-  - component: {fileID: 335467880}
+  - component: {fileID: 1377190163}
   m_Layer: 7
   m_Name: Hit Box U
   m_TagString: PlayerHitBox
@@ -97,7 +97,7 @@ PolygonCollider2D:
       - {x: -0.3995728, y: 0.8953463}
       - {x: 0.679947, y: 0.6429862}
       - {x: 0.70623755, y: 1.8241966}
---- !u!114 &335467880
+--- !u!114 &1377190163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,11 +161,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   maxHP: 5
-  damage: 5
-  sword: 1
-  emblem: 1
+  sword: 0
+  amulet: 0
+  coolDown: 4
   moveSpeed: 7
-  Wave: {fileID: 4052028450825684795, guid: c5a1a8238fd2c0545a52d2096d237d39, type: 3}
+  amuletTimer: 0
   hearts:
   - {fileID: 0}
   - {fileID: 0}
@@ -173,6 +173,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   heartContainers: {fileID: 0}
+  amuletHud: {fileID: 0}
+  amuletBar: {fileID: 0}
 --- !u!114 &4494021101368379706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,9 +187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad10f4a1e6bb827449bb0dc2dca032fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  thrust: 2
-  knockTime: 0
+  damage: 1
+  thrust: 5
+  knockTime: 0.4
 --- !u!50 &4410745162323783253
 Rigidbody2D:
   serializedVersion: 4
@@ -222,7 +224,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003078699, y: -0.64151824}
+  m_Offset: {x: -0.0010604858, y: -0.6472783}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -233,7 +235,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9199567, y: 0.6285908}
+  m_Size: {x: 0.5805893, y: 0.5573368}
   m_EdgeRadius: 0
 --- !u!212 &4410745162323783255
 SpriteRenderer:
@@ -591,7 +593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4453350046883090353}
   - component: {fileID: 9002902762022544259}
-  - component: {fileID: 6140888}
+  - component: {fileID: 1849353198}
   m_Layer: 7
   m_Name: Hit Box R
   m_TagString: PlayerHitBox
@@ -645,7 +647,7 @@ PolygonCollider2D:
       - {x: 1.7664913, y: -0.22929573}
       - {x: 1.6277015, y: 0.24097371}
       - {x: 1.2343187, y: 0.938862}
---- !u!114 &6140888
+--- !u!114 &1849353198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

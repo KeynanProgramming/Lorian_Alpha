@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Lorian : MonoBehaviour
 {
-    public int health, maxHP, sword, amulet;
-    public float moveSpeed;
+    public int health, maxHP, sword, amulet, coolDown;
+    public float moveSpeed, amuletTimer;
     /*public Transform waveRightDirection;
     public Transform waveLeftDirection;
     public Transform waveUpDirection;
@@ -14,6 +14,8 @@ public class Lorian : MonoBehaviour
     //public GameObject Wave;
     public List<GameObject> hearts = new List<GameObject>();
     public Transform heartContainers;
+    public GameObject amuletHud;
+    public Slider amuletBar;
     private Rigidbody2D myRigidbody;
     private Animator anim;
     Vector2 movement;
@@ -26,12 +28,14 @@ public class Lorian : MonoBehaviour
 
     void Update()
     {
+        amuletTimer += Time.deltaTime;
         movement = Vector2.zero;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         movement = movement.normalized;
 
         AnimationUpdate();
+        UpdateMana();
         //PowerDirection();
     }
 
@@ -58,9 +62,10 @@ public class Lorian : MonoBehaviour
             anim.SetTrigger("OnAttack");
         }
 
-        if(Input.GetButtonDown("Fire2") && amulet != 0)
+        if(Input.GetButtonDown("Fire2") && amulet != 0 && amuletTimer > coolDown)
         {
             anim.SetBool("OnPower", true);
+            amuletTimer -= amuletTimer;
 
             /*if(movement.x == 1)
             {
@@ -91,8 +96,7 @@ public class Lorian : MonoBehaviour
         {
             anim.SetBool("OnCharge", true);
         }
-        
-        if(Input.GetButtonUp("Fire2"))
+        else
         {
             anim.SetBool("OnCharge", false);
         }
@@ -130,6 +134,11 @@ public class Lorian : MonoBehaviour
     public void TakeAmulet(int num)
     {
         amulet += num;
+
+        if(amulet > 0)
+        {
+            amuletHud.SetActive(true);
+        }
     }
 
     public void TakeHeart(int num)
@@ -174,5 +183,11 @@ public class Lorian : MonoBehaviour
         {
             hearts[i].SetActive(false);
         }
+    }
+
+    public void UpdateMana()
+    {
+        amuletBar.value = (float)amuletTimer / coolDown;
+
     }
 }

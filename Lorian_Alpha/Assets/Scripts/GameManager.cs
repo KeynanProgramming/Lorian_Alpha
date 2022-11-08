@@ -31,9 +31,9 @@ public class GameManager : MonoBehaviour
     public List<Button> blueButtonsPushed = new List<Button>();
     public List<Button> greenButtonsPushed = new List<Button>();
     public List<Button> redButtonsPushed = new List<Button>();
-    public List<Button> orangeButtons = new List<Button>();
-    public List<Button> doorOneButtons = new List<Button>();
-    public List<Button> doorTwoButtons = new List<Button>();
+    public List<Button> orangeButtonsPushed = new List<Button>();
+    public List<Button> doorOneButtonsPushed = new List<Button>();
+    public List<Button> doorTwoButtonsPushed = new List<Button>();
     public int buttonsNeeded;
 
     private void Awake()
@@ -75,18 +75,18 @@ public class GameManager : MonoBehaviour
             redLightActive.SetActive(true);
         }
 
-        if(orangeButtons.Count >= buttonsNeeded)
+        if(orangeButtonsPushed.Count >= buttonsNeeded)
         {
             orangeBridgeInactive.SetActive(false);
             orangeBridgeActive.SetActive(true);
         }
 
-        if(doorOneButtons.Count >= buttonsNeeded)
+        if(doorOneButtonsPushed.Count >= buttonsNeeded)
         {
             entraceDoor.SetActive(false);
         }
 
-        if(doorTwoButtons.Count >= buttonsNeeded)
+        if(doorTwoButtonsPushed.Count >= buttonsNeeded)
         {
             secondDoor.SetActive(false);
         }
@@ -126,18 +126,18 @@ public class GameManager : MonoBehaviour
             redLightActive.SetActive(false);
         }
 
-        if(orangeButtons.Count < buttonsNeeded)
+        if(orangeButtonsPushed.Count < buttonsNeeded)
         {
             orangeBridgeInactive.SetActive(true);
             orangeBridgeActive.SetActive(false);
         }
 
-        if(doorOneButtons.Count >= buttonsNeeded)
+        if(doorOneButtonsPushed.Count >= buttonsNeeded)
         {
             entraceDoor.SetActive(true);
         }
 
-        if(doorTwoButtons.Count >= buttonsNeeded)
+        if(doorTwoButtonsPushed.Count >= buttonsNeeded)
         {
             secondDoor.SetActive(true);
         }
