@@ -37,9 +37,17 @@ public class Button : MonoBehaviour
                     GameManager.instance.redButtonsPushed.Add(this);
                     break;
 
-                /*case "OrangeButton":
+                case "OrangeButton":
                     GameManager.instance.orangeButtons.Add(this);
-                    break;*/
+                    break;
+
+                case "DoorOneButton":
+                    GameManager.instance.doorOneButtons.Add(this);
+                    break;
+
+                case "DoorTwoButton":
+                    GameManager.instance.doorTwoButtons.Add(this);
+                    break;
             }
 
             GameManager.instance.StateOn();
@@ -72,9 +80,17 @@ public class Button : MonoBehaviour
                     GameManager.instance.redButtonsPushed.Remove(this);
                     break;
 
-                /*case "OrangeButton":
+                case "OrangeButton":
                     GameManager.instance.orangeButtons.Remove(this);
-                    break;*/
+                    break;
+
+                case "DoorOneButton":
+                    GameManager.instance.doorOneButtons.Remove(this);
+                    break;
+
+                case "DoorTwoButton":
+                    GameManager.instance.doorTwoButtons.Remove(this);
+                    break;
             }
 
             GameManager.instance.StateOff();

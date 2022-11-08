@@ -134,10 +134,6 @@ public class Lorian : MonoBehaviour
 
     public void TakeHeart(int num)
     {
-        if(health == maxHP)
-        {
-
-        }
         health += num;
         UpdateHP(health);
     }
@@ -149,8 +145,6 @@ public class Lorian : MonoBehaviour
         UpdateHP(health);
         if(health <= 0)
         {
-            //Destroy(this.gameObject);
-            //this.gameObject.SetActive(false);
             anim.SetBool("OnDying", true);
         }
     }
