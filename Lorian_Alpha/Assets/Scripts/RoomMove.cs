@@ -15,9 +15,7 @@ public class RoomMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Lorian player = collision.gameObject.GetComponent<Lorian>();
-
-        if(collision != null)
+        if(collision.CompareTag("Player"))
         {
             cam2.gameObject.SetActive(true);
             cam1.gameObject.SetActive(false);
@@ -26,9 +24,7 @@ public class RoomMove : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Lorian player = collision.gameObject.GetComponent<Lorian>();
-
-        if(collision != null)
+        if(collision.CompareTag("Player"))
         {
             cam1.gameObject.SetActive(true);
             cam2.gameObject.SetActive(false);
