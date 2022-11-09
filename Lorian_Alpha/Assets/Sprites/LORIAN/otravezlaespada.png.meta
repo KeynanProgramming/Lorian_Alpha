@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 14f95e523b3599b45ba730b1b875c593
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5798648144651096595
+    second: LorianUpATK_3
+  - first:
+      213: -6996843201288346702
+    second: LorianUpATK_0
+  - first:
+      213: 5795909589978754428
+    second: LorianUpATK_1
+  - first:
+      213: 833014110006847378
+    second: LorianUpATK_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +44,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 925
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +80,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,7 +113,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LorianUpATK_3
+      rect:
+        serializedVersion: 2
+        x: 7561
+        y: 2101
+        width: 1570
+        height: 2425
+      alignment: 9
+      pivot: {x: 0.5699026, y: 0.35624376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dede7982c30178fa0800000000000000
+      internalID: -5798648144651096595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LorianUpATK_0
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 2140
+        width: 2506
+        height: 1804
+      alignment: 9
+      pivot: {x: 0.24, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3e916ed2836ee90800000000000000
+      internalID: -6996843201288346702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LorianUpATK_1
+      rect:
+        serializedVersion: 2
+        x: 3271
+        y: 2179
+        width: 2002
+        height: 2077
+      alignment: 9
+      pivot: {x: 0.3342951, y: 0.4311547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7da6f460153f6050800000000000000
+      internalID: 5795909589978754428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LorianUpATK_2
+      rect:
+        serializedVersion: 2
+        x: 5533
+        y: 2101
+        width: 1456
+        height: 2385
+      alignment: 9
+      pivot: {x: 0.45695546, y: 0.37764153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297a8d76be57f8b00800000000000000
+      internalID: 833014110006847378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -11,20 +11,18 @@ public class Statue : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    /*private void OnTriggerStay2D(Collider2D collision)
-    {
-        Lorian player = collision.gameObject.GetComponentInChildren<Lorian>();
-
-        if(collision.gameObject.CompareTag("PlayerHitBox"))
-        {
-            anim.SetTrigger("OnRestoring");
-            statueLimit.gameObject.SetActive(false);
-        }
-    }*/
-
     public void OnRestore()
     {
         anim.SetTrigger("OnRestoring");
         statueLimit.gameObject.SetActive(false);
     }
+
+    public void OnBreak()
+    {
+        anim.SetTrigger("OnBreak");
+        statueLimit.gameObject.SetActive(true);
+    }
+
+
+
 }

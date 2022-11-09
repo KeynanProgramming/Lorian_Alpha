@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: f8132643aec4b764c9e234f99fd0e780
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 295935968246569706
+    second: LorianLeftATK_0
+  - first:
+      213: 6697618246027450030
+    second: LorianLeftATK_3
+  - first:
+      213: 6373964248101139203
+    second: LorianLeftATK_1
+  - first:
+      213: 2778043563796455980
+    second: LorianLeftATK_2
+  - first:
+      213: -7471845122350486404
+    second: Sword_ATK_L_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +56,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 925
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +83,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +104,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LorianLeftATK_0
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 2764
+        width: 2039
+        height: 2740
+      alignment: 9
+      pivot: {x: 0.46106395, y: 0.35705915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea1997f1306b1400800000000000000
+      internalID: 295935968246569706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LorianLeftATK_3
+      rect:
+        serializedVersion: 2
+        x: 6859
+        y: 2803
+        width: 2116
+        height: 1843
+      alignment: 9
+      pivot: {x: 0.68509275, y: 0.50861526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea614ab2f48b2fc50800000000000000
+      internalID: 6697618246027450030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LorianLeftATK_1
+      rect:
+        serializedVersion: 2
+        x: 5455
+        y: 112
+        width: 2623
+        height: 2428
+      alignment: 9
+      pivot: {x: 0.5141244, y: 0.41062623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303bb1386bed47850800000000000000
+      internalID: 6373964248101139203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LorianLeftATK_2
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 424
+        width: 2974
+        height: 2343
+      alignment: 9
+      pivot: {x: 0.5338133, y: 0.4186786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22e5ae07e79d8620800000000000000
+      internalID: 2778043563796455980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

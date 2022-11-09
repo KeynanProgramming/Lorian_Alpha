@@ -5,8 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health, damage;
-    public float moveSpeed, timer, idleTime, moveTime;
-    public float chaseRadius, attackRadius;
+    public float moveSpeed,
+                 timer,
+                 idleTime,
+                 moveTime,
+                 chaseRadius,
+                 attackRadius,
+                 limitRadius;
     public List<Transform> points;
     public Transform target;
 
@@ -42,8 +47,7 @@ public class Enemy : MonoBehaviour
 
     void CheckDistance()
     {
-        if(Vector2.Distance(target.position, transform.position) <= chaseRadius
-            && Vector2.Distance(target.position, transform.position) > attackRadius)
+        if(Vector2.Distance(target.position, transform.position) <= chaseRadius)
         {
             Vector3 dir = target.position - transform.position;
             dir.z = 0;
@@ -53,11 +57,15 @@ public class Enemy : MonoBehaviour
 
             if(Vector2.Distance(target.position, transform.position) < attackRadius)
             {
-                transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
                 anim.SetTrigger("OnRange");
             }
 
-            if(dir.x > 0)
+            if(Vector2.Distance(target.position, transform.position) < limitRadius)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            }
+
+            if (dir.x > 0)
             {
                 transform.right = Vector3.right;
             }
@@ -95,16 +103,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Lorian player = collision.gameObject.GetComponentInParent<Lorian>();
-
-        if (player)
-        {
-            player.TakeDamage(damage);
-        }
-    }*/
-
     public void TakeDamage(int dmg)
     {
         anim.SetTrigger("Damage");
@@ -124,5 +122,7 @@ public class Enemy : MonoBehaviour
     {
         Gizmos.DrawWireSphere(transform.position, chaseRadius);
         Gizmos.DrawWireSphere(transform.position, attackRadius);
+        Gizmos.DrawWireSphere(transform.position, limitRadius);
+
     }
 }
