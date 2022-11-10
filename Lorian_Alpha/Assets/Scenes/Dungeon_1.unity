@@ -811,14 +811,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7215625755427671873, guid: 28bef8d770538ea41a754749f1748587, type: 3}
-      propertyPath: thrust
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7215625755427671873, guid: 28bef8d770538ea41a754749f1748587, type: 3}
-      propertyPath: knockTime
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9093366229267871747, guid: 28bef8d770538ea41a754749f1748587, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -877,7 +869,7 @@ PrefabInstance:
       objectReference: {fileID: 920923119}
     - target: {fileID: 9093366229267871865, guid: 28bef8d770538ea41a754749f1748587, type: 3}
       propertyPath: chaseRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9093366229267871865, guid: 28bef8d770538ea41a754749f1748587, type: 3}
       propertyPath: limitRadius
@@ -12977,14 +12969,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783255, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4494021101368379706, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
-      propertyPath: thrust
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4494021101368379706, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
-      propertyPath: knockTime
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5528098836018149422, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
