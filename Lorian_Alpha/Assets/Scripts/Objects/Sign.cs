@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Sign : MonoBehaviour
 {
     public GameObject dialogBox;
+    public GameObject spaceButton;
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
@@ -15,7 +16,7 @@ public class Sign : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true)
         {
-            if (dialogBox.activeInHierarchy)
+            if(dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
             }
@@ -28,16 +29,18 @@ public class Sign : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if(collision.CompareTag("Player"))
         {
+            spaceButton.SetActive(true);
             playerInRange = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if(collision.CompareTag("Player"))
         {
+            spaceButton.SetActive(false);
             playerInRange = false;
             dialogBox.SetActive(false);
         }
