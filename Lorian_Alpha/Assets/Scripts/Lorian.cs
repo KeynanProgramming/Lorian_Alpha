@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Lorian : MonoBehaviour
 {
     public int health, maxHP, sword, amulet, coolDown;
-    public float moveSpeed, amuletTimer;
+    public float moveSpeed, amuletTimer, spinningTime;
     /*public Transform waveRightDirection;
     public Transform waveLeftDirection;
     public Transform waveUpDirection;
@@ -102,6 +102,26 @@ public class Lorian : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Elevator portal = collision.GetComponent<Elevator>();
+
+        if(collision.CompareTag("Elevator"))
+        {
+            anim.SetBool("OnSpin", true);
+            StartCoroutine(SpinningCo(portal));
+        }
+    }
+
+    private IEnumerator SpinningCo(Elevator portal)
+    {
+        if(portal)
+        {
+            yield return new WaitForSeconds(spinningTime);
+            anim.SetBool("OnSpin", false);
+        }
+    }
+
     /*void PowerDirection()
     {
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
@@ -188,6 +208,5 @@ public class Lorian : MonoBehaviour
     public void UpdateMana()
     {
         amuletBar.value = (float)amuletTimer / coolDown;
-
     }
 }

@@ -20,6 +20,7 @@ public class Statue : MonoBehaviour
     public void OnBreak()
     {
         anim.SetTrigger("OnBreak");
+        statueLimit.transform.position = transform.position;
         statueLimit.gameObject.SetActive(true);
     }
 

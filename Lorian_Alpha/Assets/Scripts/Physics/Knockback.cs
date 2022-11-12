@@ -5,12 +5,9 @@ using UnityEngine;
 public class Knockback : MonoBehaviour
 {
     public int damage;
-    public float thrust;
-    public float knockTime;
+    public float thrust, knockTime;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Player"))
         {
             Rigidbody2D hit = collision.GetComponent<Rigidbody2D>();
@@ -20,7 +17,7 @@ public class Knockback : MonoBehaviour
                 if(collision.gameObject.CompareTag("Enemy"))
                 {
                     hit.isKinematic = false;
-                    hit.gameObject.GetComponent<Enemy>().chaseRadius = 0;
+                    //hit.gameObject.GetComponent<Enemy>().chaseRadius = 0;
                     Vector2 difference = hit.transform.position - transform.position;
                     difference = difference.normalized * thrust;
                     hit.AddForce(difference, ForceMode2D.Impulse);
@@ -47,7 +44,7 @@ public class Knockback : MonoBehaviour
         {
             yield return new WaitForSeconds(knockTime);
             hit.velocity = Vector2.zero;
-            hit.gameObject.GetComponent<Enemy>().chaseRadius = 4;
+            //hit.gameObject.GetComponent<Enemy>().chaseRadius = chaseRadius;
             hit.isKinematic = true;
         }
     }
