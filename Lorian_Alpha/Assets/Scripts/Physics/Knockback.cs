@@ -7,9 +7,10 @@ public class Knockback : MonoBehaviour
     public int damage;
     public float thrust;
     public float knockTime;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
+
         if(collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Player"))
         {
             Rigidbody2D hit = collision.GetComponent<Rigidbody2D>();
@@ -29,6 +30,7 @@ public class Knockback : MonoBehaviour
 
                 if(collision.gameObject.CompareTag("Player"))
                 {
+                    
                     Vector2 difference = hit.transform.position - transform.position;
                     difference = difference.normalized * thrust;
                     hit.AddForce(difference, ForceMode2D.Impulse);
