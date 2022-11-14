@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    public int sword;
+    /*public int sword;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Lorian takeSword = collision.GetComponent<Lorian>();
@@ -14,5 +14,5 @@ public class Sword : MonoBehaviour
             takeSword.TakeSword(sword);
             Destroy(this.gameObject);
         }
-    }
+    }*/
 }

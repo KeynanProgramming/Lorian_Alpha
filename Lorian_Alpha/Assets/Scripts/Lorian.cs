@@ -121,7 +121,7 @@ public class Lorian : MonoBehaviour
             anim.SetBool("OnSpin", false);
         }
     }
-
+    
     /*void PowerDirection()
     {
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
@@ -146,10 +146,11 @@ public class Lorian : MonoBehaviour
         }
     }*/
 
-    public void TakeSword(int num)
+    //Borrar junto con el script de Sword? No hace falta si lo obtiene del cofre
+    /*public void TakeSword(int num) 
     {
         sword += num;
-    }
+    }*/
 
     public void TakeAmulet(int num)
     {

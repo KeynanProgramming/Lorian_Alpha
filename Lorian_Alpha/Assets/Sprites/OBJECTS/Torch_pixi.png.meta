@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 045b6359551306c47bccb53a9a1325f4
+guid: ebb2c029bda286242968caf7b02fe5e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8561548385205493877
-    second: Obtencion_de_espada_0
+      213: -1148364366438096071
+    second: Torch_pixi_0
   - first:
-      213: 3672676956844202170
-    second: Obtencion_de_espada_1
+      213: 1198357639243602633
+    second: Torch_pixi_1
   - first:
-      213: 7037098034144107461
-    second: Obtencion_de_espada_5
+      213: 6531935218650617960
+    second: Torch_pixi_2
   - first:
-      213: -2957563713145033539
-    second: Obtencion_de_espada_7
+      213: 8773595996315937891
+    second: Torch_pixi_3
   - first:
-      213: -6523483152906469822
-    second: Obtencion_de_espada_8
+      213: 5324798082101627056
+    second: Torch_pixi_4
   - first:
-      213: 8627433138304202838
-    second: Obtencion_de_espada_9
+      213: -5033038647148979473
+    second: Torch_pixi_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 26
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,7 +86,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obtencion_de_espada_0
+      name: Torch_pixi_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 299
-        width: 256
-        height: 233
+        x: 10
+        y: 34
+        width: 12
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +123,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8fd18cca154f2980800000000000000
-      internalID: -8561548385205493877
+      spriteID: 933adb961b03010f0800000000000000
+      internalID: -1148364366438096071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obtencion_de_espada_1
+      name: Torch_pixi_1
       rect:
         serializedVersion: 2
-        x: 307
-        y: 288
-        width: 256
-        height: 233
+        x: 42
+        y: 34
+        width: 12
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab8167bcb38f7f230800000000000000
-      internalID: 3672676956844202170
+      spriteID: 9ca9df87ceb61a010800000000000000
+      internalID: 1198357639243602633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obtencion_de_espada_5
+      name: Torch_pixi_2
       rect:
         serializedVersion: 2
-        x: 595
-        y: 251
-        width: 256
-        height: 233
+        x: 74
+        y: 34
+        width: 12
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cb52ceb06bc8a160800000000000000
-      internalID: 7037098034144107461
+      spriteID: 8689883497816aa50800000000000000
+      internalID: 6531935218650617960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obtencion_de_espada_7
+      name: Torch_pixi_3
       rect:
         serializedVersion: 2
-        x: 47
-        y: 4
-        width: 256
-        height: 233
+        x: 10
+        y: 2
+        width: 12
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbca765097f94f6d0800000000000000
-      internalID: -2957563713145033539
+      spriteID: 36c633bf21312c970800000000000000
+      internalID: 8773595996315937891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obtencion_de_espada_8
+      name: Torch_pixi_4
       rect:
         serializedVersion: 2
-        x: 367
-        y: 4
-        width: 256
-        height: 233
+        x: 42
+        y: 2
+        width: 12
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24eb3c4a2aee775a0800000000000000
-      internalID: -6523483152906469822
+      spriteID: 0b84958c4ab75e940800000000000000
+      internalID: 5324798082101627056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obtencion_de_espada_9
+      name: Torch_pixi_5
       rect:
         serializedVersion: 2
-        x: 635
-        y: 4
-        width: 256
-        height: 233
+        x: 74
+        y: 2
+        width: 12
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6583e0caabccab770800000000000000
-      internalID: 8627433138304202838
+      spriteID: fea5fdf340e072ab0800000000000000
+      internalID: -5033038647148979473
       vertices: []
       indices: 
       edges: []

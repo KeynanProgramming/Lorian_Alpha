@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Emblem : MonoBehaviour
+public class Amulet : MonoBehaviour
 {
-    public int emblem;
+    public int amulet;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Lorian takeEmblem = collision.GetComponent<Lorian>();
 
         if (takeEmblem == true)
         {
-            takeEmblem.TakeAmulet(emblem);
+            takeEmblem.TakeAmulet(amulet);
             Destroy(this.gameObject);
         }
     }

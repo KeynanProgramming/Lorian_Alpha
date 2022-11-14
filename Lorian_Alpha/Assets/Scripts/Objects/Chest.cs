@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : MonoBehaviour
+public class Chest : Sign
 {
-    public bool playerInRange;
+    public bool chestOpened;
+    public string nextDialog;
+    public GameObject objectPanel, hero;
     private Animator anim;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -13,25 +16,55 @@ public class Chest : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playerInRange == true)
+        if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true && chestOpened == false)
         {
+            if(dialogBox.activeInHierarchy)
+            {
+                chestOpened = true;
+                dialogBox.SetActive(false);
+                objectPanel.SetActive(false);
+            }
+            else
+            {
+                dialogBox.SetActive(true);
+                dialogText.text = dialog;
+                objectPanel.SetActive(true);
+
+                if(objectPanel.CompareTag("SwordPanel"))
+                {
+                    hero.gameObject.GetComponent<Lorian>().sword++;
+                }
+
+                if (objectPanel.CompareTag("HeartPanel"))
+                {
+                    hero.gameObject.GetComponent<Lorian>().maxHP++;
+                    GameObject newHeart = Instantiate(hero.gameObject.GetComponent<Lorian>().hearts[0],
+                        hero.gameObject.GetComponent<Lorian>().heartContainers);
+                    newHeart.SetActive(true);
+                    hero.gameObject.GetComponent<Lorian>().hearts.Add(newHeart);
+                }
+            }
+
             anim.SetBool("Opening", true);
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Player"))
+        if(objectPanel.activeInHierarchy && playerInRange == false)
         {
-            playerInRange = true;
+            objectPanel.SetActive(false);
+            chestOpened = true;
         }
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Player"))
+        if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true && chestOpened == true)
         {
-            playerInRange = false;
+            if(dialogBox.activeInHierarchy)
+            {
+                dialogBox.SetActive(false);
+            }
+            else
+            {
+                dialogBox.SetActive(true);
+                dialogText.text = nextDialog;
+            }
         }
     }
 }

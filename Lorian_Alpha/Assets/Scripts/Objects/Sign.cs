@@ -5,12 +5,10 @@ using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
 {
-    public GameObject dialogBox;
-    public GameObject spaceButton;
+    public GameObject dialogBox, spaceButton;
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
-
 
     void Update()
     {
@@ -27,7 +25,7 @@ public class Sign : MonoBehaviour
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
@@ -36,7 +34,7 @@ public class Sign : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {

@@ -62,7 +62,7 @@ public class Button : MonoBehaviour
         {
             buttonAnimation.SetBool("Pushed", false);
 
-            switch (gameObject.tag)
+            switch(gameObject.tag)
             {
                 case "YellowButton":
                     GameManager.instance.yellowButtonsPushed.Remove(this);
