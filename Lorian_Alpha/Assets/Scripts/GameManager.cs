@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
                       redLightInactive,
                       orangeBridgeActive,
                       orangeBridgeInactive,
+                      entranceBridgeActive,
+                      entranceBridgeInactive,
                       entraceDoor,
                       secondDoor,
                       elevatorActivated;
@@ -102,7 +104,8 @@ public class GameManager : MonoBehaviour
 
         if(doorTwoButtonsPushed.Count >= buttonsNeeded)
         {
-            secondDoor.SetActive(false);
+            entranceBridgeInactive.SetActive(false);
+            entranceBridgeActive.SetActive(true);
         }
     }
 
@@ -157,7 +160,8 @@ public class GameManager : MonoBehaviour
 
         if(doorTwoButtonsPushed.Count >= buttonsNeeded)
         {
-            secondDoor.SetActive(true);
+            entranceBridgeInactive.SetActive(true);
+            entranceBridgeActive.SetActive(false);
         }
     }
 }
