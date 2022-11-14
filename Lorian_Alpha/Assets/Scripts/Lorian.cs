@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Lorian : MonoBehaviour
 {
@@ -182,6 +183,8 @@ public class Lorian : MonoBehaviour
     public void Dying()
     {
         this.gameObject.SetActive(false);
+        SceneManager.LoadScene(0);
+
     }
 
     public void UpdateHP(int newHP)
