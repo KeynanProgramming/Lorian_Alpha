@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class Amulet : MonoBehaviour
 {
+    public int amulet;
     public GameObject objectPanel, hero, dialogBox;
-    public string dialog;
     public Text dialogText;
+    public string dialog;
     public bool playerInRange;
 
     private void Update()
@@ -34,8 +35,9 @@ public class Amulet : MonoBehaviour
         {
             playerInRange = true;
             dialogBox.SetActive(true);
+            dialogText.text = dialog;
             objectPanel.SetActive(true);
-            hero.gameObject.GetComponent<Lorian>().amulet++;
+            hero.gameObject.GetComponent<Lorian>().TakeAmulet(amulet);
         }
     }
 

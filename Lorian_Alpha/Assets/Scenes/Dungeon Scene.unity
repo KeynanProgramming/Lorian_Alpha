@@ -706,7 +706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46147767616119652, guid: 55df5322665eaf74b9494d46851edd8a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.21
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 46147767616119652, guid: 55df5322665eaf74b9494d46851edd8a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12787,11 +12787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.8
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13251,11 +13251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4232009287900168331, guid: 551a4fd6ba6fcfb4fb01d9e586ba0ce3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.8
+      value: 5.93
       objectReference: {fileID: 0}
     - target: {fileID: 4232009287900168331, guid: 551a4fd6ba6fcfb4fb01d9e586ba0ce3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.22
+      value: 6.58
       objectReference: {fileID: 0}
     - target: {fileID: 4232009287900168331, guid: 551a4fd6ba6fcfb4fb01d9e586ba0ce3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -49256,7 +49256,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 31309826525391561, guid: 4533a53117c170643848abe839384566, type: 3}
       propertyPath: m_Name
-      value: Emblem
+      value: Amulet
       objectReference: {fileID: 0}
     - target: {fileID: 31309826525391561, guid: 4533a53117c170643848abe839384566, type: 3}
       propertyPath: m_TagString

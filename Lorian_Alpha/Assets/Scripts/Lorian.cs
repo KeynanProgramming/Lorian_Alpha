@@ -32,7 +32,6 @@ public class Lorian : MonoBehaviour
 
         AnimationUpdate();
         UpdateMana();
-        //PowerDirection();
     }
 
     private void FixedUpdate()
