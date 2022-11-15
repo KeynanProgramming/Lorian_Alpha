@@ -8,11 +8,6 @@ public class Lorian : MonoBehaviour
 {
     public int health, maxHP, sword, amulet, coolDown;
     public float moveSpeed, amuletTimer, spinningTime;
-    /*public Transform waveRightDirection;
-    public Transform waveLeftDirection;
-    public Transform waveUpDirection;
-    public Transform waveDownDirection;*/
-    //public GameObject Wave;
     public List<GameObject> hearts = new List<GameObject>();
     public Transform heartContainers;
     public GameObject amuletHud;
@@ -67,26 +62,6 @@ public class Lorian : MonoBehaviour
         {
             anim.SetBool("OnPower", true);
             amuletTimer -= amuletTimer;
-
-            /*if(movement.x == 1)
-            {
-                Instantiate(Wave, waveRightDirection.position, waveRightDirection.rotation);
-            }
-
-            if (movement.x == -1)
-            {
-                Instantiate(Wave, waveLeftDirection.position, waveLeftDirection.rotation);
-            }
-
-            if (movement.y == 1)
-            {
-                Instantiate(Wave, waveUpDirection.position, waveUpDirection.rotation);
-            }
-
-            if (movement.y == -1)
-            {
-                Instantiate(Wave, waveDownDirection.position, waveDownDirection.rotation);
-            }*/
         }
         else
         {
@@ -122,36 +97,6 @@ public class Lorian : MonoBehaviour
             anim.SetBool("OnSpin", false);
         }
     }
-    
-    /*void PowerDirection()
-    {
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-        {
-            waveRightDirection.right = Vector2.right;
-        }
-
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-        {
-            
-            waveLeftDirection.right = Vector2.left;
-        }
-
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
-            waveUpDirection.right = Vector2.up;
-        }
-
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
-            waveDownDirection.right = Vector2.down;
-        }
-    }*/
-
-    //Borrar junto con el script de Sword? No hace falta si lo obtiene del cofre
-    /*public void TakeSword(int num) 
-    {
-        sword += num;
-    }*/
 
     public void TakeAmulet(int num)
     {

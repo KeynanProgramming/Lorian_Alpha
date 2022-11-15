@@ -35,7 +35,7 @@ public class Chest : Sign
                     hero.gameObject.GetComponent<Lorian>().sword++;
                 }
 
-                if (objectPanel.CompareTag("HeartPanel"))
+                if(objectPanel.CompareTag("HeartPanel"))
                 {
                     hero.gameObject.GetComponent<Lorian>().maxHP++;
                     GameObject newHeart = Instantiate(hero.gameObject.GetComponent<Lorian>().hearts[0],

@@ -41,10 +41,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3308755682743942917}
+  - component: {fileID: 5562953057823148548}
   - component: {fileID: 3308755682743942916}
   m_Layer: 0
   m_Name: Broken statue's limit
-  m_TagString: Untagged
+  m_TagString: Statue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,6 +64,32 @@ Transform:
   m_Father: {fileID: 4232009287900168331}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5562953057823148548
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308755682743942971}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.17388773, y: -0.12170291}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.45323378, y: 0.53840375}
+    oldSize: {x: 2.225, y: 2.9318466}
+    newSize: {x: 2.59375, y: 3.356933}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0853343, y: 2.913629}
+  m_EdgeRadius: 0
 --- !u!61 &3308755682743942916
 BoxCollider2D:
   m_ObjectHideFlags: 0
