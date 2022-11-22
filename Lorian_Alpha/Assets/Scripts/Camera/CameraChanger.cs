@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomMove : MonoBehaviour
+public class CameraChanger : MonoBehaviour
 {
     private OtherCameraMovement otherCam;
     public GameObject cam1;

@@ -6,7 +6,7 @@ public class EnemyHit : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Statue"))
+        if(collision.CompareTag("Statue"))
         {
             collision.GetComponent<Statue>().OnBreak();
         }

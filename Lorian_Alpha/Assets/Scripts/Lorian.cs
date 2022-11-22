@@ -128,7 +128,6 @@ public class Lorian : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         SceneManager.LoadScene(0);
-
     }
 
     public void UpdateHP(int newHP)
@@ -155,6 +154,6 @@ public class Lorian : MonoBehaviour
 
     public void UpdateMana()
     {
-        amuletBar.value = (float)amuletTimer / coolDown;
+        amuletBar.value = amuletTimer / coolDown;
     }
 }

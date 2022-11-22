@@ -13,7 +13,7 @@ public class Statue : MonoBehaviour
 
     public void OnRestore()
     {
-        anim.SetTrigger("OnRestoring");
+        anim.SetTrigger("OnRestore");
         statueLimit.gameObject.SetActive(false);
     }
 
