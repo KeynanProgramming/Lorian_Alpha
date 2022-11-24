@@ -23,7 +23,4 @@ public class Statue : MonoBehaviour
         statueLimit.transform.position = transform.position;
         statueLimit.gameObject.SetActive(true);
     }
-
-
-
 }

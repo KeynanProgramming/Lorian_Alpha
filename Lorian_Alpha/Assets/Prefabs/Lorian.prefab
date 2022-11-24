@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2256081345356469758}
   - component: {fileID: 4732709823266673860}
+  - component: {fileID: 258066914}
   m_Layer: 7
   m_Name: Hit Box U
   m_TagString: PlayerHitBox
@@ -44,7 +45,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,15 +57,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.87308025, y: 1.6515837}
-      - {x: 0.11776638, y: 1.854249}
-      - {x: -0.5157609, y: 1.7371897}
-      - {x: -0.72539806, y: 1.5686525}
-      - {x: -0.73006636, y: 0.5121105}
-      - {x: -0.21165413, y: 0.93114054}
-      - {x: 0.25707912, y: 0.8014622}
-      - {x: 0.87681496, y: 0.20450866}
-      - {x: 1.1894567, y: 1.2335956}
+    - - {x: 0.7, y: -0.5}
+      - {x: 0.7, y: -2.2}
+      - {x: -0.7, y: -2.2}
+      - {x: -0.7, y: -0.5}
+--- !u!114 &258066914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351388788767828362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2110d01c5aaf2849887f556588c70d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2355052207939441266
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,7 +84,7 @@ GameObject:
   - component: {fileID: 4377269998006787924}
   - component: {fileID: 6020806064227419998}
   - component: {fileID: 1377190163}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Hit Box U
   m_TagString: PlayerHitBox
   m_Icon: {fileID: 0}
@@ -110,7 +118,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -122,12 +130,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.57840014, y: 1.9519533}
-      - {x: -1.342845, y: 1.1928152}
-      - {x: -0.78375727, y: 0.47631624}
-      - {x: -0.3995728, y: 0.8953463}
-      - {x: 0.679947, y: 0.6429862}
-      - {x: 0.70623755, y: 1.8241966}
+    - - {x: 0.7, y: -0.5}
+      - {x: 0.7, y: -2.2}
+      - {x: -0.7, y: -2.2}
+      - {x: -0.7, y: -0.5}
 --- !u!114 &1377190163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,8 +198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   maxHP: 5
-  sword: 0
-  amulet: 0
+  sword: 1
+  amulet: 1
   coolDown: 4
   moveSpeed: 7
   amuletTimer: 0
@@ -349,6 +355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7710265819356578903}
   - component: {fileID: 4179164102538986877}
+  - component: {fileID: 286882152}
   m_Layer: 7
   m_Name: Hit Box R
   m_TagString: PlayerHitBox
@@ -383,7 +390,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 2, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -395,13 +402,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.505692, y: 1.0450835}
-      - {x: 0.789879, y: 0.19730595}
-      - {x: 0.5801006, y: -0.60556984}
-      - {x: 1.6475612, y: -0.60086805}
-      - {x: 1.8380798, y: -0.25614166}
-      - {x: 1.8424652, y: 0.65260434}
-      - {x: 1.46698, y: 1.18942}
+    - - {x: -0.4, y: 0.4}
+      - {x: -1.5, y: 0.4}
+      - {x: -1.5, y: -1.2}
+      - {x: -0.4, y: -1.2}
+--- !u!114 &286882152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5269423419963431113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2110d01c5aaf2849887f556588c70d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5528098836018149422
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +429,7 @@ GameObject:
   - component: {fileID: 8815216530832714310}
   - component: {fileID: 3526175376236949149}
   - component: {fileID: 2170879620426688515}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Hit Box L
   m_TagString: PlayerHitBox
   m_Icon: {fileID: 0}
@@ -459,12 +475,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5342808, y: 0.9498348}
-      - {x: -1.3898523, y: 0.91625893}
-      - {x: -1.8193617, y: 0.015756398}
-      - {x: -1.6780515, y: -0.8142214}
-      - {x: -0.5579883, y: -0.8308538}
-      - {x: -0.836956, y: 0.19399875}
+    - - {x: -0.4, y: 0.4}
+      - {x: -1.5, y: 0.4}
+      - {x: -1.5, y: -1.2}
+      - {x: -0.4, y: -1.2}
 --- !u!114 &2170879620426688515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +502,7 @@ GameObject:
   - component: {fileID: 8840442828417964404}
   - component: {fileID: 8677784285664096611}
   - component: {fileID: 5832425119761117609}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Hit Box D
   m_TagString: PlayerHitBox
   m_Icon: {fileID: 0}
@@ -534,14 +548,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.6829505, y: -0.5409711}
-      - {x: 0.28227615, y: -0.8190385}
-      - {x: 0.2927742, y: -0.7984693}
-      - {x: -0.62691313, y: -0.6738676}
-      - {x: -0.5838077, y: -1.8402162}
-      - {x: -0.21471733, y: -2.0318604}
-      - {x: 0.8490952, y: -1.8874178}
-      - {x: 1.2627978, y: -1.3307127}
+    - - {x: 0.7, y: -0.7}
+      - {x: 0.7, y: -2.1}
+      - {x: -0.7, y: -2.1}
+      - {x: -0.7, y: -0.7}
 --- !u!114 &5832425119761117609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,6 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5703219544911403451}
   - component: {fileID: 7476613946698156556}
+  - component: {fileID: 1467978626}
   m_Layer: 7
   m_Name: Hit Box D
   m_TagString: PlayerHitBox
@@ -610,14 +621,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.584517, y: -0.7378381}
-      - {x: 0.28227615, y: -0.8190385}
-      - {x: -0.25308418, y: -0.8521602}
-      - {x: -0.5821705, y: -0.6022781}
-      - {x: -1.2817914, y: -1.5628123}
-      - {x: -0.21471733, y: -2.0318604}
-      - {x: 0.28533924, y: -2.003749}
-      - {x: 0.5379691, y: -1.8228811}
+    - - {x: 0.7, y: -0.7}
+      - {x: 0.7, y: -2.1}
+      - {x: -0.7, y: -2.1}
+      - {x: -0.7, y: -0.7}
+--- !u!114 &1467978626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7161244094288079925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2110d01c5aaf2849887f556588c70d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7868311791972359407
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6725363678938884585}
   m_Layer: 7
-  m_Name: Hit Boxes
+  m_Name: Magic Hit Boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -662,6 +681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184889249303465278}
   - component: {fileID: 3493283251037543506}
+  - component: {fileID: 6050875}
   m_Layer: 7
   m_Name: Hit Box L
   m_TagString: PlayerHitBox
@@ -708,14 +728,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.43584728, y: 0.45766735}
-      - {x: -1.4256465, y: 1.256302}
-      - {x: -1.8484354, y: 0.7230921}
-      - {x: -1.9291773, y: 0.16971493}
-      - {x: -1.7746191, y: -0.36902925}
-      - {x: -1.6512055, y: -0.59945774}
-      - {x: -0.5579883, y: -0.5981935}
-      - {x: -0.6400881, y: 0.023977697}
+    - - {x: -0.4, y: 0.4}
+      - {x: -1.5, y: 0.4}
+      - {x: -1.5, y: -1.2}
+      - {x: -0.4, y: -1.2}
+--- !u!114 &6050875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8058785003636612483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2110d01c5aaf2849887f556588c70d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8083131900922391048
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +755,7 @@ GameObject:
   - component: {fileID: 4453350046883090353}
   - component: {fileID: 9002902762022544259}
   - component: {fileID: 1849353198}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Hit Box R
   m_TagString: PlayerHitBox
   m_Icon: {fileID: 0}
@@ -761,7 +789,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 2, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -773,13 +801,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.505692, y: 1.0450835}
-      - {x: 0.789879, y: 0.19730595}
-      - {x: 0.6337915, y: -0.8024368}
-      - {x: 1.6386129, y: -0.8156317}
-      - {x: 1.7664913, y: -0.22929573}
-      - {x: 1.6277015, y: 0.24097371}
-      - {x: 1.2343187, y: 0.938862}
+    - - {x: -0.4, y: 0.4}
+      - {x: -1.5, y: 0.4}
+      - {x: -1.5, y: -1.2}
+      - {x: -0.4, y: -1.2}
 --- !u!114 &1849353198
 MonoBehaviour:
   m_ObjectHideFlags: 0

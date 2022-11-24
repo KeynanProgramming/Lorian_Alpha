@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
 {
-    public GameObject dialogBox, spaceButton;
+    public GameObject dialogBox, actionButton;
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
@@ -29,7 +29,7 @@ public class Sign : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            spaceButton.SetActive(true);
+            actionButton.SetActive(true);
             playerInRange = true;
         }
     }
@@ -38,7 +38,7 @@ public class Sign : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            spaceButton.SetActive(false);
+            actionButton.SetActive(false);
             playerInRange = false;
             dialogBox.SetActive(false);
         }
