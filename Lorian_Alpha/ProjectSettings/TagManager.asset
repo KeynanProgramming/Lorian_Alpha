@@ -19,6 +19,7 @@ TagManager:
   - HeartPanel
   - Amulet
   - AmuletPanel
+  - Wall
   layers:
   - Default
   - TransparentFX

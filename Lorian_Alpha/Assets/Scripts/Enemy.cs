@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
 
     private int currentPoint = 0;
     private Animator anim;
+
     void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
@@ -118,6 +119,7 @@ public class Enemy : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, chaseRadius);

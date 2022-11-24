@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Elevator : MonoBehaviour
 {
-    public GameObject hero, fadeFromWhite, fadeToWhite;
+    public GameObject hero, fadeFromWhite, fadeToWhite, uIPortal;
     public Transform teleport;
     public float timeBeforeTransport, timeBeforeFade, timeAfterFade;
 
@@ -25,6 +25,7 @@ public class Elevator : MonoBehaviour
         {
             StartCoroutine(FadeCo());
             StartCoroutine(TransportCo(enter));
+            uIPortal.SetActive(false);
         }
     }
 
@@ -49,7 +50,5 @@ public class Elevator : MonoBehaviour
             GameObject panelFromWhite = Instantiate(fadeFromWhite, Vector3.zero, Quaternion.identity);
             Destroy(panelFromWhite, 3);
         }
-        
-
     }
 }

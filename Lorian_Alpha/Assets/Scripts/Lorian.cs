@@ -10,7 +10,7 @@ public class Lorian : MonoBehaviour
     public float moveSpeed, amuletTimer, spinningTime;
     public List<GameObject> hearts = new List<GameObject>();
     public Transform heartContainers;
-    public GameObject amuletHud;
+    public GameObject amuletHud, fadeToBlack;
     public Slider amuletBar;
     private Rigidbody2D myRigidbody;
     private Animator anim;
@@ -126,7 +126,21 @@ public class Lorian : MonoBehaviour
 
     public void Dying()
     {
-        this.gameObject.SetActive(false);
+        anim.SetBool("OnDying", false);
+        StartCoroutine(DeathFadeCo());
+    }
+
+    private IEnumerator DeathFadeCo()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        if(fadeToBlack != null)
+        {
+            GameObject panelToBlack = Instantiate(fadeToBlack, Vector3.zero, Quaternion.identity);
+        }
+
+        yield return new WaitForSeconds(1.5f);
+
         SceneManager.LoadScene(0);
     }
 

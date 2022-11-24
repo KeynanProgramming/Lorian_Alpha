@@ -5,8 +5,7 @@ using UnityEngine;
 public class CameraChanger : MonoBehaviour
 {
     private OtherCameraMovement otherCam;
-    public GameObject cam1;
-    public GameObject cam2;
+    public GameObject cam1, cam2, uIPortal;
 
     void Start()
     {
@@ -19,6 +18,7 @@ public class CameraChanger : MonoBehaviour
         {
             cam2.gameObject.SetActive(true);
             cam1.gameObject.SetActive(false);
+            uIPortal.SetActive(true);
         }
     }
 
