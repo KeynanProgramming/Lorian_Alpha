@@ -163,12 +163,12 @@ public class GameManager : MonoBehaviour
             orangeBridgeActive.SetActive(false);
         }
 
-        if(doorOneButtonsPushed.Count >= buttonsNeeded)
+        if(doorOneButtonsPushed.Count < buttonsNeeded)
         {
             entraceDoor.SetActive(true);
         }
 
-        if(doorTwoButtonsPushed.Count >= buttonsNeeded)
+        if(doorTwoButtonsPushed.Count < buttonsNeeded)
         {
             entranceBridgeInactive.SetActive(true);
             entranceBridgeActive.SetActive(false);

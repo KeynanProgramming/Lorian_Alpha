@@ -3,52 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Amulet : MonoBehaviour
+public class Blocker : MonoBehaviour
 {
-    public int amulet;
-    public GameObject objectPanel, hero, dialogBox;
+    public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
 
-    private void Update()
+    void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true)
+        if(playerInRange == true && Input.GetKeyDown(KeyCode.Space))
         {
             if(dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
-                objectPanel.SetActive(false);
-                Destroy(this.gameObject);
             }
             else
             {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
-                objectPanel.SetActive(true);
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player"))
         {
             playerInRange = true;
             dialogBox.SetActive(true);
             dialogText.text = dialog;
-            objectPanel.SetActive(true);
-            hero.GetComponent<Lorian>().TakeAmulet(amulet);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player"))
         {
             playerInRange = false;
             dialogBox.SetActive(false);
-            objectPanel.SetActive(false);
-            Destroy(this.gameObject);
         }
     }
 }

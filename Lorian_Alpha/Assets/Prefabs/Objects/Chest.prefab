@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 0}
-  spaceButton: {fileID: 4517836442132578678}
+  actionButton: {fileID: 4517836442132578678}
   dialogText: {fileID: 0}
   dialog: You have received a sword! You can use it with the CTRL button.
   playerInRange: 0
