@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject fadeFromBlack, backControls, controlsButton, backCredits, creditsButton;
+    public GameObject fadeFromBlack, fadeToBlack, backControls, controlsButton, backCredits, creditsButton;
 
     private void Start()
     {
@@ -19,6 +19,13 @@ public class MenuManager : MonoBehaviour
 
     public void Play ()
     {
+        GameObject panel = Instantiate(fadeToBlack, Vector3.zero, Quaternion.identity);
+        StartCoroutine(fadeToBlackCo());
+    }
+
+    private IEnumerator fadeToBlackCo()
+    {
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(1);
     }
 

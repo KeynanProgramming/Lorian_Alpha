@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class CameraChanger : MonoBehaviour
 {
-    private OtherCameraMovement otherCam;
     public GameObject cam1, cam2, uIPortal;
-
-    void Start()
-    {
-        otherCam = GetComponent<OtherCameraMovement>();
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

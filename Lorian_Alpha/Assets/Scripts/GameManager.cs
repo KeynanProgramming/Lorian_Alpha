@@ -40,11 +40,20 @@ public class GameManager : MonoBehaviour
     public int buttonsNeeded;
     public bool redLight, greenLight, blueLight, yellowLight;
 
-    public GameObject uIBlueLight, uIGreenLight, uIRedLight, uIYellowLight;
+    public GameObject uIBlueLight, uIGreenLight, uIRedLight, uIYellowLight, fadeFromWhite;
 
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        if (fadeFromWhite != null)
+        {
+            GameObject panel = Instantiate(fadeFromWhite, Vector3.zero, Quaternion.identity) as GameObject;
+            Destroy(panel, 1.5f);
+        }
     }
 
     private void Update()

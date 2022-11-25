@@ -17,7 +17,8 @@ public class StatuesRange : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") && collision.gameObject.GetComponent<Lorian>().amuletTimer > 4)
+        if(collision.CompareTag("Player") && collision.gameObject.GetComponent<Lorian>().amuletTimer > 4
+            && collision.gameObject.GetComponent<Lorian>().amulet == 1)
         {
             actionButton.SetActive(true);
             playerInRange = true;

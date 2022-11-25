@@ -890,6 +890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeFromBlack: {fileID: 4779312844627566626, guid: ba0c2c52fb895dd4488fc6aad5aabf9c, type: 3}
+  fadeToBlack: {fileID: 7498742704370649083, guid: d3f1d4190cd841d4a94f5d3e2b61a292, type: 3}
   backControls: {fileID: 173308355}
   controlsButton: {fileID: 534998854}
   backCredits: {fileID: 1156982406}
