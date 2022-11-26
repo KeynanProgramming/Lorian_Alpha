@@ -16447,6 +16447,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: sword
       value: 0
       objectReference: {fileID: 0}
@@ -16462,6 +16466,10 @@ PrefabInstance:
       propertyPath: amuletHud
       value: 
       objectReference: {fileID: 3313337655168564587}
+    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
+      propertyPath: heroSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: moveSpeed
       value: 7
@@ -41930,6 +41938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 7962831604738127468}
+  hero: {fileID: 920923118}
   dialogText: {fileID: 9052570763587302984}
   dialog: 'LORIAN: I can''t go back now. I have to find what''s the meaning of this
     visions!'
