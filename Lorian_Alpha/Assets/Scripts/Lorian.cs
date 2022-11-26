@@ -36,7 +36,7 @@ public class Lorian : MonoBehaviour
 
     private void FixedUpdate()
     {
-        myRigidbody.MovePosition(myRigidbody.position + movement * moveSpeed * Time.fixedDeltaTime);
+        myRigidbody.MovePosition(myRigidbody.position + moveSpeed * Time.fixedDeltaTime * movement);
     }
 
     void AnimationUpdate()

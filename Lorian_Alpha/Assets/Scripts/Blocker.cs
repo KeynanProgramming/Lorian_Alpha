@@ -28,11 +28,14 @@ public class Blocker : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        collision.gameObject.GetComponent<Lorian>().moveSpeed = 0;
+
+        if (collision.gameObject.CompareTag("Player"))
         {
             playerInRange = true;
             dialogBox.SetActive(true);
             dialogText.text = dialog;
+            
         }
     }
 
