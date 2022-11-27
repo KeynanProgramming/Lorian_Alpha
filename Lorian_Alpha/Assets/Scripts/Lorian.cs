@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 public class Lorian : MonoBehaviour
 {
     public int health, maxHP, sword, amulet, coolDown;
-    public float moveSpeed, amuletTimer, spinningTime;
+    public float heroSpeed, amuletTimer, spinningTime;
     public List<GameObject> hearts = new List<GameObject>();
     public Transform heartContainers;
     public GameObject amuletHud, fadeToBlack;
     public Slider amuletBar;
     private Rigidbody2D myRigidbody;
     private Animator anim;
-    Vector2 movement;
+    public Vector2 movement;
     
     void Start()
     {
@@ -25,18 +25,19 @@ public class Lorian : MonoBehaviour
     void Update()
     {
         amuletTimer += Time.deltaTime;
+        AnimationUpdate();
         movement = Vector2.zero;
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         movement = movement.normalized;
 
-        AnimationUpdate();
+        
         UpdateMana();
     }
 
     private void FixedUpdate()
     {
-        myRigidbody.MovePosition(myRigidbody.position + moveSpeed * Time.fixedDeltaTime * movement);
+        myRigidbody.MovePosition(myRigidbody.position + heroSpeed * Time.fixedDeltaTime * movement);
     }
 
     void AnimationUpdate()
