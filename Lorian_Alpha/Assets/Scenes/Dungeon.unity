@@ -8399,7 +8399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9093366229267871747, guid: 28bef8d770538ea41a754749f1748587, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.65
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 9093366229267871747, guid: 28bef8d770538ea41a754749f1748587, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8468,6 +8468,10 @@ PrefabInstance:
     - target: {fileID: 9093366229267871866, guid: 28bef8d770538ea41a754749f1748587, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093366229267871866, guid: 28bef8d770538ea41a754749f1748587, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28bef8d770538ea41a754749f1748587, type: 3}
@@ -9889,7 +9893,8 @@ MonoBehaviour:
   dialogBox: {fileID: 7962831604738127468}
   actionButton: {fileID: 2028223553}
   dialogText: {fileID: 9052570763587302984}
-  dialog: muy bien wachin, encontraste 1 secreto
+  dialog: "En los comienzos los dioses hermanos crearon el mundo en armon\xEDa y
+    en su imagen. "
   playerInRange: 0
   objectPanel: {fileID: 409262123}
 --- !u!61 &494764540
@@ -18819,6 +18824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 967382577}
     m_Modifications:
+    - target: {fileID: 8939607061500403911, guid: 7a93f1e97a7ee1d43b211baa45ab9ae0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.62
+      objectReference: {fileID: 0}
     - target: {fileID: 8939607061819193340, guid: 7a93f1e97a7ee1d43b211baa45ab9ae0, type: 3}
       propertyPath: m_Name
       value: Points
@@ -18874,6 +18883,10 @@ PrefabInstance:
     - target: {fileID: 8939607062543196655, guid: 7a93f1e97a7ee1d43b211baa45ab9ae0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939607062543196655, guid: 7a93f1e97a7ee1d43b211baa45ab9ae0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a93f1e97a7ee1d43b211baa45ab9ae0, type: 3}
@@ -21807,7 +21820,7 @@ MonoBehaviour:
   dialogBox: {fileID: 7962831604738127468}
   actionButton: {fileID: 1871944287}
   dialogText: {fileID: 9052570763587302984}
-  dialog: eeeeeeeh, texto secreto?
+  dialog: Cerunos, Dios del Caos. Creador de las Bestias y sembrador del desorden.
   playerInRange: 0
   objectPanel: {fileID: 409262123}
 --- !u!61 &1335490858
@@ -42428,7 +42441,8 @@ MonoBehaviour:
   dialogBox: {fileID: 7962831604738127468}
   actionButton: {fileID: 101394920}
   dialogText: {fileID: 9052570763587302984}
-  dialog: puto el que lee
+  dialog: Nayru, La Diosa del Orden. Creadora del tiempo y los Nayrunos, criaturas
+    del orden y el caos.
   playerInRange: 0
   objectPanel: {fileID: 409262123}
 --- !u!1 &1870464747
@@ -44010,7 +44024,8 @@ MonoBehaviour:
   dialogBox: {fileID: 7962831604738127468}
   actionButton: {fileID: 204481905}
   dialogText: {fileID: 9052570763587302984}
-  dialog: Mural text.
+  dialog: En el fin del la guerra por Drunarya Nayru logro encerrar a Cerunos, consumiendo
+    su poder. FIN DEL "DEMO"
   playerInRange: 0
   objectPanel: {fileID: 409262123}
 --- !u!61 &2068164460
