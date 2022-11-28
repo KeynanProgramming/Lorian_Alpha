@@ -153,6 +153,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1378126556}
+  - {fileID: 654482220}
   m_Father: {fileID: 1897943252}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd0d85174d139964cbe570873a8545fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 931c8ece02fdfcf4d8b029a1c719c716, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd0d85174d139964cbe570873a8545fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e49c0de69cd839948851977e034348ca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -275,6 +276,116 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143116525}
   m_CullTransparentMesh: 1
+--- !u!1001 &202698594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130190886}
+    m_Modifications:
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_Text
+      value: Travel to the temple of the olden gods, seek the seals and put a stop
+        to Cerunos...
+      objectReference: {fileID: 0}
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_Name
+      value: Dialog Box (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 770
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -73.22452
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
 --- !u!224 &274754462 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
@@ -397,6 +508,11 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &555534567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+  m_PrefabInstance: {fileID: 1634065557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &590464022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,7 +522,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: "El regreso del caos es simplemente una cuesti\xF3n de TIEMPO"
+      value: The return of Chaos is now simply a matter of Time, once unleashed,
+        destruction will follow.
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
@@ -502,6 +619,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+--- !u!1 &654482219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+  m_PrefabInstance: {fileID: 202698594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &654482220 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+  m_PrefabInstance: {fileID: 202698594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &755843978
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +743,8 @@ MonoBehaviour:
   panel1: {fileID: 143116525}
   panel2: {fileID: 1041733473}
   panel3: {fileID: 130190885}
+  dialog1: {fileID: 555534567}
+  dialog2: {fileID: 654482219}
   dialogBoxSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
   initialSound: {fileID: 8300000, guid: 8f5f3fff44aeda04e95437854281d1ae, type: 3}
   secondSound: {fileID: 8300000, guid: 0ee922a9d1d2a9242b77d25937126288, type: 3}
@@ -730,81 +859,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &952170078
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 952170079}
-  - component: {fileID: 952170081}
-  - component: {fileID: 952170080}
-  m_Layer: 5
-  m_Name: Panel (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &952170079
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952170078}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1897943252}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 60}
-  m_SizeDelta: {x: -328.204, y: -154.449}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &952170080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952170078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.787, g: 0, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 931c8ece02fdfcf4d8b029a1c719c716, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &952170081
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952170078}
-  m_CullTransparentMesh: 1
 --- !u!1001 &968176306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -814,8 +868,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: "Con el pasar de los siglos, los sellos se han debilitado, y el mal
-        se filtra una vez m\xE1s en el mundo\u2026"
+      value: With the passing of time the seals have weakened and the forces of Chaos
+        once again bear their teeth against the peacefull Nayrunians.
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
@@ -969,7 +1023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e49c0de69cd839948851977e034348ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd0d85174d139964cbe570873a8545fa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1001,8 +1055,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: "En Drunarya existe una leyenda sobre tres antiguos templos, con tres
-        ancestrales sellos que mantienen al mundo en armon\xEDa.\n"
+      value: 'There is a legend in Drunarya, about three ancient seals, hidden in
+        long forgotten temples keeping Evil at bay.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
@@ -1192,9 +1248,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: "Nayru: \u2026Lorian, con mi gu\xEDa, t\xFA puedes evitar el futuro
-        que te he mostrado. Viaja a los templos y re\xFAne los sellos, juntos le
-        pondremos un fin a Cerunos\u2026 "
+      value: 'Lorian, the visions I''ve shown you must not come to pass.With my guide
+        you can prevent this future... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
@@ -1385,7 +1444,6 @@ RectTransform:
   - {fileID: 143116526}
   - {fileID: 1041733474}
   - {fileID: 130190886}
-  - {fileID: 952170079}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
