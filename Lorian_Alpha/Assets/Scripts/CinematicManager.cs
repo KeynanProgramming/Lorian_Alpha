@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CinematicManager : MonoBehaviour
 {
-    public GameObject fadeFromBlack, fadeToBlack, fadeToWhite,fadeInOut;
-    public GameObject panel0, panel1, panel2, panel3;
+    public GameObject fadeFromBlack, fadeToBlack, fadeToWhite;
+    public GameObject panel0, panel1, panel2, panel3,dialog1,dialog2;
     private int i;
     void Start()
     {
@@ -19,9 +19,9 @@ public class CinematicManager : MonoBehaviour
 
     void Update()
     {
-        if (i > 3)
+        if (i > 4)
         {
-            GameObject panel = Instantiate(fadeToBlack, Vector3.zero, Quaternion.identity);
+            GameObject panel = Instantiate(fadeToWhite, Vector3.zero, Quaternion.identity);
             StartCoroutine(fadeToBlackCo());
             SceneManager.LoadScene(2);
         }
@@ -47,6 +47,10 @@ public class CinematicManager : MonoBehaviour
                     panel = Instantiate(fadeFromBlack, Vector3.zero, Quaternion.identity);
                     panel2.SetActive(false);
                     panel3.SetActive(true);                   
+                    break;
+                case 4:
+                    dialog1.SetActive(false);
+                    dialog2.SetActive(true);
                     break;
                 default:
                     break;
