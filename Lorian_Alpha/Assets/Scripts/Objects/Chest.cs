@@ -59,17 +59,11 @@ public class Chest : Sign
                 }
 
                 anim.SetBool("Opening", true);
-            }
-
-            if (objectPanel.activeInHierarchy && playerOnRange == false)
-            {
-                objectPanel.SetActive(false);
-                chestOpened = true;
-            }
+            }          
 
             if (Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == true)
             {
-                if (dialogBox.activeInHierarchy)
+                if (dialogBox.activeInHierarchy )
                 {
                     audioSource.PlayOneShot(buttonSound);
                     dialogBox.SetActive(false);
@@ -78,7 +72,7 @@ public class Chest : Sign
                 {
                     dialogBox.SetActive(true);
                     dialogText.text = nextDialog;
-                                        
+                                                                     
                 }
             }
         }
