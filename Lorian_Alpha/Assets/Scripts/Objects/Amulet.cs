@@ -10,6 +10,14 @@ public class Amulet : MonoBehaviour
     public Text dialogText;
     public string dialog;
     public bool playerOnRange;
+    public AudioClip objectObtained;
+
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
