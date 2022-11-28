@@ -12,6 +12,8 @@ public class Lorian : MonoBehaviour
     public Transform heartContainers;
     public GameObject amuletHud, fadeToBlack;
     public Slider amuletBar;
+    public AudioSource audioSource;
+    public AudioClip sonido;
     private Rigidbody2D myRigidbody;
     private Animator anim;
     public Vector2 movement;
