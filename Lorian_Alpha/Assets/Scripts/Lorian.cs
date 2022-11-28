@@ -18,9 +18,11 @@ public class Lorian : MonoBehaviour
     private Animator anim;
     public Vector2 movement;
     public Elevator portal;
+    public bool blocker;
     
     void Start()
     {
+        blocker = false;    
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
@@ -30,14 +32,20 @@ public class Lorian : MonoBehaviour
     {
         amuletTimer += Time.deltaTime;
         AnimationUpdate();
-        movement = Vector2.zero;       
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        movement = movement.normalized;
+        movement = Vector2.zero;
+
+        if (blocker == false)
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+            movement = movement.normalized;
+
+        }
+       
 
         if(Input.GetKey(KeyCode.Escape))
         {
-            SceneManager.GetSceneByBuildIndex(0);
+            SceneManager.LoadScene(0);
         }
         
         UpdateMana();
@@ -179,5 +187,10 @@ public class Lorian : MonoBehaviour
     public void UpdateMana()
     {
         amuletBar.value = amuletTimer / coolDown;
+    }
+
+    public void BlockerUpdate(bool block)
+    {
+        blocker = block;
     }
 }
