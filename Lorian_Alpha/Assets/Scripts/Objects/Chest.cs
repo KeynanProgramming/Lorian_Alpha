@@ -61,9 +61,9 @@ public class Chest : Sign
                 anim.SetBool("Opening", true);
             }          
 
-            if (Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == true)
+            /*if (Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == true)
             {
-                if (dialogBox.activeInHierarchy )
+                if (dialogBox.activeInHierarchy)
                 {
                     audioSource.PlayOneShot(buttonSound);
                     dialogBox.SetActive(false);
@@ -71,10 +71,9 @@ public class Chest : Sign
                 else
                 {
                     dialogBox.SetActive(true);
-                    dialogText.text = nextDialog;
-                                                                     
+                    dialogText.text = nextDialog;                
                 }
-            }
+            }*/
         }
     }
 }
