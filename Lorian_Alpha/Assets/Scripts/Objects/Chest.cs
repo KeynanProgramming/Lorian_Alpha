@@ -20,9 +20,9 @@ public class Chest : Sign
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == false)
+        if (Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == false)
         {
-            if(dialogBox.activeInHierarchy)
+            if (dialogBox.activeInHierarchy)
             {
                 audioSource.PlayOneShot(buttonSound);
                 chestOpened = true;
@@ -36,12 +36,12 @@ public class Chest : Sign
                 dialogText.text = dialog;
                 objectPanel.SetActive(true);
 
-                if(objectPanel.CompareTag("SwordPanel"))
+                if (objectPanel.CompareTag("SwordPanel"))
                 {
                     hero.GetComponent<Lorian>().sword++;
                 }
 
-                if(objectPanel.CompareTag("HeartPanel"))
+                if (objectPanel.CompareTag("HeartPanel"))
                 {
                     hero.GetComponent<Lorian>().maxHP++;
                     GameObject newHeart = Instantiate(hero.GetComponent<Lorian>().hearts[0],
@@ -49,28 +49,37 @@ public class Chest : Sign
                     newHeart.SetActive(true);
                     hero.GetComponent<Lorian>().hearts.Add(newHeart);
                 }
+                if (objectPanel.CompareTag("HeartPanel2"))
+                {
+                    hero.GetComponent<Lorian>().maxHP++;
+                    GameObject newHeart = Instantiate(hero.GetComponent<Lorian>().hearts[0],
+                        hero.GetComponent<Lorian>().heartContainers);
+                    newHeart.SetActive(true);
+                    hero.GetComponent<Lorian>().hearts.Add(newHeart);
+                }
+
+                anim.SetBool("Opening", true);
             }
 
-            anim.SetBool("Opening", true);
-        }
-
-        if(objectPanel.activeInHierarchy && playerOnRange == false)
-        {
-            objectPanel.SetActive(false);
-            chestOpened = true;
-        }
-
-        if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == true)
-        {
-            if(dialogBox.activeInHierarchy)
+            if (objectPanel.activeInHierarchy && playerOnRange == false)
             {
-                audioSource.PlayOneShot(buttonSound);
-                dialogBox.SetActive(false);
+                objectPanel.SetActive(false);
+                chestOpened = true;
             }
-            else
+
+            if (Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == true)
             {
-                dialogBox.SetActive(true);
-                dialogText.text = nextDialog;
+                if (dialogBox.activeInHierarchy)
+                {
+                    audioSource.PlayOneShot(buttonSound);
+                    dialogBox.SetActive(false);
+                }               
+                else
+                {
+                    dialogBox.SetActive(true);
+                    dialogText.text = nextDialog;
+                                        
+                }
             }
         }
     }

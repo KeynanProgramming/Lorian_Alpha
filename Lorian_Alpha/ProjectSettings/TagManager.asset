@@ -22,6 +22,7 @@ TagManager:
   - Wall
   - SecretWallNE
   - SecretWallSW
+  - HeartPanel2
   layers:
   - Default
   - TransparentFX
