@@ -17,6 +17,7 @@ public class Lorian : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private Animator anim;
     public Vector2 movement;
+    public Elevator portal;
     
     void Start()
     {
@@ -86,15 +87,15 @@ public class Lorian : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        Elevator portal = collision.GetComponent<Elevator>();
-
-        if(collision.CompareTag("Elevator"))
-        {
-            anim.SetBool("OnSpin", true);
-            StartCoroutine(SpinningCo(portal));
-        }
+        portal = collision.GetComponent<Elevator>();      
+    }
+   public void SpinAnim()
+    {
+        
+        anim.SetBool("OnSpin", true);
+        StartCoroutine(SpinningCo(portal));
     }
 
     private IEnumerator SpinningCo(Elevator portal)
