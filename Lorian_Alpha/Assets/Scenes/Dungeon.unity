@@ -45634,7 +45634,7 @@ MonoBehaviour:
   hero: {fileID: 920923118}
   fadeFromWhite: {fileID: 9218233052266355384, guid: 5a89d9e6658969649a2c0705ffcee3d4, type: 3}
   fadeToWhite: {fileID: 2244517471433237658, guid: 861eca3473d045f47ad91047bda24b19, type: 3}
-  uIPortal: {fileID: 924336183}
+  uIPortal: {fileID: 489910697}
   actionButton: {fileID: 924336183}
   teleport: {fileID: 710087150}
   timeBeforeTransport: 2

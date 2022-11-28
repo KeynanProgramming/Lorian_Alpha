@@ -68,7 +68,7 @@ public class Elevator : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player)"))
+        if (collision.CompareTag("Player"))
         {
             actionButton.SetActive(false);
             playerOnRange = false;
