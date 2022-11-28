@@ -16994,13 +16994,27 @@ MonoBehaviour:
   entraceDoor: {fileID: 2030463090}
   secondDoor: {fileID: 1772448481}
   elevatorActivated: {fileID: 1958389305}
-  yellowButtonsPushed: []
-  blueButtonsPushed: []
-  greenButtonsPushed: []
-  redButtonsPushed: []
-  orangeButtonsPushed: []
-  doorOneButtonsPushed: []
-  doorTwoButtonsPushed: []
+  yellowButtonsPushed:
+  - {fileID: 0}
+  - {fileID: 0}
+  blueButtonsPushed:
+  - {fileID: 0}
+  - {fileID: 0}
+  greenButtonsPushed:
+  - {fileID: 0}
+  - {fileID: 0}
+  redButtonsPushed:
+  - {fileID: 0}
+  - {fileID: 0}
+  orangeButtonsPushed:
+  - {fileID: 0}
+  - {fileID: 0}
+  doorOneButtonsPushed:
+  - {fileID: 0}
+  - {fileID: 0}
+  doorTwoButtonsPushed:
+  - {fileID: 0}
+  - {fileID: 0}
   buttonsNeeded: 2
   redLight: 0
   greenLight: 0
@@ -18491,11 +18505,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 26.1
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -25.3
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.z

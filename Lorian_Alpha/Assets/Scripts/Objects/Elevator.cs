@@ -22,6 +22,7 @@ public class Elevator : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true)
         {
+            hero.GetComponent<Lorian>().SpinAnim();
             Lorian enter = GetComponent<Lorian>();
             StartCoroutine(FadeCo());
             StartCoroutine(TransportCo(enter));
