@@ -18,7 +18,6 @@ public class Knockback : MonoBehaviour
                 if(collision.gameObject.CompareTag("Enemy"))
                 {
                     hit.isKinematic = false;
-                    //hit.gameObject.GetComponent<Enemy>().chaseRadius = 0;
                     Vector2 difference = hit.transform.position - transform.position;
                     difference = difference.normalized * thrust;
                     hit.AddForce(difference, ForceMode2D.Impulse);
@@ -44,7 +43,6 @@ public class Knockback : MonoBehaviour
         {
             yield return new WaitForSeconds(knockTime);
             hit.velocity = Vector2.zero;
-            //hit.gameObject.GetComponent<Enemy>().chaseRadius = chaseRadius;
             hit.isKinematic = true;
         }
     }

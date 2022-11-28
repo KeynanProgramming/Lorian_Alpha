@@ -61,11 +61,6 @@ public class Enemy : MonoBehaviour
                 anim.SetTrigger("OnRange");
             }
 
-            if(Vector2.Distance(target.position, transform.position) < limitRadius)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-            }
-
             if (dir.x > 0)
             {
                 transform.right = Vector3.right;
@@ -112,6 +107,14 @@ public class Enemy : MonoBehaviour
         if(health <= 0)
         {
             anim.SetBool("OnDying", true);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Statue"))
+        {
+            anim.SetTrigger("Stuned");
         }
     }
 
