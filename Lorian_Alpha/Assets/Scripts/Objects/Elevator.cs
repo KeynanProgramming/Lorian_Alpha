@@ -42,10 +42,10 @@ public class Elevator : MonoBehaviour
     private IEnumerator TransportCo(Lorian enter)
     {
         if(enter != null)
-        {
-            yield return new WaitForSeconds(timeBeforeTransport);
-            hero.transform.position = teleport.transform.position;
-        }
+        { }
+        yield return new WaitForSeconds(timeBeforeTransport);
+        hero.transform.position = teleport.transform.position;
+       
     }
 
     private IEnumerator FadeCo()

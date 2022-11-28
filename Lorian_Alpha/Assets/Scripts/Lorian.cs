@@ -36,7 +36,7 @@ public class Lorian : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.GetSceneByBuildIndex(0);
         }
         
         UpdateMana();
@@ -44,6 +44,7 @@ public class Lorian : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
         myRigidbody.MovePosition(myRigidbody.position + heroSpeed * Time.fixedDeltaTime * movement);
     }
 
