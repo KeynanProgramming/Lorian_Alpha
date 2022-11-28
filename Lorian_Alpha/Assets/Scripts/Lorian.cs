@@ -26,11 +26,16 @@ public class Lorian : MonoBehaviour
     {
         amuletTimer += Time.deltaTime;
         AnimationUpdate();
-        movement = Vector2.zero;
+        movement = Vector2.zero;       
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         movement = movement.normalized;
+        
 
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         
         UpdateMana();
     }
