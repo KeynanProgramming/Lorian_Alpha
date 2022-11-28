@@ -8,11 +8,11 @@ public class Sign : MonoBehaviour
     public GameObject dialogBox, actionButton;
     public Text dialogText;
     public string dialog;
-    public bool playerInRange;
+    public bool playerOnRange;
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true)
+        if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true)
         {
             if(dialogBox.activeInHierarchy)
             {
@@ -30,7 +30,7 @@ public class Sign : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             actionButton.SetActive(true);
-            playerInRange = true;
+            playerOnRange = true;
         }
     }
 
@@ -39,8 +39,7 @@ public class Sign : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             actionButton.SetActive(false);
-            playerInRange = false;
-            dialogBox.SetActive(false);
+            playerOnRange = false;
         }
     }
 }

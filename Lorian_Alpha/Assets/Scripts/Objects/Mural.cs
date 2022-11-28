@@ -8,7 +8,7 @@ public class Mural : Sign
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true)
+        if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true)
         {
             if(dialogBox.activeInHierarchy)
             {
@@ -21,11 +21,6 @@ public class Mural : Sign
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
             }
-        }
-
-        if(objectPanel.activeInHierarchy && playerInRange == false)
-        {
-            objectPanel.SetActive(false);
         }
     }
 }

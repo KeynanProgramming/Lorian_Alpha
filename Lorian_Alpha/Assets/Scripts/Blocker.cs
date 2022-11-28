@@ -8,7 +8,7 @@ public class Blocker : MonoBehaviour
     public GameObject dialogBox, hero;
     public Text dialogText;
     public string dialog;
-    public bool playerInRange;
+    public bool playerOnRange;
 
     void Update()
     {
@@ -17,7 +17,7 @@ public class Blocker : MonoBehaviour
             hero.GetComponent<Lorian>().movement = Vector2.zero;
         }
 
-        if (playerInRange == true && Input.GetKeyDown(KeyCode.Space))
+        if (playerOnRange == true && Input.GetKeyDown(KeyCode.Space))
         {
             if(dialogBox.activeInHierarchy)
             {
@@ -32,7 +32,7 @@ public class Blocker : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerInRange = true;
+            playerOnRange = true;
             dialogBox.SetActive(true);
             dialogText.text = dialog;
         }
@@ -42,7 +42,7 @@ public class Blocker : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            playerInRange = false;
+            playerOnRange = false;
             dialogBox.SetActive(false);
         }
     }

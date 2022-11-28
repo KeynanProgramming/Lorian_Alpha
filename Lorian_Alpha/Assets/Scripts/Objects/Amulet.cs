@@ -9,11 +9,11 @@ public class Amulet : MonoBehaviour
     public GameObject objectPanel, hero, dialogBox;
     public Text dialogText;
     public string dialog;
-    public bool playerInRange;
+    public bool playerOnRange;
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true)
+        if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true)
         {
             if(dialogBox.activeInHierarchy)
             {
@@ -33,7 +33,7 @@ public class Amulet : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            playerInRange = true;
+            playerOnRange = true;
             dialogBox.SetActive(true);
             dialogText.text = dialog;
             objectPanel.SetActive(true);
@@ -45,7 +45,7 @@ public class Amulet : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            playerInRange = false;
+            playerOnRange = false;
             dialogBox.SetActive(false);
             objectPanel.SetActive(false);
             Destroy(this.gameObject);

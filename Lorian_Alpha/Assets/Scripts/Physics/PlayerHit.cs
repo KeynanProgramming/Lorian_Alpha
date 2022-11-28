@@ -8,7 +8,7 @@ public class PlayerHit : MonoBehaviour
     {
         if(collision.CompareTag("Statue"))
         {
-            collision.GetComponent<Statue>().OnRestore();
+            collision.gameObject.GetComponent<Statue>().OnRestore();
         }
     }
 }

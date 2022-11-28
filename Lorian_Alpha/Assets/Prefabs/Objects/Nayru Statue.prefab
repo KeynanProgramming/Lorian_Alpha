@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 8245978440373795955}
   m_Layer: 11
   m_Name: Broken statue's limit
-  m_TagString: Statue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

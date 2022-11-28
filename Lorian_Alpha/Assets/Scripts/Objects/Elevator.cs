@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Elevator : MonoBehaviour
 {
-    public GameObject hero, fadeFromWhite, fadeToWhite, uIPortal;
+    public GameObject hero, fadeFromWhite, fadeToWhite, uIPortal, actionButton;
     public Transform teleport;
     public float timeBeforeTransport, timeBeforeFade, timeAfterFade;
+    public bool playerOnRange;
 
     private void Awake()
     {
@@ -16,16 +17,25 @@ public class Elevator : MonoBehaviour
             Destroy(panel, 1);
         }
     }
-    
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        Lorian enter = collision.GetComponent<Lorian>();
 
-        if(collision.CompareTag("Player"))
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true)
         {
+            Lorian enter = GetComponent<Lorian>();
             StartCoroutine(FadeCo());
             StartCoroutine(TransportCo(enter));
             uIPortal.SetActive(false);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if(collision.CompareTag("Player"))
+        {
+            actionButton.SetActive(true);
+            playerOnRange = true;
         }
     }
 
@@ -40,6 +50,7 @@ public class Elevator : MonoBehaviour
 
     private IEnumerator FadeCo()
     {
+        hero.GetComponent<Lorian>().movement = Vector2.zero;
         yield return new WaitForSeconds(timeBeforeFade);
 
         if(fadeFromWhite || fadeToWhite != null)
@@ -49,6 +60,17 @@ public class Elevator : MonoBehaviour
             yield return new WaitForSeconds(timeAfterFade);
             GameObject panelFromWhite = Instantiate(fadeFromWhite, Vector3.zero, Quaternion.identity);
             Destroy(panelFromWhite, 3);
+            hero.GetComponent<Lorian>().movement.x = Input.GetAxisRaw("Horizontal");
+            hero.GetComponent<Lorian>().movement.y = Input.GetAxisRaw("Vertical");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player)"))
+        {
+            actionButton.SetActive(false);
+            playerOnRange = false;
         }
     }
 }

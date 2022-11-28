@@ -16,7 +16,7 @@ public class Chest : Sign
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true && chestOpened == false)
+        if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == false)
         {
             if(dialogBox.activeInHierarchy)
             {
@@ -48,13 +48,13 @@ public class Chest : Sign
             anim.SetBool("Opening", true);
         }
 
-        if(objectPanel.activeInHierarchy && playerInRange == false)
+        if(objectPanel.activeInHierarchy && playerOnRange == false)
         {
             objectPanel.SetActive(false);
             chestOpened = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange == true && chestOpened == true)
+        if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == true)
         {
             if(dialogBox.activeInHierarchy)
             {
