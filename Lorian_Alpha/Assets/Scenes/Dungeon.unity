@@ -61053,6 +61053,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7962831604738127468}
     - target: {fileID: 9003397463706579540, guid: e232e2d553c98fa40a1d9762ba7f047a, type: 3}
+      propertyPath: openChest
+      value: 
+      objectReference: {fileID: 8300000, guid: de9331f3579de4945806667aa63d9491, type: 3}
+    - target: {fileID: 9003397463706579540, guid: e232e2d553c98fa40a1d9762ba7f047a, type: 3}
       propertyPath: dialogText
       value: 
       objectReference: {fileID: 9052570763587302984}
@@ -61060,6 +61064,10 @@ PrefabInstance:
       propertyPath: swordPanel
       value: 
       objectReference: {fileID: 1886893129}
+    - target: {fileID: 9003397463706579540, guid: e232e2d553c98fa40a1d9762ba7f047a, type: 3}
+      propertyPath: buttonSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
     - target: {fileID: 9003397463706579540, guid: e232e2d553c98fa40a1d9762ba7f047a, type: 3}
       propertyPath: objectPanel
       value: 

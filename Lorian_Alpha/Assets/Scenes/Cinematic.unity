@@ -285,7 +285,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: Travel to the temple of the olden gods, seek the seals and put a stop
+      value: Travel to the temple of the ancient gods, seek the seals and put a stop
         to Cerunos...
       objectReference: {fileID: 0}
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
@@ -522,14 +522,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: The return of Chaos is now simply a matter of Time, once unleashed,
-        destruction will follow.
+      value: "The return of Chaos is now simply a matter of Time. \nOnce unleashed,
+        destruction will follow."
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
       value: Dialog Box (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596408180255279614, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -868,14 +872,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: With the passing of time the seals have weakened and the forces of Chaos
-        once again bear their teeth against the peacefull Nayrunians.
+      value: With the passing of time, the seals have weakened and the forces of
+        Chaos once again bear their teeth against the peacefull Nayrunians.
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
       value: Dialog Box (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596408180255279614, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1248,8 +1256,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: 'Lorian, the visions I''ve shown you must not come to pass.With my guide
-        you can prevent this future... '
+      value: 'Lorian, the visions I''ve shown you must not come to pass. With my
+        guide you can prevent this future... '
       objectReference: {fileID: 0}
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_FontData.m_FontStyle
