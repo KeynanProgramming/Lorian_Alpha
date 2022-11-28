@@ -43,6 +43,7 @@ public class Chest : Sign
 
                 if (objectPanel.CompareTag("HeartPanel"))
                 {
+                    hero.GetComponent<Lorian>().health++;
                     hero.GetComponent<Lorian>().maxHP++;
                     GameObject newHeart = Instantiate(hero.GetComponent<Lorian>().hearts[0],
                         hero.GetComponent<Lorian>().heartContainers);
@@ -51,6 +52,7 @@ public class Chest : Sign
                 }
                 if (objectPanel.CompareTag("HeartPanel2"))
                 {
+                    hero.GetComponent<Lorian>().health++;
                     hero.GetComponent<Lorian>().maxHP++;
                     GameObject newHeart = Instantiate(hero.GetComponent<Lorian>().hearts[0],
                         hero.GetComponent<Lorian>().heartContainers);
@@ -59,21 +61,7 @@ public class Chest : Sign
                 }
 
                 anim.SetBool("Opening", true);
-            }          
-
-            /*if (Input.GetKeyDown(KeyCode.Space) && playerOnRange == true && chestOpened == true)
-            {
-                if (dialogBox.activeInHierarchy)
-                {
-                    audioSource.PlayOneShot(buttonSound);
-                    dialogBox.SetActive(false);
-                }               
-                else
-                {
-                    dialogBox.SetActive(true);
-                    dialogText.text = nextDialog;                
-                }
-            }*/
+            }
         }
     }
 }

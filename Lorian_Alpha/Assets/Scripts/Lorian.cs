@@ -19,6 +19,7 @@ public class Lorian : MonoBehaviour
     public Vector2 movement;
     public Elevator portal;
     public bool blocker;
+    public GameObject mural;
     
     void Start()
     {
@@ -192,5 +193,12 @@ public class Lorian : MonoBehaviour
     public void BlockerUpdate(bool block)
     {
         blocker = block;
+    }
+    public void MuralWin()
+    {
+        if (!mural.activeInHierarchy)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

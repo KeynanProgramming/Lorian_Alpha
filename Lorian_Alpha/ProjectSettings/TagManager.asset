@@ -23,6 +23,7 @@ TagManager:
   - SecretWallNE
   - SecretWallSW
   - HeartPanel2
+  - MuralWin
   layers:
   - Default
   - TransparentFX
