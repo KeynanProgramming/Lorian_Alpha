@@ -7,7 +7,7 @@ public class Chest : Sign
     public bool chestOpened;
     public string nextDialog;
     public GameObject objectPanel, hero;
-    public AudioClip openChest, buttonSound;
+    public AudioClip objectObtained;
 
     private AudioSource audioSource;
     private Animator anim;
@@ -31,7 +31,7 @@ public class Chest : Sign
             }
             else
             {
-                audioSource.PlayOneShot(openChest);
+                audioSource.PlayOneShot(objectObtained);
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
                 objectPanel.SetActive(true);

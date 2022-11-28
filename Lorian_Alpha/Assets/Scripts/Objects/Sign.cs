@@ -9,6 +9,14 @@ public class Sign : MonoBehaviour
     public Text dialogText;
     public string dialog;
     public bool playerOnRange;
+    public AudioClip buttonSound;
+
+    private AudioSource auSource;
+
+    void Start()
+    {
+        auSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -16,6 +24,7 @@ public class Sign : MonoBehaviour
         {
             if(dialogBox.activeInHierarchy)
             {
+                auSource.PlayOneShot(buttonSound);
                 dialogBox.SetActive(false);
             }
             else

@@ -9,8 +9,8 @@ public class Amulet : MonoBehaviour
     public GameObject objectPanel, hero, dialogBox;
     public Text dialogText;
     public string dialog;
+    public AudioClip objectObtained, buttonSound;
     public bool playerOnRange;
-    public AudioClip objectObtained;
 
     private AudioSource audioSource;
 
@@ -25,15 +25,10 @@ public class Amulet : MonoBehaviour
         {
             if(dialogBox.activeInHierarchy)
             {
+                audioSource.PlayOneShot(buttonSound);
                 dialogBox.SetActive(false);
                 objectPanel.SetActive(false);
-                Destroy(this.gameObject);
-            }
-            else
-            {
-                dialogBox.SetActive(true);
-                dialogText.text = dialog;
-                objectPanel.SetActive(true);
+                Destroy(this.gameObject, 0.2f);
             }
         }
     }
@@ -42,21 +37,11 @@ public class Amulet : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             playerOnRange = true;
+            audioSource.PlayOneShot(objectObtained);
             dialogBox.SetActive(true);
             dialogText.text = dialog;
             objectPanel.SetActive(true);
             hero.GetComponent<Lorian>().TakeAmulet(amulet);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Player"))
-        {
-            playerOnRange = false;
-            dialogBox.SetActive(false);
-            objectPanel.SetActive(false);
-            Destroy(this.gameObject);
         }
     }
 }
