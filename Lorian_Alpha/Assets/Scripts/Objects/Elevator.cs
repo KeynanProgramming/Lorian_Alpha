@@ -7,11 +7,17 @@ public class Elevator : MonoBehaviour
     public GameObject hero, fadeFromWhite, fadeToWhite, uIPortal, actionButton;
     public Transform teleport;
     public float timeBeforeTransport, timeBeforeFade, timeAfterFade;
+    public AudioClip transportSound, portalActivated;
     public bool playerOnRange;
+
+    private AudioSource audioSource;
 
     private void Awake()
     {
-        if(fadeFromWhite != null)
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(portalActivated);
+
+        if (fadeFromWhite != null)
         {
             GameObject panel = Instantiate(fadeFromWhite, Vector3.zero, Quaternion.identity) as GameObject;
             Destroy(panel, 1);
@@ -42,11 +48,8 @@ public class Elevator : MonoBehaviour
 
     private IEnumerator TransportCo(Lorian enter)
     {
-        if(enter != null)
-        { }
         yield return new WaitForSeconds(timeBeforeTransport);
         hero.transform.position = teleport.transform.position;
-       
     }
 
     private IEnumerator FadeCo()
@@ -56,6 +59,7 @@ public class Elevator : MonoBehaviour
 
         if(fadeFromWhite || fadeToWhite != null)
         {
+            audioSource.PlayOneShot(transportSound);
             GameObject panelToWhite = Instantiate(fadeToWhite, Vector3.zero, Quaternion.identity);
             Destroy(panelToWhite, 2);
             yield return new WaitForSeconds(timeAfterFade);
