@@ -12,8 +12,8 @@ public class Lorian : MonoBehaviour
     public Transform heartContainers;
     public GameObject amuletHud, fadeToBlack;
     public Slider amuletBar;
-    public AudioSource audioSource;
     public AudioClip sonido;
+    private AudioSource audioSource;
     private Rigidbody2D myRigidbody;
     private Animator anim;
     public Vector2 movement;
@@ -22,6 +22,7 @@ public class Lorian : MonoBehaviour
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
