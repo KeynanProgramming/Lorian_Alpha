@@ -24,6 +24,7 @@ TagManager:
   - SecretWallSW
   - HeartPanel2
   - MuralWin
+  - BrokenStatue
   layers:
   - Default
   - TransparentFX

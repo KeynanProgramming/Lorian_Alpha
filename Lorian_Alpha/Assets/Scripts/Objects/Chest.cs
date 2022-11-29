@@ -63,5 +63,10 @@ public class Chest : Sign
                 anim.SetBool("Opening", true);
             }
         }
+
+        if (chestOpened == true)
+        {
+            actionButton.SetActive(false);
+        }
     }
 }

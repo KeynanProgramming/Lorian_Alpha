@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5649335646016475061}
   m_Layer: 0
   m_Name: Broken Statue
-  m_TagString: Statue
+  m_TagString: BrokenStatue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

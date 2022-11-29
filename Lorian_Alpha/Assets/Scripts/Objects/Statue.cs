@@ -15,6 +15,7 @@ public class Statue : MonoBehaviour
     {
         anim.SetTrigger("OnRestore");
         statueLimit.gameObject.SetActive(false);
+        gameObject.tag = "Statue";
     }
 
     public void OnBreak()
@@ -22,5 +23,12 @@ public class Statue : MonoBehaviour
         anim.SetTrigger("OnBreak");
         statueLimit.transform.position = transform.position;
         statueLimit.gameObject.SetActive(true);
+        StartCoroutine(StatueBreakCo());
+    }
+
+    private IEnumerator StatueBreakCo()
+    {
+        yield return new WaitForSeconds(1);
+        gameObject.tag = "BrokenStatue";
     }
 }
