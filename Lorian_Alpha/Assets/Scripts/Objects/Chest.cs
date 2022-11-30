@@ -5,7 +5,6 @@ using UnityEngine;
 public class Chest : Sign
 {
     public bool chestOpened;
-    public string nextDialog;
     public GameObject objectPanel, hero;
     public AudioClip objectObtained;
 

@@ -8,8 +8,8 @@ public class Sign : MonoBehaviour
     public GameObject dialogBox, actionButton;
     public Text dialogText;
     public string dialog;
-    public bool playerOnRange;
     public AudioClip buttonSound;
+    public bool playerOnRange;
 
     private AudioSource auSource;
 
