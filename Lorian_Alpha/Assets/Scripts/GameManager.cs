@@ -36,11 +36,12 @@ public class GameManager : MonoBehaviour
     public List<Button> orangeButtonsPushed = new List<Button>();
     public List<Button> doorOneButtonsPushed = new List<Button>();
     public List<Button> doorTwoButtonsPushed = new List<Button>();
+    public List<Enemy> enemies = new List<Enemy>();
 
     public int buttonsNeeded;
     public bool redLight, greenLight, blueLight, yellowLight;
 
-    public GameObject uIBlueLight, uIGreenLight, uIRedLight, uIYellowLight, fadeFromWhite;
+    public GameObject uIBlueLight, uIGreenLight, uIRedLight, uIYellowLight, fadeFromWhite, finalMuralWall, exitTorches;
 
     private void Awake()
     {
@@ -181,6 +182,14 @@ public class GameManager : MonoBehaviour
         {
             entranceBridgeInactive.SetActive(true);
             entranceBridgeActive.SetActive(false);
+        }
+    }
+
+    public void ActivateMural()
+    {
+        if(enemies.Count == 0)
+        {
+            finalMuralWall.SetActive(true);
         }
     }
 }

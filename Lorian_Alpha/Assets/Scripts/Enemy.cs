@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
     {
         target = GameObject.FindWithTag("Player").transform;
         anim = GetComponent<Animator>();
+        GameManager.instance.enemies.Add(this);
     }
 
     void Update()
@@ -120,6 +121,8 @@ public class Enemy : MonoBehaviour
 
     public void Dying()
     {
+        GameManager.instance.enemies.Remove(this);
+        GameManager.instance.ActivateMural();
         this.gameObject.SetActive(false);
     }
 
