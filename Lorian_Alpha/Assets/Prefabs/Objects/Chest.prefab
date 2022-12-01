@@ -123,13 +123,12 @@ MonoBehaviour:
   actionButton: {fileID: 4517836442132578678}
   dialogText: {fileID: 0}
   dialog: You have received a sword! You can use it with the CTRL button.
+  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
   playerOnRange: 0
   chestOpened: 0
-  nextDialog: This chest is empty.
   objectPanel: {fileID: 0}
   hero: {fileID: 0}
   objectObtained: {fileID: 8300000, guid: de9331f3579de4945806667aa63d9491, type: 3}
-  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
 --- !u!61 &9003397463706579546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -331,7 +330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4774072907921588945, guid: e97d00b288bbee54cb5a812f7f2bedb9, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4774072907921588947, guid: e97d00b288bbee54cb5a812f7f2bedb9, type: 3}
       propertyPath: m_Name
