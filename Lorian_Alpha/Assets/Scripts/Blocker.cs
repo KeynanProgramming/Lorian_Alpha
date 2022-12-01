@@ -7,22 +7,12 @@ public class Blocker : MonoBehaviour
 {
     public GameObject dialogBox, hero;
     public Text dialogText;
-    public string dialog;
+    public string dialog, buttonSound;
     public bool playerOnRange;
     public bool blockInputs = false;
-    public AudioClip buttonSound;
-
-    private AudioSource audioSource;
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
 
     void Update()
     {
-        hero.GetComponent<Lorian>().BlockerUpdate(false);
-
         if (dialogBox.activeInHierarchy)
         {
             hero.GetComponent<Lorian>().movement = Vector2.zero;
@@ -33,7 +23,7 @@ public class Blocker : MonoBehaviour
         {
             if(dialogBox.activeInHierarchy)
             {
-                audioSource.PlayOneShot(buttonSound);
+                AudioManager.instance.PlaySound(buttonSound);
                 dialogBox.SetActive(false);
                 hero.GetComponent<Lorian>().BlockerUpdate(false);
                 hero.GetComponent<Lorian>().movement.x = Input.GetAxisRaw("Horizontal");

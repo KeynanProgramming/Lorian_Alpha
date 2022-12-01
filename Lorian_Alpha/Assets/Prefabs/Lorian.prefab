@@ -146,8 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secretReveal: {fileID: 8300000, guid: 21f8974c0ea8891488f6b432cd594b62, type: 3}
-  magic: {fileID: 0}
 --- !u!1 &4410745162323783241
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,12 +198,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 5
   maxHP: 5
-  sword: 1
+  sword: 0
   amulet: 1
   coolDown: 4
-  heroSpeed: 0
-  amuletTimer: 0
+  heroSpeed: 7
   spinningTime: 4
+  amuletTimer: 0
+  movement: {x: 0, y: 0}
+  blocker: 0
   hearts:
   - {fileID: 0}
   - {fileID: 0}
@@ -217,9 +217,7 @@ MonoBehaviour:
   fadeToBlack: {fileID: 0}
   amuletBar: {fileID: 0}
   sonido: {fileID: 0}
-  movement: {x: 0, y: 0}
   portal: {fileID: 0}
-  blocker: 0
 --- !u!114 &4494021101368379706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,8 +496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secretReveal: {fileID: 0}
-  magic: {fileID: 0}
 --- !u!1 &5762999274901652666
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,8 +570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secretReveal: {fileID: 0}
-  magic: {fileID: 0}
 --- !u!82 &1165603917216595301
 AudioSource:
   m_ObjectHideFlags: 0
@@ -925,8 +919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe9f0b92ec09374a97c34c0132bcaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secretReveal: {fileID: 0}
-  magic: {fileID: 0}
 --- !u!1 &8418206904353333519
 GameObject:
   m_ObjectHideFlags: 0

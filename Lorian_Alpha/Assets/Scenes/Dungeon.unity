@@ -972,7 +972,7 @@ MonoBehaviour:
   actionButton: {fileID: 786373482}
   dialogText: {fileID: 9052570763587302984}
   dialog: Mural text.
-  buttonSound: {fileID: 0}
+  buttonSound: 
   playerOnRange: 0
   objectPanel: {fileID: 409262123}
 --- !u!61 &58799841
@@ -2954,7 +2954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8939607061819193341, guid: 7a93f1e97a7ee1d43b211baa45ab9ae0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.77
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 8939607061819193341, guid: 7a93f1e97a7ee1d43b211baa45ab9ae0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11069,7 +11069,6 @@ GameObject:
   - component: {fileID: 494764541}
   - component: {fileID: 494764540}
   - component: {fileID: 494764539}
-  - component: {fileID: 494764542}
   m_Layer: 0
   m_Name: Siblings Mural
   m_TagString: Untagged
@@ -11109,7 +11108,7 @@ MonoBehaviour:
   dialogText: {fileID: 9052570763587302984}
   dialog: In the beginnings of time the godly siblings shaped the world in harmony,
     creating as they saw fit.
-  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
+  buttonSound: Button Sound
   playerOnRange: 0
   objectPanel: {fileID: 822472119}
 --- !u!61 &494764540
@@ -11189,102 +11188,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!82 &494764542
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494764537}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &500921759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17777,11 +17680,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851017462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.9480753, y: -15.5943985, z: -79.71276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 884517366}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &852757048
@@ -18458,12 +18361,44 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882113923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.8, y: 43.3, z: 0}
+  m_LocalPosition: {x: -15.42, y: 26.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 416595971}
   m_Father: {fileID: 950203277}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &884517365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884517366}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &884517366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884517365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.9480753, y: 15.5943985, z: 79.71276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2032114732}
+  - {fileID: 851017464}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912891501
 GameObject:
@@ -19384,10 +19319,6 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
-      propertyPath: sword
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: amulet
       value: 1
       objectReference: {fileID: 0}
@@ -19399,10 +19330,6 @@ PrefabInstance:
       propertyPath: amuletHud
       value: 
       objectReference: {fileID: 3313337655168564587}
-    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
-      propertyPath: heroSpeed
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: moveSpeed
       value: 7
@@ -19465,11 +19392,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.71
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.7
+      value: -19.37
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19511,6 +19438,10 @@ PrefabInstance:
       propertyPath: secretReveal
       value: 
       objectReference: {fileID: 8300000, guid: 21f8974c0ea8891488f6b432cd594b62, type: 3}
+    - target: {fileID: 8418206904353333519, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
 --- !u!4 &999531685 stripped
@@ -22078,7 +22009,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e232e2d553c98fa40a1d9762ba7f047a, type: 3}
 --- !u!4 &1207367510 stripped
 Transform:
@@ -24877,7 +24809,6 @@ GameObject:
   - component: {fileID: 1335490859}
   - component: {fileID: 1335490858}
   - component: {fileID: 1335490857}
-  - component: {fileID: 1335490860}
   m_Layer: 0
   m_Name: Mural Cerunos
   m_TagString: Untagged
@@ -24916,7 +24847,7 @@ MonoBehaviour:
   actionButton: {fileID: 1871944287}
   dialogText: {fileID: 9052570763587302984}
   dialog: Cerunos, God of Chaos. Creator of the Beasts.
-  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
+  buttonSound: Button Sound
   playerOnRange: 0
   objectPanel: {fileID: 2108850103}
 --- !u!61 &1335490858
@@ -24996,102 +24927,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!82 &1335490860
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335490855}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1359501565
 GameObject:
   m_ObjectHideFlags: 0
@@ -44987,7 +44822,6 @@ GameObject:
   - component: {fileID: 1840993183}
   - component: {fileID: 1840993185}
   - component: {fileID: 1840993186}
-  - component: {fileID: 1840993187}
   m_Layer: 0
   m_Name: Mural_Nayru
   m_TagString: Untagged
@@ -45103,105 +44937,9 @@ MonoBehaviour:
   actionButton: {fileID: 101394920}
   dialogText: {fileID: 9052570763587302984}
   dialog: Nayru, Goddess of Time and Order.
-  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
+  buttonSound: Button Sound
   playerOnRange: 0
   objectPanel: {fileID: 409262123}
---- !u!82 &1840993187
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840993182}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1857078540
 GameObject:
   m_ObjectHideFlags: 0
@@ -45841,9 +45579,9 @@ MonoBehaviour:
   dialogText: {fileID: 9052570763587302984}
   dialog: 'LORIAN: I can''t go back now. I have to find what''s the meaning of this
     visions!'
+  buttonSound: Button Sound
   playerOnRange: 0
   blockInputs: 0
-  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
 --- !u!82 &1912663859
 AudioSource:
   m_ObjectHideFlags: 0
@@ -46127,7 +45865,6 @@ GameObject:
   - component: {fileID: 1958389306}
   - component: {fileID: 1958389307}
   - component: {fileID: 1958389308}
-  - component: {fileID: 1958389309}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Elevator
@@ -46197,105 +45934,9 @@ MonoBehaviour:
   timeBeforeTransport: 2
   timeBeforeFade: 1
   timeAfterFade: 2
-  transportSound: {fileID: 8300000, guid: 1eb29084fbe356e4bba91e100c4f3953, type: 3}
-  portalActivated: {fileID: 8300000, guid: 21f8974c0ea8891488f6b432cd594b62, type: 3}
+  transportSFX: Transport SFX
+  portalActivated: Puzzle Solved SFX
   playerOnRange: 0
---- !u!82 &1958389309
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958389305}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1963694074
 GameObject:
   m_ObjectHideFlags: 0
@@ -47078,6 +46719,86 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2032114731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032114732}
+  - component: {fileID: 2032114733}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2032114732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032114731}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.9480753, y: -15.5943985, z: -79.71276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 884517366}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032114733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032114731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb0bcc783bab62b4a98391f519d13dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Chest SFX
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: de9331f3579de4945806667aa63d9491, type: 3}
+    myGameObject: {fileID: 0}
+    vol: 1
+    pitch: 1
+    spatialBlend: 0
+    playOnAwake: 0
+    loop: 0
+  - name: Button Sound
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
+    myGameObject: {fileID: 0}
+    vol: 1
+    pitch: 1
+    spatialBlend: 0
+    playOnAwake: 0
+    loop: 0
+  - name: Transport SFX
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 1eb29084fbe356e4bba91e100c4f3953, type: 3}
+    myGameObject: {fileID: 0}
+    vol: 1
+    pitch: 1
+    spatialBlend: 0
+    playOnAwake: 0
+    loop: 0
+  - name: Puzzle Solved SFX
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 21f8974c0ea8891488f6b432cd594b62, type: 3}
+    myGameObject: {fileID: 0}
+    vol: 1
+    pitch: 1
+    spatialBlend: 0
+    playOnAwake: 0
+    loop: 0
 --- !u!1 &2052128282
 GameObject:
   m_ObjectHideFlags: 0
@@ -47239,7 +46960,6 @@ GameObject:
   - component: {fileID: 2068164460}
   - component: {fileID: 2068164463}
   - component: {fileID: 2068164459}
-  - component: {fileID: 2068164462}
   m_Layer: 0
   m_Name: Confinement Mural
   m_TagString: Untagged
@@ -47278,7 +46998,7 @@ MonoBehaviour:
   actionButton: {fileID: 204481905}
   dialogText: {fileID: 9052570763587302984}
   dialog: 'The war for Drunarya was ended by Nayru''s sacrifice, '
-  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
+  buttonSound: Button Sound
   playerOnRange: 0
   objectPanel: {fileID: 1691496349}
 --- !u!61 &2068164460
@@ -47358,102 +47078,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!82 &2068164462
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068164457}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!61 &2068164463
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61609,6 +61233,10 @@ PrefabInstance:
         statues with ALT button.
       objectReference: {fileID: 0}
     - target: {fileID: 31309826525391563, guid: 4533a53117c170643848abe839384566, type: 3}
+      propertyPath: chestSFX
+      value: Chest SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 31309826525391563, guid: 4533a53117c170643848abe839384566, type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 7962831604738127468}
@@ -61616,6 +61244,10 @@ PrefabInstance:
       propertyPath: dialogText
       value: 
       objectReference: {fileID: 9052570763587302984}
+    - target: {fileID: 31309826525391563, guid: 4533a53117c170643848abe839384566, type: 3}
+      propertyPath: buttonSound
+      value: Button Sound
+      objectReference: {fileID: 0}
     - target: {fileID: 31309826525391563, guid: 4533a53117c170643848abe839384566, type: 3}
       propertyPath: objectPanel
       value: 
@@ -62094,7 +61726,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sign
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1121197237856528707, guid: 3bea6c15450bfc6408e920627e23be98, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3bea6c15450bfc6408e920627e23be98, type: 3}
 --- !u!4 &3938521167566004624 stripped
 Transform:
@@ -63318,7 +62951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9003397463706579541, guid: e232e2d553c98fa40a1d9762ba7f047a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9003397463706579544, guid: e232e2d553c98fa40a1d9762ba7f047a, type: 3}
       propertyPath: m_RootOrder

@@ -7,16 +7,8 @@ public class Sign : MonoBehaviour
 {
     public GameObject dialogBox, actionButton;
     public Text dialogText;
-    public string dialog;
-    public AudioClip buttonSound;
+    public string dialog, buttonSound;
     public bool playerOnRange;
-
-    private AudioSource auSource;
-
-    void Start()
-    {
-        auSource = GetComponent<AudioSource>();
-    }
 
     void Update()
     {
@@ -24,7 +16,7 @@ public class Sign : MonoBehaviour
         {
             if(dialogBox.activeInHierarchy)
             {
-                auSource.PlayOneShot(buttonSound);
+                AudioManager.instance.PlaySound(buttonSound);
                 dialogBox.SetActive(false);
             }
             else

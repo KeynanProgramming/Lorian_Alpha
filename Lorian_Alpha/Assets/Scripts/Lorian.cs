@@ -7,20 +7,20 @@ using UnityEngine.SceneManagement;
 public class Lorian : MonoBehaviour
 {
     public int health, maxHP, sword, amulet, coolDown;
-    public float heroSpeed, amuletTimer, spinningTime;
+    public float heroSpeed, spinningTime, amuletTimer;
+    public Vector2 movement;
+    public bool blocker;
     public List<GameObject> hearts = new List<GameObject>();
     public Transform heartContainers;
     public GameObject amuletHud, fadeToBlack;
     public Slider amuletBar;
     public AudioClip sonido;
+    public Elevator portal;
+
     private AudioSource audioSource;
     private Rigidbody2D myRigidbody;
     private Animator anim;
-    public Vector2 movement;
-    public Elevator portal;
-    public bool blocker;
-    public GameObject mural;
-    
+
     void Start()
     {
         blocker = false;    
@@ -40,7 +40,6 @@ public class Lorian : MonoBehaviour
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
             movement = movement.normalized;
-
         }
        
 
@@ -89,10 +88,12 @@ public class Lorian : MonoBehaviour
         if(Input.GetButton("Fire2"))
         {
             anim.SetBool("OnCharge", true);
+            blocker = true;
         }
         else
         {
             anim.SetBool("OnCharge", false);
+            blocker = false;
         }
     }
 
@@ -193,12 +194,5 @@ public class Lorian : MonoBehaviour
     public void BlockerUpdate(bool block)
     {
         blocker = block;
-    }
-    public void MuralWin()
-    {
-        if (!mural.activeInHierarchy)
-        {
-            SceneManager.LoadScene(0);
-        }
     }
 }

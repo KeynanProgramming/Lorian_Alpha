@@ -8,16 +8,8 @@ public class Amulet : MonoBehaviour
     public int amulet;
     public GameObject objectPanel, hero, dialogBox;
     public Text dialogText;
-    public string dialog;
-    public AudioClip objectObtained, buttonSound;
+    public string dialog, buttonSound, chestSFX;
     public bool playerOnRange;
-
-    private AudioSource audioSource;
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
 
     private void Update()
     {
@@ -25,7 +17,7 @@ public class Amulet : MonoBehaviour
         {
             if(dialogBox.activeInHierarchy)
             {
-                audioSource.PlayOneShot(buttonSound);
+                AudioManager.instance.PlaySound(buttonSound);
                 dialogBox.SetActive(false);
                 objectPanel.SetActive(false);
                 Destroy(this.gameObject, 0.2f);
@@ -37,7 +29,7 @@ public class Amulet : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             playerOnRange = true;
-            audioSource.PlayOneShot(objectObtained);
+            AudioManager.instance.PlaySound(chestSFX);
             dialogBox.SetActive(true);
             dialogText.text = dialog;
             objectPanel.SetActive(true);

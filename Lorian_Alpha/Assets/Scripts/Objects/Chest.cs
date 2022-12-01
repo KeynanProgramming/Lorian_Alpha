@@ -6,15 +6,13 @@ public class Chest : Sign
 {
     public bool chestOpened;
     public GameObject objectPanel, hero;
-    public AudioClip objectObtained;
+    public string chestSFX;
 
-    private AudioSource audioSource;
     private Animator anim;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -23,14 +21,14 @@ public class Chest : Sign
         {
             if (dialogBox.activeInHierarchy)
             {
-                audioSource.PlayOneShot(buttonSound);
+                AudioManager.instance.PlaySound(buttonSound);
                 chestOpened = true;
                 dialogBox.SetActive(false);
                 objectPanel.SetActive(false);
             }
             else
             {
-                audioSource.PlayOneShot(objectObtained);
+                AudioManager.instance.PlaySound(chestSFX);
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
                 objectPanel.SetActive(true);

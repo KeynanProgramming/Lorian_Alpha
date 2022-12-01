@@ -103,8 +103,8 @@ MonoBehaviour:
   actionButton: {fileID: 0}
   dialogText: {fileID: 0}
   dialog: You should push the buttons with the statues and see what happens.
+  buttonSound: Button Sound
   playerOnRange: 0
-  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
 --- !u!61 &3938521166293189527
 BoxCollider2D:
   m_ObjectHideFlags: 0
