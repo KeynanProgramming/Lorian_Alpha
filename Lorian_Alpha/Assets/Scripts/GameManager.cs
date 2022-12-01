@@ -5,43 +5,24 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public GameObject yellowBridgeActive,
-                      yellowBridgeInactive,
-                      yellowLightActive,
-                      yellowLightInactive,
-                      blueBridgeActive,
-                      blueBridgeInactive,
-                      blueLightActive,
-                      blueLightInactive,
-                      greenBridgeActive,
-                      greenBridgeInactive,
-                      greenLightActive,
-                      greenLightInactive,
-                      redBridgeActive,
-                      redBridgeInactive,
-                      redLightActive,
-                      redLightInactive,
-                      orangeBridgeActive,
-                      orangeBridgeInactive,
-                      entranceBridgeActive,
-                      entranceBridgeInactive,
-                      entraceDoor,
-                      secondDoor,
+    public GameObject yellowBridgeActive, yellowBridgeInactive, yellowLightActive, yellowLightInactive,
+                      blueBridgeActive, blueBridgeInactive, blueLightActive, blueLightInactive,
+                      greenBridgeActive, greenBridgeInactive, greenLightActive, greenLightInactive,
+                      redBridgeActive, redBridgeInactive, redLightActive, redLightInactive,
+                      orangeBridgeActive, orangeBridgeInactive,
+                      entranceBridgeActive, entranceBridgeInactive,
+                      entraceDoor, secondDoor,
                       elevatorActivated;
 
-    public List<Button> yellowButtonsPushed = new List<Button>();
-    public List<Button> blueButtonsPushed = new List<Button>();
-    public List<Button> greenButtonsPushed = new List<Button>();
-    public List<Button> redButtonsPushed = new List<Button>();
-    public List<Button> orangeButtonsPushed = new List<Button>();
-    public List<Button> doorOneButtonsPushed = new List<Button>();
-    public List<Button> doorTwoButtonsPushed = new List<Button>();
+    public List<Button> yellowButtonsPushed, blueButtonsPushed, greenButtonsPushed, redButtonsPushed, orangeButtonsPushed,
+                        doorOneButtonsPushed, doorTwoButtonsPushed = new List<Button>();
     public List<Enemy> enemies = new List<Enemy>();
 
     public int buttonsNeeded;
     public bool redLight, greenLight, blueLight, yellowLight;
 
-    public GameObject uIBlueLight, uIGreenLight, uIRedLight, uIYellowLight, fadeFromWhite, finalMuralWall, exitTorches;
+    public GameObject uIBlueLight, uIGreenLight, uIRedLight, uIYellowLight, fadeFromWhite, 
+                      exit, torchesAndMural, bossDoor;
 
     private void Awake()
     {
@@ -189,7 +170,9 @@ public class GameManager : MonoBehaviour
     {
         if(enemies.Count == 0)
         {
-            finalMuralWall.SetActive(true);
+            exit.SetActive(true);
+            torchesAndMural.SetActive(true);
+            bossDoor.SetActive(false);
         }
     }
 }

@@ -21,7 +21,8 @@ public class FinalMural : Sign
             if (dialogBox.activeInHierarchy)
             {
                 audioSource.PlayOneShot(buttonSound);
-                SceneManager.LoadScene(0);
+                //SceneManager.LoadScene(0);
+                this.gameObject.SetActive(false);
                 objectPanel.SetActive(false);
                 dialogBox.SetActive(false);
             }
