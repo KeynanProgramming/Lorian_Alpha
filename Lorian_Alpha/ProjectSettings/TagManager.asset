@@ -25,6 +25,7 @@ TagManager:
   - HeartPanel2
   - MuralWin
   - BrokenStatue
+  - Exit
   layers:
   - Default
   - TransparentFX

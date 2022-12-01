@@ -15,17 +15,17 @@ public class Blocker : MonoBehaviour
     {
         if (dialogBox.activeInHierarchy)
         {
+            hero.GetComponent<Lorian>().UpdateBlocker(true);
             hero.GetComponent<Lorian>().movement = Vector2.zero;
-            hero.GetComponent<Lorian>().BlockerUpdate(true);
         }
 
         if (playerOnRange == true && Input.GetKeyDown(KeyCode.Space))
         {
             if(dialogBox.activeInHierarchy)
             {
+                hero.GetComponent<Lorian>().UpdateBlocker(false);
                 AudioManager.instance.PlaySound(buttonSound);
                 dialogBox.SetActive(false);
-                hero.GetComponent<Lorian>().BlockerUpdate(false);
                 hero.GetComponent<Lorian>().movement.x = Input.GetAxisRaw("Horizontal");
                 hero.GetComponent<Lorian>().movement.y = Input.GetAxisRaw("Vertical");
                 
@@ -51,4 +51,7 @@ public class Blocker : MonoBehaviour
             dialogBox.SetActive(false);
         }
     }
+
+   
+
 }

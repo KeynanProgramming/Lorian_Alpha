@@ -5,11 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Lorian : MonoBehaviour
-{
+{    
     public int health, maxHP, sword, amulet, coolDown;
     public float heroSpeed, spinningTime, amuletTimer;
     public Vector2 movement;
-    public bool blocker;
+    public bool blocker,magicBlocker;
+
     public List<GameObject> hearts = new List<GameObject>();
     public Transform heartContainers;
     public GameObject amuletHud, fadeToBlack;
@@ -23,7 +24,8 @@ public class Lorian : MonoBehaviour
 
     void Start()
     {
-        blocker = false;    
+        blocker = false;
+        magicBlocker = false;
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
@@ -33,9 +35,8 @@ public class Lorian : MonoBehaviour
     {
         amuletTimer += Time.deltaTime;
         AnimationUpdate();
-        movement = Vector2.zero;
-
-        if (blocker == false)
+        movement = Vector2.zero;           
+        if (blocker == false || magicBlocker == false)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
@@ -88,18 +89,26 @@ public class Lorian : MonoBehaviour
         if(Input.GetButton("Fire2"))
         {
             anim.SetBool("OnCharge", true);
-            blocker = true;
+            magicBlocker = true;
         }
         else
         {
             anim.SetBool("OnCharge", false);
-            blocker = false;
+            magicBlocker = false;
         }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        portal = collision.GetComponent<Elevator>();      
+        if (collision.CompareTag("Exit"))
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            portal = collision.GetComponent<Elevator>();
+        }
+              
     }
    public void SpinAnim()
     {
@@ -189,10 +198,10 @@ public class Lorian : MonoBehaviour
     public void UpdateMana()
     {
         amuletBar.value = amuletTimer / coolDown;
-    }
-
-    public void BlockerUpdate(bool block)
+    }  
+    
+    public void UpdateBlocker(bool block)
     {
         blocker = block;
     }
-}
+ }
