@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class Lorian : MonoBehaviour
 {    
     public int health, maxHP, sword, amulet, coolDown;
-    public float heroSpeed, spinningTime, amuletTimer;
+    public float heroSpid, spinningTime, amuletTimer;
     public Vector2 movement;
-    public bool blocker,magicBlocker;
+    public bool movementBlocker;
 
     public List<GameObject> hearts = new List<GameObject>();
     public Transform heartContainers;
-    public GameObject amuletHud, fadeToBlack;
+    public GameObject amuletHud, fadeToBlack, dialogBox;
     public Slider amuletBar;
 
     private Elevator portal;
@@ -22,8 +22,7 @@ public class Lorian : MonoBehaviour
 
     void Start()
     {
-        blocker = false;
-        magicBlocker = false;
+        movementBlocker = false;
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -32,14 +31,21 @@ public class Lorian : MonoBehaviour
     {
         amuletTimer += Time.deltaTime;
         AnimationUpdate();
-        movement = Vector2.zero;           
-        if (blocker == false || magicBlocker == false)
+        movement = Vector2.zero;
+
+        if (dialogBox.activeInHierarchy)
+        {
+            movementBlocker = true;
+        }
+
+        if (movementBlocker == false)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
             movement = movement.normalized;
         }
-       
+
+        
 
         if(Input.GetKey(KeyCode.Escape))
         {
@@ -51,7 +57,7 @@ public class Lorian : MonoBehaviour
 
     private void FixedUpdate()
     {
-        myRigidbody.MovePosition(myRigidbody.position + heroSpeed * Time.fixedDeltaTime * movement);
+        myRigidbody.MovePosition(myRigidbody.position + heroSpid * Time.fixedDeltaTime * movement);
     }
 
     void AnimationUpdate()
@@ -84,13 +90,13 @@ public class Lorian : MonoBehaviour
 
         if(Input.GetButton("Fire2"))
         {
+            movementBlocker = true;
             anim.SetBool("OnCharge", true);
-            magicBlocker = true;
         }
         else
         {
             anim.SetBool("OnCharge", false);
-            magicBlocker = false;
+            movementBlocker = false;
         }
     }
 
@@ -104,13 +110,13 @@ public class Lorian : MonoBehaviour
         {
             portal = collision.GetComponent<Elevator>();
         }
-              
     }
-   public void SpinAnim()
-   {
+
+    public void SpinAnim()
+    {
         anim.SetBool("OnSpin", true);
         StartCoroutine(SpinningCo(portal));
-   }
+    }
 
     private IEnumerator SpinningCo(Elevator portal)
     {
@@ -197,6 +203,6 @@ public class Lorian : MonoBehaviour
     
     public void UpdateBlocker(bool block)
     {
-        blocker = block;
+        movementBlocker = block;
     }
- }
+}

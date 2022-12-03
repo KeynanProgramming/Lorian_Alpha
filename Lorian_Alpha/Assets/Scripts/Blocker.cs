@@ -9,14 +9,13 @@ public class Blocker : MonoBehaviour
     public Text dialogText;
     public string dialog, buttonSound;
     public bool playerOnRange;
-    public bool blockInputs = false;
 
     void Update()
     {
         if (dialogBox.activeInHierarchy)
         {
-            hero.GetComponent<Lorian>().UpdateBlocker(true);
             hero.GetComponent<Lorian>().movement = Vector2.zero;
+            hero.GetComponent<Lorian>().UpdateBlocker(true);
         }
 
         if (playerOnRange == true && Input.GetKeyDown(KeyCode.Space))
@@ -28,7 +27,6 @@ public class Blocker : MonoBehaviour
                 dialogBox.SetActive(false);
                 hero.GetComponent<Lorian>().movement.x = Input.GetAxisRaw("Horizontal");
                 hero.GetComponent<Lorian>().movement.y = Input.GetAxisRaw("Vertical");
-                
             }
         }
     }
@@ -51,7 +49,4 @@ public class Blocker : MonoBehaviour
             dialogBox.SetActive(false);
         }
     }
-
-   
-
 }

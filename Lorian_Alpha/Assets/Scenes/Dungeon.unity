@@ -17660,7 +17660,7 @@ MonoBehaviour:
   doorOneButtonsPushed: []
   doorTwoButtonsPushed: []
   enemies: []
-  buttonsNeeded: 0
+  buttonsNeeded: 2
   redLight: 0
   greenLight: 0
   blueLight: 0
@@ -19327,6 +19327,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
+      propertyPath: heroSped
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
+      propertyPath: heroSpid
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: amuletBar
       value: 
       objectReference: {fileID: 7820152189397548618}
@@ -19334,6 +19342,14 @@ PrefabInstance:
       propertyPath: amuletHud
       value: 
       objectReference: {fileID: 3313337655168564587}
+    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 7962831604738127468}
+    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
+      propertyPath: heroSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: moveSpeed
       value: 7
@@ -45520,7 +45536,7 @@ GameObject:
   - component: {fileID: 1912663858}
   m_Layer: 0
   m_Name: Blocker
-  m_TagString: Untagged
+  m_TagString: Blocker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45584,7 +45600,6 @@ MonoBehaviour:
     visions!'
   buttonSound: Button SFX
   playerOnRange: 0
-  blockInputs: 0
 --- !u!1 &1916322127
 GameObject:
   m_ObjectHideFlags: 0
