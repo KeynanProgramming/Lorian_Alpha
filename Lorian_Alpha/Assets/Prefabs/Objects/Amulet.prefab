@@ -118,6 +118,6 @@ MonoBehaviour:
   dialogBox: {fileID: 0}
   dialogText: {fileID: 0}
   dialog: 
-  objectObtained: {fileID: 8300000, guid: de9331f3579de4945806667aa63d9491, type: 3}
-  buttonSound: {fileID: 8300000, guid: 3a69cbca9762a424ca2cb5b22e8a1a22, type: 3}
+  buttonSFX: Button SFX
+  objectObtainedSFX: Object Obtained SFX
   playerOnRange: 0

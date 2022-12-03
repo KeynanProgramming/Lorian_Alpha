@@ -122,12 +122,12 @@ MonoBehaviour:
   actionButton: {fileID: 4517836442132578678}
   dialogText: {fileID: 0}
   dialog: You have received a sword! You can use it with the CTRL button.
-  buttonSound: Button Sound
+  buttonSound: Button SFX
   playerOnRange: 0
   chestOpened: 0
   objectPanel: {fileID: 0}
   hero: {fileID: 0}
-  chestSFX: Chest SFX
+  objectObtainedSFX: Object Obtained SFX
 --- !u!61 &9003397463706579546
 BoxCollider2D:
   m_ObjectHideFlags: 0

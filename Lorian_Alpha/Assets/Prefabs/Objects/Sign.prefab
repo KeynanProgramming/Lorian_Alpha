@@ -103,7 +103,7 @@ MonoBehaviour:
   actionButton: {fileID: 0}
   dialogText: {fileID: 0}
   dialog: You should push the buttons with the statues and see what happens.
-  buttonSound: Button Sound
+  buttonSound: Button SFX
   playerOnRange: 0
 --- !u!61 &3938521166293189527
 BoxCollider2D:

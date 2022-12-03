@@ -15,10 +15,8 @@ public class Lorian : MonoBehaviour
     public Transform heartContainers;
     public GameObject amuletHud, fadeToBlack;
     public Slider amuletBar;
-    public AudioClip sonido;
-    public Elevator portal;
 
-    private AudioSource audioSource;
+    private Elevator portal;
     private Rigidbody2D myRigidbody;
     private Animator anim;
 
@@ -28,7 +26,6 @@ public class Lorian : MonoBehaviour
         magicBlocker = false;
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -54,7 +51,6 @@ public class Lorian : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
         myRigidbody.MovePosition(myRigidbody.position + heroSpeed * Time.fixedDeltaTime * movement);
     }
 
@@ -111,11 +107,10 @@ public class Lorian : MonoBehaviour
               
     }
    public void SpinAnim()
-    {
-        
+   {
         anim.SetBool("OnSpin", true);
         StartCoroutine(SpinningCo(portal));
-    }
+   }
 
     private IEnumerator SpinningCo(Elevator portal)
     {

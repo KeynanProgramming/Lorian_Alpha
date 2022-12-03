@@ -6,44 +6,107 @@ using System;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-    public Sound[] sounds;
+    public Sound[] miscSounds, enemySounds, heroSounds;
 
     private void Awake()
     {
         instance = this;
 
-        foreach (var s in sounds)
+        foreach (var miscS in miscSounds)
         {
-            if (s.myGameObject) 
+            if (miscS.myGameObject) 
             { 
-                s.source = s.myGameObject.AddComponent<AudioSource>();
+                miscS.source = miscS.myGameObject.AddComponent<AudioSource>();
             }
             else 
             {
-                s.source = gameObject.AddComponent<AudioSource>();
+                miscS.source = gameObject.AddComponent<AudioSource>();
             }
               
-            s.source.clip = s.clip;
-            s.source.volume = s.vol;
-            s.source.pitch = s.pitch;
-            s.source.spatialBlend = s.spatialBlend;
-            s.source.playOnAwake = s.playOnAwake;
+            miscS.source.clip = miscS.clip;
+            miscS.source.volume = miscS.vol;
+            miscS.source.pitch = miscS.pitch;
+            miscS.source.spatialBlend = miscS.spatialBlend;
+            miscS.source.playOnAwake = miscS.playOnAwake;
 
-            if (s.playOnAwake) 
+            if (miscS.playOnAwake) 
             {
-                s.source.Play();
+                miscS.source.Play();
             }
                 
-            s.source.loop = s.loop;
+            miscS.source.loop = miscS.loop;
+        }
+
+        foreach (var enemyS in enemySounds)
+        {
+            if (enemyS.myGameObject)
+            {
+                enemyS.source = enemyS.myGameObject.AddComponent<AudioSource>();
+            }
+            else
+            {
+                enemyS.source = gameObject.AddComponent<AudioSource>();
+            }
+
+            enemyS.source.clip = enemyS.clip;
+            enemyS.source.volume = enemyS.vol;
+            enemyS.source.pitch = enemyS.pitch;
+            enemyS.source.spatialBlend = enemyS.spatialBlend;
+            enemyS.source.playOnAwake = enemyS.playOnAwake;
+
+            if (enemyS.playOnAwake)
+            {
+                enemyS.source.Play();
+            }
+
+            enemyS.source.loop = enemyS.loop;
+        }
+
+        foreach (var heroS in heroSounds)
+        {
+            if (heroS.myGameObject)
+            {
+                heroS.source = heroS.myGameObject.AddComponent<AudioSource>();
+            }
+            else
+            {
+                heroS.source = gameObject.AddComponent<AudioSource>();
+            }
+
+            heroS.source.clip = heroS.clip;
+            heroS.source.volume = heroS.vol;
+            heroS.source.pitch = heroS.pitch;
+            heroS.source.spatialBlend = heroS.spatialBlend;
+            heroS.source.playOnAwake = heroS.playOnAwake;
+
+            if (heroS.playOnAwake)
+            {
+                heroS.source.Play();
+            }
+
+            heroS.source.loop = heroS.loop;
         }
     }
 
     public void PlaySound(string name)
     {
-        Sound s = Array.Find(sounds, sonido => sonido.name == name);
-        if (s != null)
+        Sound miscS = Array.Find(miscSounds, sound => sound.name == name);
+        Sound enemyS = Array.Find(enemySounds, sound => sound.name == name);
+        Sound heroS = Array.Find(heroSounds, sound => sound.name == name);
+
+        if (miscS != null)
         {
-            s.source.PlayOneShot(s.clip);
+            miscS.source.PlayOneShot(miscS.clip);
+        }
+
+        if (enemyS != null)
+        {
+            enemyS.source.PlayOneShot(enemyS.clip);
+        }
+
+        if (heroS != null)
+        {
+            heroS.source.PlayOneShot(heroS.clip);
         }
     }
 }

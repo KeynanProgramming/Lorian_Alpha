@@ -6,7 +6,7 @@ public class Chest : Sign
 {
     public bool chestOpened;
     public GameObject objectPanel, hero;
-    public string chestSFX;
+    public string objectObtainedSFX;
 
     private Animator anim;
 
@@ -28,7 +28,7 @@ public class Chest : Sign
             }
             else
             {
-                AudioManager.instance.PlaySound(chestSFX);
+                AudioManager.instance.PlaySound(objectObtainedSFX);
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
                 objectPanel.SetActive(true);
