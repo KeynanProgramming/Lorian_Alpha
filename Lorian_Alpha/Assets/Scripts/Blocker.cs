@@ -15,14 +15,12 @@ public class Blocker : MonoBehaviour
         if (dialogBox.activeInHierarchy)
         {
             hero.GetComponent<Lorian>().movement = Vector2.zero;
-            hero.GetComponent<Lorian>().UpdateBlocker(true);
         }
 
         if (playerOnRange == true && Input.GetKeyDown(KeyCode.Space))
         {
             if(dialogBox.activeInHierarchy)
             {
-                hero.GetComponent<Lorian>().UpdateBlocker(false);
                 AudioManager.instance.PlaySound(buttonSound);
                 dialogBox.SetActive(false);
                 hero.GetComponent<Lorian>().movement.x = Input.GetAxisRaw("Horizontal");
