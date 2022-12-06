@@ -201,11 +201,15 @@ MonoBehaviour:
   sword: 0
   amulet: 1
   coolDown: 4
-  heroSpeed: 7
+  heroSpeed: 0
   spinningTime: 4
   amuletTimer: 0
+  lorianDamageSFX: Lorian Damage SFX
+  magicAttackSFX: Magic Attack SFX
+  loseSFX: Lose SFX
+  heartSFX: Heart SFX
   movement: {x: 0, y: 0}
-  blocker: 0
+  movementBlocker: 0
   hearts:
   - {fileID: 0}
   - {fileID: 0}
@@ -215,9 +219,8 @@ MonoBehaviour:
   heartContainers: {fileID: 0}
   amuletHud: {fileID: 0}
   fadeToBlack: {fileID: 0}
+  dialogBox: {fileID: 0}
   amuletBar: {fileID: 0}
-  sonido: {fileID: 0}
-  portal: {fileID: 0}
 --- !u!114 &4494021101368379706
 MonoBehaviour:
   m_ObjectHideFlags: 0

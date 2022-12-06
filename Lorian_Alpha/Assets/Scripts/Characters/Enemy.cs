@@ -5,13 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health, damage;
-    public float moveSpeed,
-                 timer,
-                 idleTime,
-                 moveTime,
-                 chaseRadius,
-                 attackRadius,
-                 limitRadius;
+    public float moveSpeed,  timer, idleTime, moveTime, chaseRadius, attackRadius, limitRadius;
+    public string enemyDamageSFX, enemyAttackSFX, enemyStunedSFX;
     public List<Transform> points;
     public Transform target;
 
@@ -100,8 +95,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    void EnemyAttackSFX()
+    {
+        AudioManager.instance.PlaySound(enemyAttackSFX);
+    }
+
     public void TakeDamage(int dmg)
     {
+        AudioManager.instance.PlaySound(enemyDamageSFX);
         anim.SetTrigger("Damage");
         health -= dmg;
 
@@ -116,16 +117,23 @@ public class Enemy : MonoBehaviour
         if (collision.CompareTag("Statue"))
         {
             anim.SetTrigger("Stuned");
+            AudioManager.instance.PlaySound(enemyStunedSFX);
         }
     }
 
     public void Dying()
     {
+        AudioManager.instance.PlaySound(enemyDamageSFX);
+        StartCoroutine(DyingCo());
+    }
+
+    private IEnumerator DyingCo()
+    {
+        yield return new WaitForSeconds(1);
         GameManager.instance.enemies.Remove(this);
         GameManager.instance.ActivateMural();
         this.gameObject.SetActive(false);
     }
-
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, chaseRadius);

@@ -13,7 +13,7 @@ public class FinalMural : Sign
         {
             if (dialogBox.activeInHierarchy)
             {
-                AudioManager.instance.PlaySound(buttonSound);
+                AudioManager.instance.PlaySound("Button SFX");
                 //SceneManager.LoadScene(0);
                 this.gameObject.SetActive(false);
                 objectPanel.SetActive(false);

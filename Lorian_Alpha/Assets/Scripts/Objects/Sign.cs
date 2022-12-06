@@ -7,7 +7,7 @@ public class Sign : MonoBehaviour
 {
     public GameObject dialogBox, actionButton;
     public Text dialogText;
-    public string dialog, buttonSound;
+    public string dialog;
     public bool playerOnRange;
 
     void Update()
@@ -16,7 +16,7 @@ public class Sign : MonoBehaviour
         {
             if(dialogBox.activeInHierarchy)
             {
-                AudioManager.instance.PlaySound(buttonSound);
+                AudioManager.instance.PlaySound("Button SFX");
                 dialogBox.SetActive(false);
             }
             else

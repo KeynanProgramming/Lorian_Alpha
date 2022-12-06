@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
 
         if(doorOneButtonsPushed.Count >= buttonsNeeded)
         {
+            AudioManager.instance.PlaySound("Door SFX");
             entraceDoor.SetActive(false);
         }
 
@@ -156,6 +157,7 @@ public class GameManager : MonoBehaviour
 
         if(doorOneButtonsPushed.Count < buttonsNeeded)
         {
+            AudioManager.instance.PlaySound("Door SFX");
             entraceDoor.SetActive(true);
         }
 
@@ -170,9 +172,17 @@ public class GameManager : MonoBehaviour
     {
         if(enemies.Count == 0)
         {
-            exit.SetActive(true);
-            torchesAndMural.SetActive(true);
+            AudioManager.instance.PlaySound("Door SFX");
             bossDoor.SetActive(false);
+            StartCoroutine(ActivateMuralCo());
         }
+    }
+
+    private IEnumerator ActivateMuralCo()
+    {
+        yield return new WaitForSeconds(1);
+        AudioManager.instance.PlaySound("Puzzle Solved SFX");
+        exit.SetActive(true);
+        torchesAndMural.SetActive(true);
     }
 }

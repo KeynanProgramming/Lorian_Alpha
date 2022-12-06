@@ -12,7 +12,7 @@ public class Mural : Sign
         {
             if(dialogBox.activeInHierarchy)
             {
-                AudioManager.instance.PlaySound(buttonSound);
+                AudioManager.instance.PlaySound("Button SFX");
                 objectPanel.SetActive(false);
                 dialogBox.SetActive(false);
             }

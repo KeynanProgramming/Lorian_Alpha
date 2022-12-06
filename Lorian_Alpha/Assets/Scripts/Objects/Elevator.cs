@@ -7,12 +7,11 @@ public class Elevator : MonoBehaviour
     public GameObject hero, fadeFromWhite, fadeToWhite, uIPortal, actionButton;
     public Transform teleport;
     public float timeBeforeTransport, timeBeforeFade, timeAfterFade;
-    public string transportSFX, portalActivated;
     public bool playerOnRange;
 
     private void Awake()
     {
-        AudioManager.instance.PlaySound(portalActivated);
+        AudioManager.instance.PlaySound("Puzzle Solved SFX");
 
         if (fadeFromWhite != null)
         {
@@ -56,7 +55,7 @@ public class Elevator : MonoBehaviour
 
         if(fadeFromWhite || fadeToWhite != null)
         {
-            AudioManager.instance.PlaySound(transportSFX);
+            AudioManager.instance.PlaySound("Transport SFX");
             GameObject panelToWhite = Instantiate(fadeToWhite, Vector3.zero, Quaternion.identity);
             Destroy(panelToWhite, 2);
             yield return new WaitForSeconds(timeAfterFade);

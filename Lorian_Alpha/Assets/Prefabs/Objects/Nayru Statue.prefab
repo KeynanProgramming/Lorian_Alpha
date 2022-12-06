@@ -132,6 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueLimit: {fileID: 6666125095609295068}
+  statueBreakSFX: Statue Break SFX
+  statueRestoreSFX: Statue Restore SFX
 --- !u!114 &1707631921120426847
 MonoBehaviour:
   m_ObjectHideFlags: 0

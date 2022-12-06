@@ -7,7 +7,7 @@ public class Blocker : MonoBehaviour
 {
     public GameObject dialogBox, hero;
     public Text dialogText;
-    public string dialog, buttonSound;
+    public string dialog;
     public bool playerOnRange;
 
     void Update()
@@ -21,7 +21,7 @@ public class Blocker : MonoBehaviour
         {
             if(dialogBox.activeInHierarchy)
             {
-                AudioManager.instance.PlaySound(buttonSound);
+                AudioManager.instance.PlaySound("Button SFX");
                 dialogBox.SetActive(false);
                 hero.GetComponent<Lorian>().movement.x = Input.GetAxisRaw("Horizontal");
                 hero.GetComponent<Lorian>().movement.y = Input.GetAxisRaw("Vertical");

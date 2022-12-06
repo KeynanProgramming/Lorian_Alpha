@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class Lorian : MonoBehaviour
 {    
     public int health, maxHP, sword, amulet, coolDown;
-    public float heroSpid, spinningTime, amuletTimer;
+    public float heroSpeed, spinningTime, amuletTimer;
+    public string lorianDamageSFX, magicAttackSFX, loseSFX;
     public Vector2 movement;
     public bool movementBlocker;
 
@@ -56,7 +57,7 @@ public class Lorian : MonoBehaviour
 
     private void FixedUpdate()
     {
-        myRigidbody.MovePosition(myRigidbody.position + heroSpid * Time.fixedDeltaTime * movement);
+        myRigidbody.MovePosition(myRigidbody.position + heroSpeed * Time.fixedDeltaTime * movement);
     }
 
     void AnimationUpdate()
@@ -79,6 +80,7 @@ public class Lorian : MonoBehaviour
 
         if(Input.GetButtonDown("Fire2") && amulet != 0 && amuletTimer > coolDown)
         {
+            AudioManager.instance.PlaySound(magicAttackSFX);
             anim.SetBool("OnPower", true);
             amuletTimer -= amuletTimer;
         }
@@ -111,14 +113,14 @@ public class Lorian : MonoBehaviour
         }
     }
 
-    public void MusicChanger()
+    public void RoomFade()
     {
         movement = Vector2.zero;
         movementBlocker = true;
-        StartCoroutine(MusicChangerCo());
+        StartCoroutine(RoomFadeCo());
     }
 
-    private IEnumerator MusicChangerCo()
+    private IEnumerator RoomFadeCo()
     {
         yield return new WaitForSeconds(2);
         movementBlocker = false;
@@ -155,6 +157,11 @@ public class Lorian : MonoBehaviour
         UpdateHP(health);
     }
 
+    void LorianDamageSFX()
+    {
+        AudioManager.instance.PlaySound(lorianDamageSFX);
+    }
+
     public void TakeDamage(int dmg)
     {
         anim.SetTrigger("Damage");
@@ -168,6 +175,7 @@ public class Lorian : MonoBehaviour
 
     public void Dying()
     {
+        AudioManager.instance.PlaySound(loseSFX);
         anim.SetBool("OnDying", false);
         StartCoroutine(DeathFadeCo());
     }

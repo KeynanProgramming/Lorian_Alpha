@@ -6,7 +6,6 @@ public class Chest : Sign
 {
     public bool chestOpened;
     public GameObject objectPanel, hero;
-    public string objectObtainedSFX;
 
     private Animator anim;
 
@@ -21,14 +20,14 @@ public class Chest : Sign
         {
             if (dialogBox.activeInHierarchy)
             {
-                AudioManager.instance.PlaySound(buttonSound);
+                AudioManager.instance.PlaySound("Button SFX");
                 chestOpened = true;
                 dialogBox.SetActive(false);
                 objectPanel.SetActive(false);
             }
             else
             {
-                AudioManager.instance.PlaySound(objectObtainedSFX);
+                AudioManager.instance.PlaySound("Object Obtained SFX");
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
                 objectPanel.SetActive(true);
@@ -47,6 +46,7 @@ public class Chest : Sign
                     newHeart.SetActive(true);
                     hero.GetComponent<Lorian>().hearts.Add(newHeart);
                 }
+
                 if (objectPanel.CompareTag("HeartPanel2"))
                 {
                     hero.GetComponent<Lorian>().health++;
