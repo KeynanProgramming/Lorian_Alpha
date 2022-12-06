@@ -37,7 +37,7 @@ public class RoomFade : MonoBehaviour
     {
         GameObject panel = Instantiate(fadePanel, Vector3.zero, Quaternion.identity);
         Destroy(panel, 2);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.8f);
         hero.GetComponent<Lorian>().transform.position += deltaPosition;
         fade = false;
     }

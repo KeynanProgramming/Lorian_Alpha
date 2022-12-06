@@ -17,13 +17,13 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void Play ()
+    public void Play()
     {
         GameObject panel = Instantiate(fadeToBlack, Vector3.zero, Quaternion.identity);
-        StartCoroutine(fadeToBlackCo());
+        StartCoroutine(FadeToBlackCo());
     }
 
-    private IEnumerator fadeToBlackCo()
+    private IEnumerator FadeToBlackCo()
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(1);

@@ -47,10 +47,10 @@ public class Lorian : MonoBehaviour
             movement = movement.normalized;
         }
 
-        if (Input.GetKey(KeyCode.Escape))
+        /*if (Input.GetKey(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
-        }
+        }*/
         
         UpdateMana();
     }
