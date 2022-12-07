@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [System.Serializable]
 public class Sound
@@ -9,6 +10,7 @@ public class Sound
     [HideInInspector]
     public AudioSource source;
     public AudioClip clip;
+    public AudioMixerGroup mixerGroup;
     public GameObject myGameObject;
     [Range(0, 1)]
     public float vol = 1;

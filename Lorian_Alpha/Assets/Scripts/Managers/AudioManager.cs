@@ -24,6 +24,7 @@ public class AudioManager : MonoBehaviour
             }
               
             miscS.source.clip = miscS.clip;
+            miscS.source.outputAudioMixerGroup = miscS.mixerGroup;
             miscS.source.volume = miscS.vol;
             miscS.source.pitch = miscS.pitch;
             miscS.source.spatialBlend = miscS.spatialBlend;
@@ -49,6 +50,7 @@ public class AudioManager : MonoBehaviour
             }
 
             enemyS.source.clip = enemyS.clip;
+            enemyS.source.outputAudioMixerGroup = enemyS.mixerGroup;
             enemyS.source.volume = enemyS.vol;
             enemyS.source.pitch = enemyS.pitch;
             enemyS.source.spatialBlend = enemyS.spatialBlend;
@@ -74,6 +76,7 @@ public class AudioManager : MonoBehaviour
             }
 
             heroS.source.clip = heroS.clip;
+            heroS.source.outputAudioMixerGroup = heroS.mixerGroup;
             heroS.source.volume = heroS.vol;
             heroS.source.pitch = heroS.pitch;
             heroS.source.spatialBlend = heroS.spatialBlend;
@@ -99,6 +102,7 @@ public class AudioManager : MonoBehaviour
             }
 
             backMusic.source.clip = backMusic.clip;
+            backMusic.source.outputAudioMixerGroup = backMusic.mixerGroup;
             backMusic.source.volume = backMusic.vol;
             backMusic.source.pitch = backMusic.pitch;
             backMusic.source.spatialBlend = backMusic.spatialBlend;
