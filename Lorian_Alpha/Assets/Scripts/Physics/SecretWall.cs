@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class SecretWall : MonoBehaviour
 {
-    public void removeWall()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        this.gameObject.SetActive(false);
+        if (CompareTag("Player"))
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }

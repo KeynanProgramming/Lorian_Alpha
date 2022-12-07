@@ -9,17 +9,7 @@ public class PlayerHit : MonoBehaviour
         if(collision.CompareTag("BrokenStatue"))
         {
             collision.gameObject.GetComponent<Statue>().OnRestore();
-        }
-
-        if (collision.CompareTag("SecretWallSW"))
-        {
-            collision.gameObject.GetComponent<SecretWall>().removeWall();
-        }
-
-        if (collision.CompareTag("SecretWallNE"))
-        {
-            collision.gameObject.GetComponent<SecretWall>().removeWall();
-        }
+        }      
     }
 }
 

@@ -26,6 +26,7 @@ TagManager:
   - MuralWin
   - BrokenStatue
   - Exit
+  - Sello
   layers:
   - Default
   - TransparentFX
