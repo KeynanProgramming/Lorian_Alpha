@@ -103,7 +103,7 @@ public class Lorian : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Sello"))
+        if (collision.CompareTag("SecretWallSW"))
         {
             SceneManager.LoadScene(0);
         }
