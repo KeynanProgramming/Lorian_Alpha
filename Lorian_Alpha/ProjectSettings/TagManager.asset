@@ -27,6 +27,7 @@ TagManager:
   - BrokenStatue
   - Exit
   - Sello
+  - Return
   layers:
   - Default
   - TransparentFX

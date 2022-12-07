@@ -17,9 +17,10 @@ public class Lorian : MonoBehaviour
     public GameObject amuletHud, fadeToBlack, dialogBox;
     public Slider amuletBar;
 
-    private Elevator portal;
+    public Elevator portal;
     private Rigidbody2D myRigidbody;
-    private Animator anim;
+    private Animator anim;    
+
 
     void Start()
     {
@@ -103,14 +104,25 @@ public class Lorian : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("SecretWallSW"))
+      /*  if (collision.CompareTag("Sello"))
         {
             SceneManager.LoadScene(0);
         }
-        else
+        if (collision.CompareTag("SecretWallSW"))
+        {
+            collision.gameObject.GetComponent<SecretWall>().removeWall();
+        }
+        if (collision.CompareTag("SecretWallNE"))
+        {
+            collision.gameObject.GetComponent<SecretWall>().removeWall();
+        }
+        if (collision.CompareTag("Elevator"))
         {
             portal = collision.GetComponent<Elevator>();
         }
+      */
+        // checkCollisions.CheckCollisions(collision);
+        collision.gameObject.GetComponent<PlayerCollisions>().CheckCollisions(collision);
     }
 
     public void RoomFade()
