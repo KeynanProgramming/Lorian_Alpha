@@ -48,11 +48,6 @@ public class Lorian : MonoBehaviour
             movement = movement.normalized;
         }
 
-        /*if (Input.GetKey(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(0);
-        }*/
-        
         UpdateMana();
     }
 
@@ -104,25 +99,12 @@ public class Lorian : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-      /*  if (collision.CompareTag("Sello"))
+        PlayerCollisions playerCollisions = collision.GetComponent<PlayerCollisions>();
+
+        if (playerCollisions) 
         {
-            SceneManager.LoadScene(0);
+            playerCollisions.CheckCollisions(collision);
         }
-        if (collision.CompareTag("SecretWallSW"))
-        {
-            collision.gameObject.GetComponent<SecretWall>().removeWall();
-        }
-        if (collision.CompareTag("SecretWallNE"))
-        {
-            collision.gameObject.GetComponent<SecretWall>().removeWall();
-        }
-        if (collision.CompareTag("Elevator"))
-        {
-            portal = collision.GetComponent<Elevator>();
-        }
-      */
-        // checkCollisions.CheckCollisions(collision);
-        collision.gameObject.GetComponent<PlayerCollisions>().CheckCollisions(collision);
     }
 
     public void RoomFade()
