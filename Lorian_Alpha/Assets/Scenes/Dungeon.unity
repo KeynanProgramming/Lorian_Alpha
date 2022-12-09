@@ -1127,6 +1127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 920923125}
+  zeroMovement: 0
+  fadePanel: {fileID: 2244517471433237658, guid: 861eca3473d045f47ad91047bda24b19, type: 3}
 --- !u!1 &58799838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,6 +1608,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 920923125}
+  zeroMovement: 0
+  fadePanel: {fileID: 0}
 --- !u!1 &82524807
 GameObject:
   m_ObjectHideFlags: 0
@@ -9787,6 +9791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 920923125}
+  zeroMovement: 0
+  fadePanel: {fileID: 0}
 --- !u!1 &341749954
 GameObject:
   m_ObjectHideFlags: 0
@@ -21704,6 +21710,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 920923125}
+  zeroMovement: 0
+  fadePanel: {fileID: 0}
 --- !u!1 &1078191998
 GameObject:
   m_ObjectHideFlags: 0
@@ -45299,6 +45307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 920923125}
+  zeroMovement: 0
+  fadePanel: {fileID: 0}
 --- !u!19719996 &1634604033
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -50269,6 +50279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 920923125}
+  zeroMovement: 0
+  fadePanel: {fileID: 0}
 --- !u!1 &1963694074
 GameObject:
   m_ObjectHideFlags: 0

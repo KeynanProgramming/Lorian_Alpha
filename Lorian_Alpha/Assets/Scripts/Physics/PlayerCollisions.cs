@@ -7,11 +7,23 @@ using UnityEngine.SceneManagement;
 public class PlayerCollisions : MonoBehaviour
 {   
     public Lorian player;
+    public bool zeroMovement = false;
+    public GameObject fadePanel;
+
+    private void Update()
+    {
+        if (zeroMovement)
+        {
+            player.movementBlocker = true;
+        }
+    }
     public void CheckCollisions(Collider2D collision)
     {
         if (collision.CompareTag("Seal"))
         {
-            SceneManager.LoadScene(0);
+            zeroMovement = true;
+            GameObject panel = Instantiate(fadePanel, Vector3.zero, Quaternion.identity);
+            StartCoroutine(StartCinematicCo());
         }
 
         if (collision.CompareTag("SecretWallSW"))
@@ -40,5 +52,11 @@ public class PlayerCollisions : MonoBehaviour
         {
             player.transform.position = new Vector3(-17, 26.5f, 0);
         }
+    }
+
+    private IEnumerator StartCinematicCo()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(3);
     }
 }
