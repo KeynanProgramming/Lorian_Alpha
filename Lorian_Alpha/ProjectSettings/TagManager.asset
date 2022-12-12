@@ -28,6 +28,7 @@ TagManager:
   - Exit
   - Return
   - Seal
+  - Bat
   layers:
   - Default
   - TransparentFX

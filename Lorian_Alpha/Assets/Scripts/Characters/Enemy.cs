@@ -114,10 +114,15 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Statue"))
+        if (this.gameObject.tag == "Enemy" && collision.CompareTag("Statue"))
         {
             anim.SetTrigger("Stuned"); 
             AudioManager.instance.PlaySound(enemyStunedSFX);
+        }
+
+        if(this.gameObject.tag == "Bat" && collision.CompareTag("Statue"))
+        {
+            TakeDamage(1);
         }
     }
 

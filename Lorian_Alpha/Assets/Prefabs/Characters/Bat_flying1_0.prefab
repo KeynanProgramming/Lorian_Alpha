@@ -126,10 +126,12 @@ MonoBehaviour:
   chaseRadius: 5
   attackRadius: 2
   limitRadius: 0
-  enemyDamageSFX: Werewolf Damage SFX
+  enemyDamageSFX: 
   enemyAttackSFX: Werewolf Attack SFX
   enemyStunedSFX: Werewolf Stuned SFX
   points:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   target: {fileID: 0}
