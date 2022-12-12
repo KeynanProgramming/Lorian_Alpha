@@ -22277,11 +22277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -25.44
+      value: -25.9
       objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783243, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_LocalPosition.z
@@ -75375,6 +75375,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7763249260581601975, guid: 030a4a3a2b18b0844905e6795e53f792, type: 3}
+      propertyPath: health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763249260581601975, guid: 030a4a3a2b18b0844905e6795e53f792, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 920923119}
@@ -75386,6 +75390,10 @@ PrefabInstance:
       propertyPath: points.Array.data[1]
       value: 
       objectReference: {fileID: 2115066007}
+    - target: {fileID: 7763249260581601977, guid: 030a4a3a2b18b0844905e6795e53f792, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.859375
+      objectReference: {fileID: 0}
     - target: {fileID: 7763249260581601981, guid: 030a4a3a2b18b0844905e6795e53f792, type: 3}
       propertyPath: m_Name
       value: Werewolf

@@ -743,6 +743,7 @@ MonoBehaviour:
   fadeToBlack: {fileID: 7498742704370649083, guid: d3f1d4190cd841d4a94f5d3e2b61a292, type: 3}
   fadeToWhite: {fileID: 2244517471433237658, guid: 861eca3473d045f47ad91047bda24b19, type: 3}
   fadeInOut: {fileID: 3718477174114356977, guid: 9120b82e78e97c546aef468005ba5b5e, type: 3}
+  fadeFromWhite: {fileID: 9218233052266355384, guid: 5a89d9e6658969649a2c0705ffcee3d4, type: 3}
   panel0: {fileID: 755843978}
   panel1: {fileID: 143116525}
   panel2: {fileID: 1041733473}

@@ -109,14 +109,14 @@ public class Enemy : MonoBehaviour
         if(health <= 0)
         {
             anim.SetBool("OnDying", true);
-        }
+        }       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Statue"))
         {
-            anim.SetTrigger("Stuned");
+            anim.SetTrigger("Stuned"); 
             AudioManager.instance.PlaySound(enemyStunedSFX);
         }
     }

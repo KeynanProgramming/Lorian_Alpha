@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CinematicManager : MonoBehaviour
 {
-    public GameObject fadeFromBlack, fadeToBlack, fadeToWhite, fadeInOut;
+    public GameObject fadeFromBlack, fadeToBlack, fadeToWhite, fadeInOut,fadeFromWhite;
     public GameObject panel0, panel1, panel2, panel3;
     public GameObject dialog1, dialog2;
     public AudioClip dialogBoxSound, initialSound, secondSound, wakingSound;
@@ -18,12 +18,19 @@ public class CinematicManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         Scene activeScene = SceneManager.GetActiveScene();
         scene = activeScene.buildIndex;
-
-        if (fadeFromBlack != null)
+    
+        if (scene == 1)
         {
             GameObject panel = Instantiate(fadeFromBlack, Vector3.zero, Quaternion.identity) as GameObject;
             Destroy(panel, 1.5f);
         }
+
+        if (scene == 3)
+        {
+            GameObject panel = Instantiate(fadeFromWhite, Vector3.zero, Quaternion.identity) as GameObject;
+            Destroy(panel, 1.5f);
+        }
+
     }
 
     void Update()

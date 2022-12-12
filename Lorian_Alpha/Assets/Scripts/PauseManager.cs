@@ -70,8 +70,9 @@ public class PauseManager : MonoBehaviour
             {
                 AudioManager.instance.PlaySound("Button Select SFX");
                 Pause();
-            }
+            }          
         }
+        
     }
 
     public void Resume()
@@ -298,5 +299,6 @@ public class PauseManager : MonoBehaviour
         muralTwoPanel.SetActive(false);
         muralThreePanel.SetActive(false);
         muralFourPanel.SetActive(false);
+        dialogBox.SetActive(false);
     }
 }
