@@ -247,6 +247,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4410745162323783240, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
+      propertyPath: heroSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4410745162323783241, guid: e298cae826e5f5d44beefa274bd40361, type: 3}
       propertyPath: m_Name
       value: Lorian
@@ -310,11 +314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7763249260581601972, guid: 030a4a3a2b18b0844905e6795e53f792, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.1
+      value: 28.52
       objectReference: {fileID: 0}
     - target: {fileID: 7763249260581601972, guid: 030a4a3a2b18b0844905e6795e53f792, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1
+      value: 10.35
       objectReference: {fileID: 0}
     - target: {fileID: 7763249260581601972, guid: 030a4a3a2b18b0844905e6795e53f792, type: 3}
       propertyPath: m_LocalPosition.z
