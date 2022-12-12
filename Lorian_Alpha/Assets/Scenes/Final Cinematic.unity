@@ -532,8 +532,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: The Seals are getting weaker, Lorian. You must hurry, you can prevent
-        all the chaos Cerunos wants so bad! You are the only one...
+      value: The Seals are getting weaker, Lorian. You must prevent the chaos Cerunos
+        wants to unleash! You are the only one...
       objectReference: {fileID: 0}
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_FontData.m_FontStyle
@@ -1307,8 +1307,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: Lorian must reach the next temple in the deserted lands of Sahirya.
-        It's not going to be an easy one for our little fella.
+      value: 'For Lorian to reach the next temple in the deserted lands of Sahirya,
+        he will have to endure countless trials. '
       objectReference: {fileID: 0}
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_FontData.m_FontStyle

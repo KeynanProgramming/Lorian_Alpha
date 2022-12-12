@@ -16,13 +16,14 @@ public class GameManager : MonoBehaviour
 
     public List<Button> yellowButtonsPushed, blueButtonsPushed, greenButtonsPushed, redButtonsPushed, orangeButtonsPushed,
                         doorOneButtonsPushed, doorTwoButtonsPushed = new List<Button>();
+
     public List<Enemy> enemies = new List<Enemy>();
 
     public int buttonsNeeded;
     public bool redLight, greenLight, blueLight, yellowLight;
 
     public GameObject uIBlueLight, uIGreenLight, uIRedLight, uIYellowLight, fadeFromWhite, 
-                      exit, torchesAndMural, bossDoor;
+                      exit, torchesAndMural, bossDoor, boss;
 
     private void Awake()
     {
@@ -44,6 +45,8 @@ public class GameManager : MonoBehaviour
         {
             elevatorActivated.SetActive(true);
         }
+
+        ActivateMural();
     }
 
     public void StateOn()
@@ -170,7 +173,7 @@ public class GameManager : MonoBehaviour
 
     public void ActivateMural()
     {
-        if(enemies.Count == 0)
+        if(!boss.activeInHierarchy)
         {
             AudioManager.instance.PlaySound("Door SFX");
             bossDoor.SetActive(false);
