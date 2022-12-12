@@ -5,11 +5,14 @@ using UnityEngine;
 public class Mural : Sign
 {
     public GameObject objectPanel;
+    public GameObject codexMural;
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space) && playerOnRange == true)
         {
+            codexMural.SetActive(true);
+
             if(dialogBox.activeInHierarchy)
             {
                 AudioManager.instance.PlaySound("Button SFX");
