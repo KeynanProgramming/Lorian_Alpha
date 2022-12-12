@@ -380,7 +380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd0d85174d139964cbe570873a8545fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39efc3ce623041145a8e54bfaece3c5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -407,8 +407,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: 'There is a legend in Drunarya, about three ancient seals, hidden in
-        long forgotten temples keeping Evil at bay.
+      value: 'Having obtained the First of the Three Seals, Lorian journeys foward.
 
 '
       objectReference: {fileID: 0}
@@ -904,7 +903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6892754390172367641, guid: 4b7d2c67243a5764f91e9aea5a3bacc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0042abb88de74744c828c66c5597afdf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1044,8 +1043,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: With the passing of time, the seals have weakened and the forces of
-        Chaos once again bear their teeth against the peacefull Nayrunians.
+      value: Thinking of what it is to come, the fate of Drunarya weighs on his shoulders.
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
@@ -1164,8 +1162,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: "The return of Chaos is now simply a matter of Time. \nOnce unleashed,
-        destruction will follow."
+      value: END OF PART ONE, THE TEMPLE OF CREATION.
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
@@ -1443,7 +1440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e49c0de69cd839948851977e034348ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39efc3ce623041145a8e54bfaece3c5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
