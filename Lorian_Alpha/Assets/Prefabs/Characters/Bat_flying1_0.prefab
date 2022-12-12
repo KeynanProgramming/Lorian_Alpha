@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7530997768136340269}
   - component: {fileID: 7530997768136340242}
   - component: {fileID: 7530997768136340243}
+  - component: {fileID: 6693642241179320055}
+  - component: {fileID: 8359426792238868814}
+  - component: {fileID: 6444088956818166875}
   m_Layer: 0
   m_Name: Bat_flying1_0
   m_TagString: Untagged
@@ -71,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 8888381870531075839, guid: 4f9c6da2d067b0447841c640abd6871b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -102,3 +105,78 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6693642241179320055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530997768136340240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271f5d57864898e47a56fb7674cb63f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  damage: 1
+  moveSpeed: 1.5
+  timer: 0
+  idleTime: 5
+  moveTime: 10
+  chaseRadius: 5
+  attackRadius: 2
+  limitRadius: 0
+  enemyDamageSFX: Werewolf Damage SFX
+  enemyAttackSFX: Werewolf Attack SFX
+  enemyStunedSFX: Werewolf Stuned SFX
+  points:
+  - {fileID: 0}
+  - {fileID: 0}
+  target: {fileID: 0}
+--- !u!61 &8359426792238868814
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530997768136340240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.7083334, y: 0.5833333}
+    newSize: {x: 1.7083334, y: 0.5833333}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7083334, y: 0.5833333}
+  m_EdgeRadius: 0
+--- !u!50 &6444088956818166875
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530997768136340240}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
