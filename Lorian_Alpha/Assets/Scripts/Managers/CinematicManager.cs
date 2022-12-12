@@ -11,10 +11,13 @@ public class CinematicManager : MonoBehaviour
     public AudioClip dialogBoxSound, initialSound, secondSound, wakingSound;
     private AudioSource audioSource;
     private int i = 0;
+    private int scene;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        Scene activeScene = SceneManager.GetActiveScene();
+        scene = activeScene.buildIndex;
 
         if (fadeFromBlack != null)
         {
@@ -51,12 +54,17 @@ public class CinematicManager : MonoBehaviour
                     panel = Instantiate(fadeToBlack, Vector3.zero, Quaternion.identity);
                     Destroy(panel, 2.5f);
                     StartCoroutine(fade3Co(panel));
+                    if (scene == 3)
+                    {
+                        i++;
+                    }
                     break;
 
                 case 4:
                     audioSource.PlayOneShot(dialogBoxSound);
                     dialog1.SetActive(false);
                     dialog2.SetActive(true);
+                    
                     break;
 
                 case 5:
@@ -101,7 +109,14 @@ public class CinematicManager : MonoBehaviour
     private IEnumerator fadeToWhiteCo()
     {
         yield return new WaitForSeconds(4);
-        SceneManager.LoadScene(2);
+        if (scene == 3)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        { 
+            SceneManager.LoadScene(2);
+        }
     }
                 
 }
