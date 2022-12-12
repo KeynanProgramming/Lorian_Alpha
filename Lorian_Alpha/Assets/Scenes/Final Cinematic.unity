@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 931c8ece02fdfcf4d8b029a1c719c716, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0042abb88de74744c828c66c5597afdf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -407,9 +407,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: 'Having obtained the First of the Three Seals, Lorian journeys foward.
-
-'
+      value: Having obtained the First of the Three Seals, Lorian's journey continues.
+      objectReference: {fileID: 0}
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_FontData.m_RichText
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
@@ -514,8 +532,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: Travel to the temple of the ancient gods, seek the seals and put a stop
-        to Cerunos...
+      value: The Seals are getting weaker, Lorian. You must hurry, you can prevent
+        all the chaos Cerunos wants so bad! You are the only one...
       objectReference: {fileID: 0}
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_FontData.m_FontStyle
@@ -528,6 +546,10 @@ PrefabInstance:
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596408180255279614, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7730868511980276369, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Pivot.x
@@ -903,7 +925,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0042abb88de74744c828c66c5597afdf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39efc3ce623041145a8e54bfaece3c5f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1044,6 +1066,10 @@ PrefabInstance:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
       value: Thinking of what it is to come, the fate of Drunarya weighs on his shoulders.
+      objectReference: {fileID: 0}
+    - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name
@@ -1281,12 +1307,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Text
-      value: 'Lorian, the visions I''ve shown you must not come to pass. With my
-        guide you can prevent this future... '
+      value: Lorian must reach the next temple in the deserted lands of Sahirya.
+        It's not going to be an easy one for our little fella.
       objectReference: {fileID: 0}
     - target: {fileID: 482225978125905513, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_FontData.m_FontStyle
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1554214638134406733, guid: 6d5387b90a4732c48816d34619e4f17d, type: 3}
       propertyPath: m_Name

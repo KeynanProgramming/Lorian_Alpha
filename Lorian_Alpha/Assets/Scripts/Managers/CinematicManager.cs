@@ -61,10 +61,10 @@ public class CinematicManager : MonoBehaviour
                     panel = Instantiate(fadeToBlack, Vector3.zero, Quaternion.identity);
                     Destroy(panel, 2.5f);
                     StartCoroutine(fade3Co(panel));
-                    if (scene == 3)
+                    /*if (scene == 3)
                     {
                         i++;
-                    }
+                    }*/
                     break;
 
                 case 4:
