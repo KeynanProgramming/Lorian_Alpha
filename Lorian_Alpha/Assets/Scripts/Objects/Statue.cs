@@ -5,6 +5,7 @@ using UnityEngine;
 public class Statue : MonoBehaviour
 {
     public GameObject statueLimit;
+    public string statueBreakSFX, statueRestoreSFX;
     private Animator anim;
     void Start()
     {
@@ -14,6 +15,7 @@ public class Statue : MonoBehaviour
     public void OnRestore()
     {
         anim.SetTrigger("OnRestore");
+        AudioManager.instance.PlaySound(statueRestoreSFX);
         statueLimit.gameObject.SetActive(false);
         gameObject.tag = "Statue";
     }
@@ -21,6 +23,7 @@ public class Statue : MonoBehaviour
     public void OnBreak()
     {
         anim.SetTrigger("OnBreak");
+        AudioManager.instance.PlaySound(statueBreakSFX);
         statueLimit.transform.position = transform.position;
         statueLimit.gameObject.SetActive(true);
         StartCoroutine(StatueBreakCo());

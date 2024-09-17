@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraChanger : MonoBehaviour
 {
-    public GameObject cam1, cam2, uIPortal;
+    public GameObject cam1, cam2;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,7 +12,6 @@ public class CameraChanger : MonoBehaviour
         {
             cam2.gameObject.SetActive(true);
             cam1.gameObject.SetActive(false);
-            uIPortal.SetActive(true);
         }
     }
 

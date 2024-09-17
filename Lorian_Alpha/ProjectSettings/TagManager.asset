@@ -25,6 +25,10 @@ TagManager:
   - HeartPanel2
   - MuralWin
   - BrokenStatue
+  - Exit
+  - Return
+  - Seal
+  - Bat
   layers:
   - Default
   - TransparentFX

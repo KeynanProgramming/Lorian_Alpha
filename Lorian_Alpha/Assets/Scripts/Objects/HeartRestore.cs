@@ -9,8 +9,11 @@ public class HeartRestore : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Lorian takeHeart = collision.gameObject.GetComponent<Lorian>();
-        if(takeHeart && takeHeart.gameObject.GetComponent<Lorian>().health < takeHeart.gameObject.GetComponent<Lorian>().hearts.Count) 
+
+        if(takeHeart && takeHeart.gameObject.GetComponent<Lorian>().health
+            < takeHeart.gameObject.GetComponent<Lorian>().hearts.Count)
         {
+            AudioManager.instance.PlaySound("Heart SFX");
             takeHeart.TakeHeart(healthRestore);
             Destroy(this.gameObject);
         }
