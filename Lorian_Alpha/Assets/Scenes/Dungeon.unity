@@ -4217,7 +4217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe6cfda1e95592498a3197790455177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMaster: {fileID: 741138316}
+  volumeMusic: {fileID: 741138316}
   volumeSFX: {fileID: 1780497510}
   mute: {fileID: 994305546}
   mixer: {fileID: 24100000, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
@@ -18181,7 +18181,7 @@ GameObject:
   - component: {fileID: 741138315}
   - component: {fileID: 741138316}
   m_Layer: 5
-  m_Name: Master Slider
+  m_Name: Music Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18259,7 +18259,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2032114731}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &761040542
 GameObject:
   m_ObjectHideFlags: 0
@@ -52046,7 +52058,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2032114731}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &1780497511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -52153,7 +52177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1788069437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -55987,7 +56011,7 @@ MonoBehaviour:
   - name: Werewolf Attack SFX
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: 0b44e6f0dd48c0a4ca03c68ad6b81f1c, type: 3}
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 9150305563623269625, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
     myGameObject: {fileID: 0}
     vol: 0.9
     pitch: 1
@@ -55997,7 +56021,7 @@ MonoBehaviour:
   - name: Werewolf Damage SFX
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: 144818016dae7bb44aae1552b889cb72, type: 3}
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 9150305563623269625, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
     myGameObject: {fileID: 0}
     vol: 1
     pitch: 1
@@ -56007,7 +56031,7 @@ MonoBehaviour:
   - name: Werewolf Stuned SFX
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: 86aa3f447261e8147a0ddf725207eaa3, type: 3}
-    mixerGroup: {fileID: 0}
+    mixerGroup: {fileID: 9150305563623269625, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
     myGameObject: {fileID: 0}
     vol: 1
     pitch: 1
@@ -56028,7 +56052,7 @@ MonoBehaviour:
   - name: Lose SFX
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: 67b77211908bb334abf9106745de4f7b, type: 3}
-    mixerGroup: {fileID: 24300002, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
+    mixerGroup: {fileID: 9191528714196859916, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
     myGameObject: {fileID: 0}
     vol: 1
     pitch: 1
@@ -56049,7 +56073,7 @@ MonoBehaviour:
   - name: Forest Music
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: b3b507a61a1c14d479321c28342fab41, type: 3}
-    mixerGroup: {fileID: 24300002, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
+    mixerGroup: {fileID: 9191528714196859916, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
     myGameObject: {fileID: 1731797161}
     vol: 0.3
     pitch: 1.07
@@ -56059,7 +56083,7 @@ MonoBehaviour:
   - name: Temple Music
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: 20d105ee61336684680dcde040656871, type: 3}
-    mixerGroup: {fileID: 24300002, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
+    mixerGroup: {fileID: 9191528714196859916, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
     myGameObject: {fileID: 47162667}
     vol: 0.5
     pitch: 1
@@ -56069,7 +56093,7 @@ MonoBehaviour:
   - name: Battle Music
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: d89eee0a1a7b90041baa9d07afecde18, type: 3}
-    mixerGroup: {fileID: 24300002, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
+    mixerGroup: {fileID: 9191528714196859916, guid: a28dc4b26a786ff45b1e065bee992263, type: 2}
     myGameObject: {fileID: 1661022908}
     vol: 0.5
     pitch: 1

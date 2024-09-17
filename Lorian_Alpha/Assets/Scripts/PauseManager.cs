@@ -1,15 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseManager : MonoBehaviour
 {
     [Header("Options")]
-    public Slider volumeMaster;
+    public Slider volumeMusic;
     public Slider volumeSFX;
     public Toggle mute;
     public AudioMixer mixer;
@@ -53,7 +52,7 @@ public class PauseManager : MonoBehaviour
 
     private void Awake()
     {
-        volumeMaster.onValueChanged.AddListener(ChangeVolumeMaster);
+        volumeMusic.onValueChanged.AddListener(ChangeVolumeMusic);
         volumeSFX.onValueChanged.AddListener(ChangeVolumeSFX);
     }
 
@@ -209,9 +208,9 @@ public class PauseManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void ChangeVolumeMaster(float vol)
+    public void ChangeVolumeMusic(float vol)
     {
-        mixer.SetFloat("VolMaster", vol);
+        mixer.SetFloat("VolMusic", vol);
     }
 
     public void ChangeVolumeSFX(float vol)
