@@ -1702,8 +1702,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Move Up                            [W] or [\u2191]\nMove Down                        
     [S] or [\u2193]\nMove Left                          [A] or [\u2190]\nMove Right                      
-    [D] or [\u2192]\nInteract                                 [Space]\nAttack                   
-    [Ctrl] or Left click\nUse Amulet           [Alt] or Right click"
+    [D] or [\u2192]\nInteract                                 [Space]\nUse Amulet          
+    [Alt] or Right click"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
