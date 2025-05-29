@@ -4,7 +4,12 @@ Proyecto para la materia de PRODUCCION DE VIDEOJUEGOS de la carrera Desarrollo d
 
 Inicio del proyecto: 06/09/2022.
 
-Integrantes: de Mayolas, Francisco (Game Designer)
-             Pérez Ortíz, Tomás (Artist)
-             Rodríguez, María Eugenia (Artist)
-             Rukoz, Wilfredo (Programmer)
+Integrantes: 
+
+de MAYOLAS, Francisco (Game Designer)
+             
+PÉREZ ORTIZ, Tomás (Artist)
+             
+RODRÍGUEZ, María Eugenia (Artist)
+
+RUKOZ, Wilfredo (Programmer)
